@@ -1,0 +1,1842 @@
+[
+  {
+    "end_ms": 8760,
+    "index": 0,
+    "normalized_text": "buenos dias. mi nombre es elva esperanza cruz ruiz, mi cedula de identidad es 100,",
+    "start_ms": 0,
+    "text": "Buenos días. Mi nombre es Elva Esperanza Cruz Ruiz, mi cédula de identidad es 100,",
+    "time_label": "00:00-00:08",
+    "window_index": 0,
+    "word_count": 15
+  },
+  {
+    "end_ms": 16600,
+    "index": 1,
+    "normalized_text": "207, 149, 3. trabajo en la unidad educativa presidente velasco y barra, en el nivel inicial,",
+    "start_ms": 8760,
+    "text": "207, 149, 3. Trabajo en la unidad educativa Presidente Velasco y Barra, en el nivel inicial,",
+    "time_label": "00:08-00:16",
+    "window_index": 0,
+    "word_count": 16
+  },
+  {
+    "end_ms": 22680,
+    "index": 2,
+    "normalized_text": "con el grupo de tres anos de edad. este dia voy a trabajar con 14 estudiantes,",
+    "start_ms": 16600,
+    "text": "con el grupo de tres años de edad. Este día voy a trabajar con 14 estudiantes,",
+    "time_label": "00:16-00:22",
+    "window_index": 0,
+    "word_count": 16
+  },
+  {
+    "end_ms": 28440,
+    "index": 3,
+    "normalized_text": "seis ninas, ocho ninos. el tema en partir es el numero cinco. bienvenidos.",
+    "start_ms": 22680,
+    "text": "seis niñas, ocho niños. El tema en partir es el número cinco. Bienvenidos.",
+    "time_label": "00:22-00:28",
+    "window_index": 0,
+    "word_count": 13
+  },
+  {
+    "end_ms": 42280,
+    "index": 4,
+    "normalized_text": "hola chicos, ¿como estan? bien. vea, ¿sabe que la elvita? ninos y ninas, muy bien. ¿sabe",
+    "start_ms": 31120,
+    "text": "Hola chicos, ¿cómo están? Bien. Vea, ¿sabe que la elvita? Niños y niñas, muy bien. ¿Sabe",
+    "time_label": "00:31-00:42",
+    "window_index": 0,
+    "word_count": 16
+  },
+  {
+    "end_ms": 49400,
+    "index": 5,
+    "normalized_text": "que la elvita? ¿quieres saber como esta cada uno de ustedes? ¿y quien aqui? diferentes caritas,",
+    "start_ms": 42280,
+    "text": "que la elvita? ¿Quieres saber cómo está cada uno de ustedes? ¿Y quién aquí? Diferentes caritas,",
+    "time_label": "00:42-00:49",
+    "window_index": 0,
+    "word_count": 16
+  },
+  {
+    "end_ms": 55420,
+    "index": 6,
+    "normalized_text": "levante la manito. ¿quien esta enojado? levante la manito. ¿quien esta enojado?",
+    "start_ms": 49400,
+    "text": "levante la manito. ¿Quién está enojado? Levante la manito. ¿Quién está enojado?",
+    "time_label": "00:49-00:55",
+    "window_index": 0,
+    "word_count": 12
+  },
+  {
+    "end_ms": 63440,
+    "index": 7,
+    "normalized_text": "nadie. muy bien. que bueno que no este enojado. levante la manito. ¿quien esta triste?",
+    "start_ms": 55420,
+    "text": "Nadie. Muy bien. Qué bueno que no esté enojado. Levante la manito. ¿Quién está triste?",
+    "time_label": "00:55-01:03",
+    "window_index": 0,
+    "word_count": 15
+  },
+  {
+    "end_ms": 72720,
+    "index": 8,
+    "normalized_text": "oh, que lindo. es muy bueno trabajar con gente muy feliz. a ver, levante la mano. ¿quien esta",
+    "start_ms": 63440,
+    "text": "Oh, qué lindo. Es muy bueno trabajar con gente muy feliz. A ver, levante la mano. ¿Quién está",
+    "time_label": "01:03-01:12",
+    "window_index": 0,
+    "word_count": 18
+  },
+  {
+    "end_ms": 80160,
+    "index": 9,
+    "normalized_text": "feliz? muy bien. sean todos ustedes bienvenidos a este dia de clase.",
+    "start_ms": 72720,
+    "text": "feliz? Muy bien. sean todos ustedes bienvenidos a este día de clase.",
+    "time_label": "01:12-01:20",
+    "window_index": 0,
+    "word_count": 12
+  },
+  {
+    "end_ms": 98360,
+    "index": 10,
+    "normalized_text": "muy bien. ahora vamos a hacer unos acuerdos. vean, mire, mire, mire. ¿que significara este acuerdo?",
+    "start_ms": 85920,
+    "text": "Muy bien. Ahora vamos a hacer unos acuerdos. Vean, mire, mire, mire. ¿Qué significará este acuerdo?",
+    "time_label": "01:25-01:38",
+    "window_index": 0,
+    "word_count": 16
+  },
+  {
+    "end_ms": 106900,
+    "index": 11,
+    "normalized_text": "hace silencio. y cuando la profe habla, usted hace silencio. cuando la profe habla,",
+    "start_ms": 98360,
+    "text": "Hace silencio. Y cuando la profe habla, usted hace silencio. Cuando la profe habla,",
+    "time_label": "01:38-01:46",
+    "window_index": 0,
+    "word_count": 14
+  },
+  {
+    "end_ms": 113760,
+    "index": 12,
+    "normalized_text": "usted hace silencio. muy bien. ¿quien va a cumplir este acuerdo? muy bien. el que cumple este",
+    "start_ms": 106900,
+    "text": "usted hace silencio. Muy bien. ¿Quién va a cumplir este acuerdo? Muy bien. El que cumple este",
+    "time_label": "01:46-01:53",
+    "window_index": 0,
+    "word_count": 17
+  },
+  {
+    "end_ms": 119640,
+    "index": 13,
+    "normalized_text": "acuerdo tendra carita feliz. mire, le voy a poner aqui. le voy a poner aqui para que usted",
+    "start_ms": 113760,
+    "text": "acuerdo tendrá carita feliz. Mire, le voy a poner aquí. Le voy a poner aquí para que usted",
+    "time_label": "01:53-01:59",
+    "window_index": 0,
+    "word_count": 18
+  },
+  {
+    "end_ms": 128200,
+    "index": 14,
+    "normalized_text": "recuerde todo el tiempo. que no tiene que hacer bullitas. muy bien. aca tengo otro acuerdo,",
+    "start_ms": 119640,
+    "text": "recuerde todo el tiempo. Que no tiene que hacer bullitas. Muy bien. Acá tengo otro acuerdo,",
+    "time_label": "01:59-02:08",
+    "window_index": 0,
+    "word_count": 16
+  },
+  {
+    "end_ms": 137480,
+    "index": 15,
+    "normalized_text": "mire. aqui tengo otro acuerdo. ¿que significara este? para participar. muy bien. usted.",
+    "start_ms": 128200,
+    "text": "mire. Aquí tengo otro acuerdo. ¿Qué significará este? Para participar. Muy bien. Usted.",
+    "time_label": "02:08-02:17",
+    "window_index": 0,
+    "word_count": 13
+  },
+  {
+    "end_ms": 147280,
+    "index": 16,
+    "normalized_text": "si, muy bien. no bullas de asi. muy bien. tiene que levantar la mano para participar. muy bien. muy",
+    "start_ms": 139240,
+    "text": "Sí, muy bien. No bullas de así. Muy bien. Tiene que levantar la mano para participar. Muy bien. Muy",
+    "time_label": "02:19-02:27",
+    "window_index": 0,
+    "word_count": 19
+  },
+  {
+    "end_ms": 156400,
+    "index": 17,
+    "normalized_text": "bien, chicos. vamos a poner aqui para recordar porque usted a veces se puede olvidar, entonces la",
+    "start_ms": 147280,
+    "text": "bien, chicos. Vamos a poner aquí para recordar porque usted a veces se puede olvidar, entonces la",
+    "time_label": "02:27-02:36",
+    "window_index": 0,
+    "word_count": 17
+  },
+  {
+    "end_ms": 164400,
+    "index": 18,
+    "normalized_text": "elbita le ha puesto esto, la profe, para que usted recuerde estas cartitas. mire. a ver que significara",
+    "start_ms": 156400,
+    "text": "elbita le ha puesto esto, la profe, para que usted recuerde estas cartitas. Mire. A ver qué significará",
+    "time_label": "02:36-02:44",
+    "window_index": 0,
+    "word_count": 18
+  },
+  {
+    "end_ms": 173760,
+    "index": 19,
+    "normalized_text": "esto. muy bien, respetar a los amiguitos. ¿le tiene que molestar al amiguito? ¿le tiene que coger el cabello?",
+    "start_ms": 164400,
+    "text": "esto. Muy bien, respetar a los amiguitos. ¿Le tiene que molestar al amiguito? ¿Le tiene que coger el cabello?",
+    "time_label": "02:44-02:53",
+    "window_index": 0,
+    "word_count": 19
+  },
+  {
+    "end_ms": 185400,
+    "index": 20,
+    "normalized_text": "muy bien, ni dar besos a los amigos. hay que respetarles y hay que compartir. ¿de acuerdo? muy bien.",
+    "start_ms": 178040,
+    "text": "Muy bien, ni dar besos a los amigos. Hay que respetarles y hay que compartir. ¿De acuerdo? Muy bien.",
+    "time_label": "02:58-03:05",
+    "window_index": 0,
+    "word_count": 19
+  },
+  {
+    "end_ms": 192400,
+    "index": 21,
+    "normalized_text": "le vamos a poner este acuerdo aqui para que usted le pueda ver. yo me leo una fotito. esto me leo una",
+    "start_ms": 185400,
+    "text": "Le vamos a poner este acuerdo aquí para que usted le pueda ver. Yo me leo una fotito. Esto me leo una",
+    "time_label": "03:05-03:12",
+    "window_index": 0,
+    "word_count": 22
+  },
+  {
+    "end_ms": 203880,
+    "index": 22,
+    "normalized_text": "fotito. muy bien. saben que el dia de hoy, ya, saben que el dia de hoy vamos a trabajar el numero",
+    "start_ms": 192400,
+    "text": "fotito. Muy bien. Saben que el día de hoy, ya, saben que el día de hoy vamos a trabajar el número",
+    "time_label": "03:12-03:23",
+    "window_index": 0,
+    "word_count": 21
+  },
+  {
+    "end_ms": 214520,
+    "index": 23,
+    "normalized_text": "cinco. si. vamos a identificar el numero cinco y vamos a saber que cuando, que cuando decimos que",
+    "start_ms": 203880,
+    "text": "cinco. Sí. Vamos a identificar el número cinco y vamos a saber que cuando, que cuando decimos que",
+    "time_label": "03:23-03:34",
+    "window_index": 0,
+    "word_count": 18
+  },
+  {
+    "end_ms": 222960,
+    "index": 24,
+    "normalized_text": "tenemos el numero cinco, tambien tenemos que tener cinco cosas, cinco objetos. muy bien. ya,",
+    "start_ms": 214520,
+    "text": "tenemos el número cinco, también tenemos que tener cinco cosas, cinco objetos. Muy bien. Ya,",
+    "time_label": "03:34-03:42",
+    "window_index": 0,
+    "word_count": 15
+  },
+  {
+    "end_ms": 231720,
+    "index": 25,
+    "normalized_text": "ya nos vamos a sacar el saquito. sientese mi amor. tranquilito. ¿que paso? ya le molesto. venga para",
+    "start_ms": 222960,
+    "text": "ya nos vamos a sacar el saquito. Sientese mi amor. Tranquilito. ¿Qué pasó? Ya le molesto. Venga para",
+    "time_label": "03:42-03:51",
+    "window_index": 0,
+    "word_count": 18
+  },
+  {
+    "end_ms": 238080,
+    "index": 26,
+    "normalized_text": "aca. venga encito. vayase para alla, al lado de leito y usted viene para aca. es bien atentos,",
+    "start_ms": 231720,
+    "text": "acá. Venga encito. Váyase para allá, al lado de leíto y usted viene para acá. Es bien atentos,",
+    "time_label": "03:51-03:58",
+    "window_index": 0,
+    "word_count": 18
+  },
+  {
+    "end_ms": 247400,
+    "index": 27,
+    "normalized_text": "al lado de paula. muy bien. tranquilitos. chicos, vamos a mirar el video, el video del numero cinco,",
+    "start_ms": 238080,
+    "text": "al lado de Paula. Muy bien. Tranquilitos. Chicos, vamos a mirar el video, el video del número cinco,",
+    "time_label": "03:58-04:07",
+    "window_index": 0,
+    "word_count": 18
+  },
+  {
+    "end_ms": 248520,
+    "index": 28,
+    "normalized_text": "vamos a escuchar la cancion.",
+    "start_ms": 247400,
+    "text": "vamos a escuchar la canción.",
+    "time_label": "04:07-04:08",
+    "window_index": 0,
+    "word_count": 5
+  },
+  {
+    "end_ms": 275680,
+    "index": 29,
+    "normalized_text": "todas cantamos. el numero cinco. hasta cinco. el numero cinco. hasta cinco. uno, dos, tres.",
+    "start_ms": 248520,
+    "text": "Todas cantamos. El número cinco. Hasta cinco. El número cinco. Hasta cinco. Uno, dos, tres.",
+    "time_label": "04:08-04:35",
+    "window_index": 0,
+    "word_count": 15
+  },
+  {
+    "end_ms": 286960,
+    "index": 30,
+    "normalized_text": "quatro, cinco. uno, dos, tres. quatro, cinco. uno, dos, tres.",
+    "start_ms": 275800,
+    "text": "Quatro, cinco. Uno, dos, tres. Quatro, cinco. Uno, dos, tres.",
+    "time_label": "04:35-04:46",
+    "window_index": 0,
+    "word_count": 10
+  },
+  {
+    "end_ms": 310200,
+    "index": 31,
+    "normalized_text": "hasta cinco el numero cinco el numero cinco hasta cinco cuatro cinco",
+    "start_ms": 286960,
+    "text": "hasta cinco el número cinco el número cinco hasta cinco cuatro cinco",
+    "time_label": "04:46-05:10",
+    "window_index": 0,
+    "word_count": 12
+  },
+  {
+    "end_ms": 328880,
+    "index": 32,
+    "normalized_text": "cuatro cinco fuerte, cuatro, si, mas fuerte muy bien, mire, hemos escuchado la cancion,",
+    "start_ms": 310200,
+    "text": "cuatro cinco fuerte, cuatro, sí, más fuerte muy bien, mire, hemos escuchado la canción,",
+    "time_label": "05:10-05:28",
+    "window_index": 1,
+    "word_count": 14
+  },
+  {
+    "end_ms": 336240,
+    "index": 33,
+    "normalized_text": "¿de que hablaba la cancion? el numero cinco. muy bien, ¿y aqui en el salon habra algo que",
+    "start_ms": 328880,
+    "text": "¿De qué hablaba la canción? El número cinco. Muy bien, ¿Y aquí en el salón habrá algo que",
+    "time_label": "05:28-05:36",
+    "window_index": 1,
+    "word_count": 18
+  },
+  {
+    "end_ms": 349720,
+    "index": 34,
+    "normalized_text": "haya cinco cosas? habra algo. los numeros, ¿o que? los numeros, muy bien, aqui sera que hay",
+    "start_ms": 336240,
+    "text": "haya cinco cosas? Habrá algo. Los números, ¿O qué? Los números, muy bien, aquí será que hay",
+    "time_label": "05:36-05:49",
+    "window_index": 1,
+    "word_count": 17
+  },
+  {
+    "end_ms": 359680,
+    "index": 35,
+    "normalized_text": "cinco carteles, uno, dos, tres, no mas habido. habra cinco pizarras, no, muy bien, ¿quiere",
+    "start_ms": 349720,
+    "text": "cinco carteles, uno, dos, tres, no más habido. Habrá cinco pizarras, no, muy bien, ¿Quiere",
+    "time_label": "05:49-05:59",
+    "window_index": 1,
+    "word_count": 15
+  },
+  {
+    "end_ms": 367840,
+    "index": 36,
+    "normalized_text": "conocerle el numero cinco? mire, este ha sido el numero cinco, tomele una fotito,",
+    "start_ms": 359680,
+    "text": "conocerle el número cinco? Mire, este ha sido el número cinco, tómele una fotito,",
+    "time_label": "05:59-06:07",
+    "window_index": 1,
+    "word_count": 14
+  },
+  {
+    "end_ms": 378160,
+    "index": 37,
+    "normalized_text": "tomele una fotito, el numero cinco nos indica que hay cinco cosas, vea como este guante, como",
+    "start_ms": 367840,
+    "text": "tómele una fotito, el número cinco nos indica que hay cinco cosas, vea como este guante, como",
+    "time_label": "06:07-06:18",
+    "window_index": 1,
+    "word_count": 17
+  },
+  {
+    "end_ms": 385720,
+    "index": 38,
+    "normalized_text": "este super guante, mire, la elbita ha tenido un super guante, mire, a ver, contamos los deditos,",
+    "start_ms": 378160,
+    "text": "este súper guante, mire, la elbita ha tenido un súper guante, mire, a ver, contamos los deditos,",
+    "time_label": "06:18-06:25",
+    "window_index": 1,
+    "word_count": 17
+  },
+  {
+    "end_ms": 397000,
+    "index": 39,
+    "normalized_text": "uno, dos, tres, cuatro, cinco, muy bien, el numero cinco nos indica que hay cinco dedos,",
+    "start_ms": 385720,
+    "text": "uno, dos, tres, cuatro, cinco, muy bien, el número cinco nos indica que hay cinco dedos,",
+    "time_label": "06:25-06:37",
+    "window_index": 1,
+    "word_count": 16
+  },
+  {
+    "end_ms": 409080,
+    "index": 40,
+    "normalized_text": "correcto, muy bien, ahora vamos a jugar, vamos a jugar con el con el dado magico, mire, mire,",
+    "start_ms": 397000,
+    "text": "correcto, muy bien, ahora vamos a jugar, vamos a jugar con el con el dado mágico, mire, mire,",
+    "time_label": "06:37-06:49",
+    "window_index": 1,
+    "word_count": 18
+  },
+  {
+    "end_ms": 416520,
+    "index": 41,
+    "normalized_text": "este ha sido un dado, mire, atentos, este ha sido un dado, mire, este dado tiene el numero cinco,",
+    "start_ms": 409080,
+    "text": "este ha sido un dado, mire, atentos, este ha sido un dado, mire, este dado tiene el número cinco,",
+    "time_label": "06:49-06:56",
+    "window_index": 1,
+    "word_count": 19
+  },
+  {
+    "end_ms": 423360,
+    "index": 42,
+    "normalized_text": "mire, tiene el numero cinco, mire, mire, mire, miren todos y tiene tambien diferentes cantidades,",
+    "start_ms": 416520,
+    "text": "mire, tiene el número cinco, mire, mire, mire, miren todos y tiene también diferentes cantidades,",
+    "time_label": "06:56-07:03",
+    "window_index": 1,
+    "word_count": 15
+  },
+  {
+    "end_ms": 433840,
+    "index": 43,
+    "normalized_text": "tiene uno, tiene dos, tiene tres, tiene cuatro y tambien tiene cinco bolitas, mire, vamos a jugar",
+    "start_ms": 423360,
+    "text": "tiene uno, tiene dos, tiene tres, tiene cuatro y también tiene cinco bolitas, mire, vamos a jugar",
+    "time_label": "07:03-07:13",
+    "window_index": 1,
+    "word_count": 17
+  },
+  {
+    "end_ms": 439360,
+    "index": 44,
+    "normalized_text": "en equipo, vamos a lanzar el dado, asi le puede hacer rodar o le puede lanzar para arriba,",
+    "start_ms": 433840,
+    "text": "en equipo, vamos a lanzar el dado, así le puede hacer rodar o le puede lanzar para arriba,",
+    "time_label": "07:13-07:19",
+    "window_index": 1,
+    "word_count": 18
+  },
+  {
+    "end_ms": 445240,
+    "index": 45,
+    "normalized_text": "mire, le lanza para arriba, si es que sale una cantidad diferente a cinco solamente vamos a dar",
+    "start_ms": 439360,
+    "text": "mire, le lanza para arriba, si es que sale una cantidad diferente a cinco solamente vamos a dar",
+    "time_label": "07:19-07:25",
+    "window_index": 1,
+    "word_count": 18
+  },
+  {
+    "end_ms": 452320,
+    "index": 46,
+    "normalized_text": "un aplauso, de acuerdo, pero trabajamos en equipos, primero trabaja el equipo de aca y despues",
+    "start_ms": 445240,
+    "text": "un aplauso, de acuerdo, pero trabajamos en equipos, primero trabaja el equipo de acá y después",
+    "time_label": "07:25-07:32",
+    "window_index": 1,
+    "word_count": 16
+  },
+  {
+    "end_ms": 460640,
+    "index": 47,
+    "normalized_text": "el otro equipo de aca, equipo numero uno, equipo numero dos, muy bien, mire, la elbita le va a",
+    "start_ms": 452320,
+    "text": "el otro equipo de acá, equipo número uno, equipo número dos, muy bien, mire, la elbita le va a",
+    "time_label": "07:32-07:40",
+    "window_index": 1,
+    "word_count": 19
+  },
+  {
+    "end_ms": 466920,
+    "index": 48,
+    "normalized_text": "nombrar a un amiguito que lance o haga rodar el dado o podemos lanzar para arriba o le podemos",
+    "start_ms": 460640,
+    "text": "nombrar a un amiguito que lance o haga rodar el dado o podemos lanzar para arriba o le podemos",
+    "time_label": "07:40-07:46",
+    "window_index": 1,
+    "word_count": 19
+  },
+  {
+    "end_ms": 474320,
+    "index": 49,
+    "normalized_text": "hacer rodar asi, cayo numero cinco, muy bien, ya, aja, sentadito por favor, dilan, esto muy",
+    "start_ms": 466920,
+    "text": "hacer rodar así, cayó número cinco, muy bien, ya, ajá, sentadito por favor, Dilan, esto muy",
+    "time_label": "07:46-07:54",
+    "window_index": 1,
+    "word_count": 16
+  },
+  {
+    "end_ms": 483920,
+    "index": 50,
+    "normalized_text": "bien, per turnos, mirara, recordara que hay que estar educaditos y participando, todos respetando",
+    "start_ms": 474320,
+    "text": "bien, per turnos, mirará, recordará que hay que estar educaditos y participando, todos respetando",
+    "time_label": "07:54-08:03",
+    "window_index": 1,
+    "word_count": 14
+  },
+  {
+    "end_ms": 491040,
+    "index": 51,
+    "normalized_text": "el turno, muy bien, a ver equipo numero uno se va a poner de pie, equipo numero uno, levantese",
+    "start_ms": 483920,
+    "text": "el turno, muy bien, a ver equipo número uno se va a poner de pie, equipo número uno, levántese",
+    "time_label": "08:03-08:11",
+    "window_index": 1,
+    "word_count": 19
+  },
+  {
+    "end_ms": 496360,
+    "index": 52,
+    "normalized_text": "por favor, equipo numero uno, levantese, levantese, pongase de pie porque ya vamos a jugar con el",
+    "start_ms": 491040,
+    "text": "por favor, equipo número uno, levántese, levántese, póngase de pie porque ya vamos a jugar con el",
+    "time_label": "08:11-08:16",
+    "window_index": 1,
+    "word_count": 17
+  },
+  {
+    "end_ms": 505000,
+    "index": 53,
+    "normalized_text": "dado, a ver, valentina va a lanzar el dado, venga para aca, venga, muy bien, lanza el dado para",
+    "start_ms": 496360,
+    "text": "dado, a ver, Valentina va a lanzar el dado, venga para acá, venga, muy bien, lanza el dado para",
+    "time_label": "08:16-08:25",
+    "window_index": 1,
+    "word_count": 19
+  },
+  {
+    "end_ms": 513640,
+    "index": 54,
+    "normalized_text": "alla, lance mi amor, el dado, lance bien fuerte. oh, que numero salria, a ver que numero salria,",
+    "start_ms": 505000,
+    "text": "allá, lance mi amor, el dado, lance bien fuerte. Oh, qué número salría, a ver qué número salría,",
+    "time_label": "08:25-08:33",
+    "window_index": 1,
+    "word_count": 18
+  },
+  {
+    "end_ms": 519560,
+    "index": 55,
+    "normalized_text": "mire, este tenemos que ver esta carita, sientese muchas gracias por su participacion, sientese mi",
+    "start_ms": 513640,
+    "text": "mire, este tenemos que ver esta carita, siéntese muchas gracias por su participación, siéntese mi",
+    "time_label": "08:33-08:39",
+    "window_index": 1,
+    "word_count": 15
+  },
+  {
+    "end_ms": 526520,
+    "index": 56,
+    "normalized_text": "amor, mire, ha salido numero cinco, uno, dos, tres, cuatro y repitamos otra vez todos juntos,",
+    "start_ms": 519560,
+    "text": "amor, mire, ha salido número cinco, uno, dos, tres, cuatro y repitamos otra vez todos juntos,",
+    "time_label": "08:39-08:46",
+    "window_index": 1,
+    "word_count": 16
+  },
+  {
+    "end_ms": 533880,
+    "index": 57,
+    "normalized_text": "uno, dos, tres, cuatro, cinco, muy bien, ahora se van a levantar los chicos y van a dar cinco",
+    "start_ms": 526680,
+    "text": "uno, dos, tres, cuatro, cinco, muy bien, ahora se van a levantar los chicos y van a dar cinco",
+    "time_label": "08:46-08:53",
+    "window_index": 1,
+    "word_count": 19
+  },
+  {
+    "end_ms": 539680,
+    "index": 58,
+    "normalized_text": "saltitos, equipo numero uno, levantese, levantese equipo numero uno y vamos a contar cinco saltos,",
+    "start_ms": 533880,
+    "text": "saltitos, equipo número uno, levántese, levántese equipo número uno y vamos a contar cinco saltos,",
+    "time_label": "08:53-08:59",
+    "window_index": 1,
+    "word_count": 15
+  },
+  {
+    "end_ms": 544600,
+    "index": 59,
+    "normalized_text": "ustedes tambien chicos de aca, numero uno, equipo numero uno, usted y equipo numero uno,",
+    "start_ms": 539680,
+    "text": "ustedes también chicos de acá, número uno, equipo número uno, usted y equipo número uno,",
+    "time_label": "08:59-09:04",
+    "window_index": 1,
+    "word_count": 15
+  },
+  {
+    "end_ms": 551760,
+    "index": 60,
+    "normalized_text": "usted, eso, muy bien, hasta ahi equipo numero uno, a ver, contamos, saltitos, saltamos, uno,",
+    "start_ms": 544600,
+    "text": "usted, eso, muy bien, hasta ahí equipo número uno, a ver, contamos, saltitos, saltamos, uno,",
+    "time_label": "09:04-09:11",
+    "window_index": 1,
+    "word_count": 15
+  },
+  {
+    "end_ms": 560480,
+    "index": 61,
+    "normalized_text": "eso, vamos, eso, dos, equipo numero dos, es usted mi amor, volvemos a contar,",
+    "start_ms": 552200,
+    "text": "eso, vamos, eso, dos, equipo número dos, es usted mi amor, volvemos a contar,",
+    "time_label": "09:12-09:20",
+    "window_index": 1,
+    "word_count": 14
+  },
+  {
+    "end_ms": 566960,
+    "index": 62,
+    "normalized_text": "primero equipo numero uno, respetando el turno y despues equipo numero dos, muy bien, a ver chicos,",
+    "start_ms": 560480,
+    "text": "primero equipo número uno, respetando el turno y después equipo número dos, muy bien, a ver chicos,",
+    "time_label": "09:20-09:26",
+    "window_index": 1,
+    "word_count": 17
+  },
+  {
+    "end_ms": 580880,
+    "index": 63,
+    "normalized_text": "equipo numero uno, uno, dos, cuente, tres, cuatro, cinco, muy bien, tome asientito, tome asiento,",
+    "start_ms": 567120,
+    "text": "equipo número uno, uno, dos, cuente, tres, cuatro, cinco, muy bien, tome asientito, tome asiento,",
+    "time_label": "09:27-09:40",
+    "window_index": 1,
+    "word_count": 15
+  },
+  {
+    "end_ms": 588400,
+    "index": 64,
+    "normalized_text": "ahora vamos a nombrar a otro participante del equipo numero dos, levantese por favor, venga",
+    "start_ms": 580880,
+    "text": "ahora vamos a nombrar a otro participante del equipo número dos, levántese por favor, venga",
+    "time_label": "09:40-09:48",
+    "window_index": 1,
+    "word_count": 15
+  },
+  {
+    "end_ms": 596480,
+    "index": 65,
+    "normalized_text": "para aca, levantese equipo numero dos, arleve, levantese por favor mi amor, para saltar y para",
+    "start_ms": 588400,
+    "text": "para acá, levántese equipo número dos, arleve, levántese por favor mi amor, para saltar y para",
+    "time_label": "09:48-09:56",
+    "window_index": 1,
+    "word_count": 16
+  },
+  {
+    "end_ms": 604440,
+    "index": 66,
+    "normalized_text": "para movernos, el cuerpito, lancen mi amor, otra vez cayo en el numero, no cayo en el numero",
+    "start_ms": 596480,
+    "text": "para movernos, el cuerpito, lancen mi amor, otra vez cayó en el número, no cayó en el número",
+    "time_label": "09:56-10:04",
+    "window_index": 1,
+    "word_count": 18
+  },
+  {
+    "end_ms": 609760,
+    "index": 67,
+    "normalized_text": "cinco mi amor, aqui no le podemos mover el dalito porque ya nos dio el numero cinco, ahora saltamos,",
+    "start_ms": 604440,
+    "text": "cinco mi amor, aquí no le podemos mover el dalito porque ya nos dio el número cinco, ahora saltamos,",
+    "time_label": "10:04-10:09",
+    "window_index": 2,
+    "word_count": 19
+  },
+  {
+    "end_ms": 622480,
+    "index": 68,
+    "normalized_text": "uno, dos, tres, cuatro, cinco, muy bien, todos a tomar asiento, bravo, bravo, bravo, muy bien,",
+    "start_ms": 609920,
+    "text": "uno, dos, tres, cuatro, cinco, muy bien, todos a tomar asiento, bravo, bravo, bravo, muy bien,",
+    "time_label": "10:09-10:22",
+    "window_index": 2,
+    "word_count": 16
+  },
+  {
+    "end_ms": 632160,
+    "index": 69,
+    "normalized_text": "muy bien chicos, mire, la albita trajo hoy unos juguetes super divertidos, super super divertidos,",
+    "start_ms": 622480,
+    "text": "muy bien chicos, mire, la albita trajo hoy unos juguetes súper divertidos, súper súper divertidos,",
+    "time_label": "10:22-10:32",
+    "window_index": 2,
+    "word_count": 15
+  },
+  {
+    "end_ms": 643000,
+    "index": 70,
+    "normalized_text": "que mi amor, a ver, escuche atentamente que es lo que vamos a hacer, leonard, por favor,",
+    "start_ms": 632480,
+    "text": "qué mi amor, a ver, escuche atentamente qué es lo que vamos a hacer, leonard, por favor,",
+    "time_label": "10:32-10:43",
+    "window_index": 2,
+    "word_count": 17
+  },
+  {
+    "end_ms": 648720,
+    "index": 71,
+    "normalized_text": "nos sentamos bien, mire, aqui como esta la nina ordenadita, mire, nos recuerda que nos sentamos",
+    "start_ms": 643000,
+    "text": "nos sentamos bien, mire, aquí como está la niña ordenadita, mire, nos recuerda que nos sentamos",
+    "time_label": "10:43-10:48",
+    "window_index": 2,
+    "word_count": 16
+  },
+  {
+    "end_ms": 659760,
+    "index": 72,
+    "normalized_text": "bien la sillita, nos recuerda que nos sentamos muy bien en la sillita, mire, ya atento, ve a lo que",
+    "start_ms": 648720,
+    "text": "bien la sillita, nos recuerda que nos sentamos muy bien en la sillita, mire, ya atento, ve a lo que",
+    "time_label": "10:48-10:59",
+    "window_index": 2,
+    "word_count": 20
+  },
+  {
+    "end_ms": 673160,
+    "index": 73,
+    "normalized_text": "vamos a hacer, mire, la albita tiene un cd y tiene unas pinzas, usted va a coger el cd y le va a",
+    "start_ms": 659760,
+    "text": "vamos a hacer, mire, la albita tiene un CD y tiene unas pinzas, usted va a coger el CD y le va a",
+    "time_label": "10:59-11:13",
+    "window_index": 2,
+    "word_count": 23
+  },
+  {
+    "end_ms": 685400,
+    "index": 74,
+    "normalized_text": "sujetar con una mano y con la otra mano, con las pincitas, vea, uno, cuente, dos, tres, cuatro,",
+    "start_ms": 673160,
+    "text": "sujetar con una mano y con la otra mano, con las pincitas, vea, uno, cuente, dos, tres, cuatro,",
+    "time_label": "11:13-11:25",
+    "window_index": 2,
+    "word_count": 18
+  },
+  {
+    "end_ms": 694840,
+    "index": 75,
+    "normalized_text": "cinco, sera que le pongo otra? no, ¿por que? porque estamos estudiando el numero cinco,",
+    "start_ms": 685400,
+    "text": "cinco, será que le pongo otra? No, ¿por qué? Porque estamos estudiando el número cinco,",
+    "time_label": "11:25-11:34",
+    "window_index": 2,
+    "word_count": 15
+  },
+  {
+    "end_ms": 703000,
+    "index": 76,
+    "normalized_text": "le puedo sacar una? no, ¿por que? porque estamos estudiando el numero cinco, muy bien, usted va",
+    "start_ms": 694840,
+    "text": "le puedo sacar una? No, ¿por qué? Porque estamos estudiando el número cinco, muy bien, usted va",
+    "time_label": "11:34-11:43",
+    "window_index": 2,
+    "word_count": 17
+  },
+  {
+    "end_ms": 715920,
+    "index": 77,
+    "normalized_text": "a poner solamente cinco pinzas, ¿de acuerdo? a ver, vamos, uno, dos, tres, cuatro, cinco, ¿de acuerdo?",
+    "start_ms": 703000,
+    "text": "a poner solamente cinco pinzas, ¿de acuerdo? A ver, vamos, uno, dos, tres, cuatro, cinco, ¿de acuerdo?",
+    "time_label": "11:43-11:55",
+    "window_index": 2,
+    "word_count": 17
+  },
+  {
+    "end_ms": 725680,
+    "index": 78,
+    "normalized_text": "mire, cuando contamos, llegamos hasta cinco. si, mi amor, el que cuenta hasta cinco y para,",
+    "start_ms": 715920,
+    "text": "Mire, cuando contamos, llegamos hasta cinco. Sí, mi amor, el que cuenta hasta cinco y para,",
+    "time_label": "11:55-12:05",
+    "window_index": 2,
+    "word_count": 16
+  },
+  {
+    "end_ms": 733720,
+    "index": 79,
+    "normalized_text": "le ponemos una carita feliz, contamos hasta cinco y paramos, vea porque la albita tiene mas pinzas,",
+    "start_ms": 725960,
+    "text": "le ponemos una carita feliz, contamos hasta cinco y paramos, vea porque la albita tiene más pinzas,",
+    "time_label": "12:05-12:13",
+    "window_index": 2,
+    "word_count": 17
+  },
+  {
+    "end_ms": 741240,
+    "index": 80,
+    "normalized_text": "pero no las va a poner porque estamos estudiando el numero. muy bien, vamos a trabajar y hoy",
+    "start_ms": 733720,
+    "text": "pero no las va a poner porque estamos estudiando el número. Muy bien, vamos a trabajar y hoy",
+    "time_label": "12:13-12:21",
+    "window_index": 2,
+    "word_count": 18
+  },
+  {
+    "end_ms": 746800,
+    "index": 81,
+    "normalized_text": "ya le doy su material. janita, por favor, para atras, con su sillita, mia, por favor, para atras,",
+    "start_ms": 741240,
+    "text": "ya le doy su material. Janita, por favor, para atrás, con su sillita, mía, por favor, para atrás,",
+    "time_label": "12:21-12:26",
+    "window_index": 2,
+    "word_count": 18
+  },
+  {
+    "end_ms": 756760,
+    "index": 82,
+    "normalized_text": "por favor, vilan para atras, muy bien, arlet, a ver la ayuda, mi amor, siga, siga, siga, por favor,",
+    "start_ms": 747240,
+    "text": "por favor, vilan para atrás, muy bien, Arlet, a ver la ayuda, mi amor, siga, siga, siga, por favor,",
+    "time_label": "12:27-12:36",
+    "window_index": 2,
+    "word_count": 19
+  },
+  {
+    "end_ms": 770880,
+    "index": 83,
+    "normalized_text": "muy bien, venga, muy bien, ahi arlet, venga, said, venga para aca, said, venga, said,",
+    "start_ms": 756760,
+    "text": "muy bien, venga, muy bien, ahí Arlet, venga, Said, venga para acá, Said, venga, Said,",
+    "time_label": "12:36-12:50",
+    "window_index": 2,
+    "word_count": 15
+  },
+  {
+    "end_ms": 777080,
+    "index": 84,
+    "normalized_text": "venga, desde la vuelta, solita, usted ahi, mi amor, ahi, sientes en mi corazon ahi,",
+    "start_ms": 770880,
+    "text": "venga, desde la vuelta, solita, usted ahí, mi amor, ahí, sientes en mi corazón ahí,",
+    "time_label": "12:50-12:57",
+    "window_index": 2,
+    "word_count": 15
+  },
+  {
+    "end_ms": 783680,
+    "index": 85,
+    "normalized_text": "ahi sientes el, por favor, aqui mismo, rafita, aqui, aqui, sentadita, desde la vuelta a la mesa,",
+    "start_ms": 777080,
+    "text": "ahí sientes el, por favor, aquí mismo, Rafita, aquí, aquí, sentadita, desde la vuelta a la mesa,",
+    "time_label": "12:57-13:03",
+    "window_index": 2,
+    "word_count": 17
+  },
+  {
+    "end_ms": 792680,
+    "index": 86,
+    "normalized_text": "por favor, vaya david alla al lado de, al lado de rafael, venga usted con su sillita para aca,",
+    "start_ms": 783680,
+    "text": "por favor, vaya David allá al lado de, al lado de Rafael, venga usted con su sillita para acá,",
+    "time_label": "13:03-13:12",
+    "window_index": 2,
+    "word_count": 19
+  },
+  {
+    "end_ms": 808400,
+    "index": 87,
+    "normalized_text": "muy bien, desde la vuelta vale valentina, desde la vueltita, muy bien, la lechusa, la lechusa,",
+    "start_ms": 793680,
+    "text": "muy bien, desde la vuelta vale Valentina, desde la vueltita, muy bien, la lechusa, la lechusa,",
+    "time_label": "13:13-13:28",
+    "window_index": 2,
+    "word_count": 16
+  },
+  {
+    "end_ms": 825680,
+    "index": 88,
+    "normalized_text": "ahi mismo, ahi, a, c, a, c, todos calladitos, como la lechusa, que a, c, a, c, a ver, muy bien,",
+    "start_ms": 808400,
+    "text": "ahí mismo, ahí, A, C, A, C, todos calladitos, como la lechusa, que A, C, A, C, a ver, muy bien,",
+    "time_label": "13:28-13:45",
+    "window_index": 2,
+    "word_count": 21
+  },
+  {
+    "end_ms": 832680,
+    "index": 89,
+    "normalized_text": "ya escuchad a lo que le va a decir la elbita, vilan, mire, la elbita le va a dar el material,",
+    "start_ms": 825680,
+    "text": "ya escuchad a lo que le va a decir la elbita, vilan, mire, la elbita le va a dar el material,",
+    "time_label": "13:45-13:52",
+    "window_index": 2,
+    "word_count": 21
+  },
+  {
+    "end_ms": 841440,
+    "index": 90,
+    "normalized_text": "pero tiene que compartir entre parejitas, tiene que compartir entre parejitas, muy bien,",
+    "start_ms": 832680,
+    "text": "pero tiene que compartir entre parejitas, tiene que compartir entre parejitas, muy bien,",
+    "time_label": "13:52-14:01",
+    "window_index": 2,
+    "word_count": 13
+  },
+  {
+    "end_ms": 850960,
+    "index": 91,
+    "normalized_text": "contamos hasta cinco y paramos, o con cd, de la su amigo un cd, de la, al rafa un cd, a ver,",
+    "start_ms": 843680,
+    "text": "contamos hasta cinco y paramos, o con Cd, de la su amigo un Cd, de la, al Rafa un Cd, a ver,",
+    "time_label": "14:03-14:10",
+    "window_index": 2,
+    "word_count": 22
+  },
+  {
+    "end_ms": 856960,
+    "index": 92,
+    "normalized_text": "contamos, cuente, cuente, porque ya le va a visitar el numero cinco, para ver si es que ha",
+    "start_ms": 850960,
+    "text": "contamos, cuente, cuente, porque ya le va a visitar el número cinco, para ver si es que ha",
+    "time_label": "14:10-14:16",
+    "window_index": 2,
+    "word_count": 18
+  },
+  {
+    "end_ms": 871800,
+    "index": 93,
+    "normalized_text": "hecho correcta la tarea, muy bien, arlet, muy bien, venga, a ver, cuando, cuando trabajamos,",
+    "start_ms": 856960,
+    "text": "hecho correcta la tarea, muy bien, Arlet, muy bien, venga, a ver, cuando, cuando trabajamos,",
+    "time_label": "14:16-14:31",
+    "window_index": 2,
+    "word_count": 15
+  },
+  {
+    "end_ms": 879520,
+    "index": 94,
+    "normalized_text": "estamos en silencio, muy bien, venga para aca mi amor, venga para aca, ya, silencio,",
+    "start_ms": 871800,
+    "text": "estamos en silencio, muy bien, venga para acá mi amor, venga para acá, ya, silencio,",
+    "time_label": "14:31-14:39",
+    "window_index": 2,
+    "word_count": 15
+  },
+  {
+    "end_ms": 889480,
+    "index": 95,
+    "normalized_text": "y vamos a armar, arme, muy bien, siga, claro que le falta otra, contara muy bien, contara muy",
+    "start_ms": 879840,
+    "text": "y vamos a armar, arme, muy bien, siga, claro que le falta otra, contará muy bien, contará muy",
+    "time_label": "14:39-14:49",
+    "window_index": 2,
+    "word_count": 18
+  },
+  {
+    "end_ms": 900040,
+    "index": 96,
+    "normalized_text": "bien, tome, ahi estan dos, venga para aca, calecito, venga para aca mi amor,",
+    "start_ms": 889480,
+    "text": "bien, tome, ahí están dos, venga para acá, calecito, venga para acá mi amor,",
+    "time_label": "14:49-15:00",
+    "window_index": 2,
+    "word_count": 14
+  },
+  {
+    "end_ms": 914760,
+    "index": 97,
+    "normalized_text": "el leito no tiene, si, tome mi amor el cd, es bravo, venga aqui, cuente mi amor,",
+    "start_ms": 900040,
+    "text": "el leíto no tiene, sí, tome mi amor el Cd, es bravo, venga aquí, cuente mi amor,",
+    "time_label": "15:00-15:14",
+    "window_index": 3,
+    "word_count": 17
+  },
+  {
+    "end_ms": 922200,
+    "index": 98,
+    "normalized_text": "cuente, ya le va a visitar el numero cinco, aqui tiene mi amor, cuente, cuente, ya le va",
+    "start_ms": 914760,
+    "text": "cuente, ya le va a visitar el número cinco, aquí tiene mi amor, cuente, cuente, ya le va",
+    "time_label": "15:14-15:22",
+    "window_index": 3,
+    "word_count": 18
+  },
+  {
+    "end_ms": 930240,
+    "index": 99,
+    "normalized_text": "a visitar, ya le va a visitar el numero cinco, a ver si, todos tienen el material chicos,",
+    "start_ms": 922360,
+    "text": "a visitar, ya le va a visitar el número cinco, a ver si, todos tienen el material chicos,",
+    "time_label": "15:22-15:30",
+    "window_index": 3,
+    "word_count": 18
+  },
+  {
+    "end_ms": 939680,
+    "index": 100,
+    "normalized_text": "ya mi amor, siga trabajando, mire el numero cinco con estos ojitos le va a visitar, a ver,",
+    "start_ms": 930240,
+    "text": "ya mi amor, siga trabajando, mire el número cinco con estos ojitos le va a visitar, a ver,",
+    "time_label": "15:30-15:39",
+    "window_index": 3,
+    "word_count": 18
+  },
+  {
+    "end_ms": 954040,
+    "index": 101,
+    "normalized_text": "cuente, a ver, contamos, uno, dos, uno, dos, tres, cuatro, sera que nos falta uno, falta uno, a ver,",
+    "start_ms": 939840,
+    "text": "cuente, a ver, contamos, uno, dos, uno, dos, tres, cuatro, será que nos falta uno, falta uno, a ver,",
+    "time_label": "15:39-15:54",
+    "window_index": 3,
+    "word_count": 19
+  },
+  {
+    "end_ms": 962560,
+    "index": 102,
+    "normalized_text": "y ahi yo le visito a su, a su sillita, a ver, le visita el numero cinco, dos, tres, cuatro,",
+    "start_ms": 954040,
+    "text": "y ahí yo le visito a su, a su sillita, a ver, le visita el número cinco, dos, tres, cuatro,",
+    "time_label": "15:54-16:02",
+    "window_index": 3,
+    "word_count": 20
+  },
+  {
+    "end_ms": 968800,
+    "index": 103,
+    "normalized_text": "cinco, muy bien, correcto, like, like, tome mi amor, aqui tiene las piezas, siga poniendo en el",
+    "start_ms": 962560,
+    "text": "cinco, muy bien, correcto, like, like, tome mi amor, aquí tiene las piezas, siga poniendo en el",
+    "time_label": "16:02-16:08",
+    "window_index": 3,
+    "word_count": 17
+  },
+  {
+    "end_ms": 981000,
+    "index": 104,
+    "normalized_text": "cd, a ver, like, muy bien, like, a ver, contamos, matias, una, dos, tres, cuatro, cinco, ya paramos",
+    "start_ms": 968800,
+    "text": "Cd, a ver, like, muy bien, like, a ver, contamos, Matías, una, dos, tres, cuatro, cinco, ya paramos",
+    "time_label": "16:08-16:21",
+    "window_index": 3,
+    "word_count": 18
+  },
+  {
+    "end_ms": 988000,
+    "index": 105,
+    "normalized_text": "aqui, retiramos esta, esta de mas, saquenle mi amor, eso, vuelva a contar, no, eso esta bien,",
+    "start_ms": 981000,
+    "text": "aquí, retiramos esta, está de más, saquenle mi amor, eso, vuelva a contar, no, eso está bien,",
+    "time_label": "16:21-16:28",
+    "window_index": 3,
+    "word_count": 17
+  },
+  {
+    "end_ms": 997440,
+    "index": 106,
+    "normalized_text": "muy bien, a ver, vamos, uno, dos, tres, cuatro, cinco, si, ahi, cuente otra vez, cuente otra vez,",
+    "start_ms": 988000,
+    "text": "muy bien, a ver, vamos, uno, dos, tres, cuatro, cinco, sí, ahí, cuente otra vez, cuente otra vez,",
+    "time_label": "16:28-16:37",
+    "window_index": 3,
+    "word_count": 18
+  },
+  {
+    "end_ms": 1007600,
+    "index": 107,
+    "normalized_text": "a ver mi amor, usted, a ver, cuente, uno, dos, tres, cuatro, cinco, y esta estado de mas,",
+    "start_ms": 997440,
+    "text": "a ver mi amor, usted, a ver, cuente, uno, dos, tres, cuatro, cinco, y está estado de más,",
+    "time_label": "16:37-16:47",
+    "window_index": 3,
+    "word_count": 18
+  },
+  {
+    "end_ms": 1014960,
+    "index": 108,
+    "normalized_text": "le sacamos, le sacamos, es que la ibita le puso una trampa, le dio mas, pinzas para que usted",
+    "start_ms": 1007600,
+    "text": "le sacamos, le sacamos, es que la Ibita le puso una trampa, le dio más, pinzas para que usted",
+    "time_label": "16:47-16:54",
+    "window_index": 3,
+    "word_count": 19
+  },
+  {
+    "end_ms": 1022200,
+    "index": 109,
+    "normalized_text": "cuente hasta cinco y pare, cuente hasta cinco y para, de acuerdo, ya, ya vamos, ya le visita el",
+    "start_ms": 1014960,
+    "text": "cuente hasta cinco y pare, cuente hasta cinco y para, de acuerdo, ya, ya vamos, ya le visita el",
+    "time_label": "16:54-17:02",
+    "window_index": 3,
+    "word_count": 19
+  },
+  {
+    "end_ms": 1033040,
+    "index": 110,
+    "normalized_text": "numero cinco, muy bien, a ver, uno, dos, tres, cuatro, cinco, correcto, bien, dice el numero",
+    "start_ms": 1022200,
+    "text": "número cinco, muy bien, a ver, uno, dos, tres, cuatro, cinco, correcto, bien, dice el número",
+    "time_label": "17:02-17:13",
+    "window_index": 3,
+    "word_count": 16
+  },
+  {
+    "end_ms": 1042120,
+    "index": 111,
+    "normalized_text": "cinco, muy bien chicos, muy bien, like, like, uno, dos, tres, cuatro, cinco, falta una, muy bien,",
+    "start_ms": 1033040,
+    "text": "cinco, muy bien chicos, muy bien, like, like, uno, dos, tres, cuatro, cinco, falta una, muy bien,",
+    "time_label": "17:13-17:22",
+    "window_index": 3,
+    "word_count": 17
+  },
+  {
+    "end_ms": 1048800,
+    "index": 112,
+    "normalized_text": "muy bien, correcto, muy bien, like, muy bien, si, cuente con su dedito, cuente con su dedito,",
+    "start_ms": 1042120,
+    "text": "muy bien, correcto, muy bien, like, muy bien, sí, cuente con su dedito, cuente con su dedito,",
+    "time_label": "17:22-17:28",
+    "window_index": 3,
+    "word_count": 17
+  },
+  {
+    "end_ms": 1060840,
+    "index": 113,
+    "normalized_text": "dos, a ver, contamos, uno, dos, tres, cuatro, cinco, falta una, ponemos una mas, muy bien, a ver,",
+    "start_ms": 1049680,
+    "text": "dos, a ver, contamos, uno, dos, tres, cuatro, cinco, falta una, ponemos una más, muy bien, a ver,",
+    "time_label": "17:29-17:40",
+    "window_index": 3,
+    "word_count": 18
+  },
+  {
+    "end_ms": 1071480,
+    "index": 114,
+    "normalized_text": "contamos, rafita, uno, dos, tres, cuatro, cinco, correcto, listo, listo, listo, listo, a ver,",
+    "start_ms": 1060840,
+    "text": "contamos, Rafita, uno, dos, tres, cuatro, cinco, correcto, listo, listo, listo, listo, a ver,",
+    "time_label": "17:40-17:51",
+    "window_index": 3,
+    "word_count": 14
+  },
+  {
+    "end_ms": 1079440,
+    "index": 115,
+    "normalized_text": "like, like, ve a como le visita el numero cinco, bien, bien, bien, chicos, like, muy bien, ahora",
+    "start_ms": 1071640,
+    "text": "like, like, ve a cómo le visita el número cinco, bien, bien, bien, chicos, like, muy bien, ahora",
+    "time_label": "17:51-17:59",
+    "window_index": 3,
+    "word_count": 18
+  },
+  {
+    "end_ms": 1090080,
+    "index": 116,
+    "normalized_text": "va a sacar las pinzas y les vuelve al, al recipiente, a ver, saib, contamos, a ver,",
+    "start_ms": 1079440,
+    "text": "va a sacar las pinzas y les vuelve al, al recipiente, a ver, Saib, contamos, a ver,",
+    "time_label": "17:59-18:10",
+    "window_index": 3,
+    "word_count": 17
+  },
+  {
+    "end_ms": 1098520,
+    "index": 117,
+    "normalized_text": "chicos, vamos a cantar la lechusa todo, espero en secreto, a ver, la lechusa, la lechusa,",
+    "start_ms": 1090080,
+    "text": "chicos, vamos a cantar la lechusa todo, espero en secreto, a ver, la lechusa, la lechusa,",
+    "time_label": "18:10-18:18",
+    "window_index": 3,
+    "word_count": 16
+  },
+  {
+    "end_ms": 1120000,
+    "index": 118,
+    "normalized_text": "como la lechusa, uno, dos, tres, cuatro, cinco y para, sacamos de esta de mas, muy bien, sacamos",
+    "start_ms": 1098520,
+    "text": "como la lechusa, uno, dos, tres, cuatro, cinco y para, sacamos de esta de más, muy bien, sacamos",
+    "time_label": "18:18-18:40",
+    "window_index": 3,
+    "word_count": 18
+  },
+  {
+    "end_ms": 1125960,
+    "index": 119,
+    "normalized_text": "todo, guarde todo, guarde todo, guarde pronto, sentaditos ahi, sentaditos todos, vamos a hacer",
+    "start_ms": 1120000,
+    "text": "todo, guarde todo, guarde todo, guarde pronto, sentaditos ahí, sentaditos todos, vamos a hacer",
+    "time_label": "18:40-18:45",
+    "window_index": 3,
+    "word_count": 14
+  },
+  {
+    "end_ms": 1140320,
+    "index": 120,
+    "normalized_text": "otra tarea, vamos a hacer otra tarea, apurese, apurese, apurese, muy bien, muy bien, chicos,",
+    "start_ms": 1125960,
+    "text": "otra tarea, vamos a hacer otra tarea, apúrese, apúrese, apúrese, muy bien, muy bien, chicos,",
+    "time_label": "18:45-19:00",
+    "window_index": 3,
+    "word_count": 15
+  },
+  {
+    "end_ms": 1148520,
+    "index": 121,
+    "normalized_text": "gracias, gracias, gracias, sentaditos, educaditos, a ver, muy bien, muy bien, carita feliz para mis",
+    "start_ms": 1140320,
+    "text": "gracias, gracias, gracias, sentaditos, educaditos, a ver, muy bien, muy bien, carita feliz para mis",
+    "time_label": "19:00-19:08",
+    "window_index": 3,
+    "word_count": 15
+  },
+  {
+    "end_ms": 1156720,
+    "index": 122,
+    "normalized_text": "chicos, muy bien, el numero cinco, chicos, nos indica que tenemos que contar hasta cinco y",
+    "start_ms": 1148520,
+    "text": "chicos, muy bien, el número cinco, chicos, nos indica que tenemos que contar hasta cinco y",
+    "time_label": "19:08-19:16",
+    "window_index": 3,
+    "word_count": 16
+  },
+  {
+    "end_ms": 1165840,
+    "index": 123,
+    "normalized_text": "parar, muy bien, mirara, ve, ve, hay que respetar a los amiguitos, eh, rafita, sin gritar, sin gritar,",
+    "start_ms": 1156720,
+    "text": "parar, muy bien, mirará, ve, ve, hay que respetar a los amiguitos, eh, rafita, sin gritar, sin gritar,",
+    "time_label": "19:16-19:25",
+    "window_index": 3,
+    "word_count": 18
+  },
+  {
+    "end_ms": 1170920,
+    "index": 124,
+    "normalized_text": "no gritar, dice, hay que recordar los acuerdos, si, muy bien.",
+    "start_ms": 1165840,
+    "text": "no gritar, dice, hay que recordar los acuerdos, sí, muy bien.",
+    "time_label": "19:25-19:30",
+    "window_index": 3,
+    "word_count": 11
+  },
+  {
+    "end_ms": 1191360,
+    "index": 125,
+    "normalized_text": "a ver, chicos, atentos, muy bien, chicos, mire, en este momento la elbita le va a dar unos",
+    "start_ms": 1178560,
+    "text": "A ver, chicos, atentos, muy bien, chicos, mire, en este momento la elbita le va a dar unos",
+    "time_label": "19:38-19:51",
+    "window_index": 3,
+    "word_count": 18
+  },
+  {
+    "end_ms": 1200480,
+    "index": 126,
+    "normalized_text": "lindos maderos, a ver, chicos, venis a hacer una toresita, mire para aca, mire para aca, mire,",
+    "start_ms": 1191360,
+    "text": "lindos maderos, a ver, chicos, venís a hacer una toresita, mire para acá, mire para acá, mire,",
+    "time_label": "19:51-20:00",
+    "window_index": 3,
+    "word_count": 17
+  },
+  {
+    "end_ms": 1216040,
+    "index": 127,
+    "normalized_text": "mire, uno, dos, tres, cuatro, rafita, tome asientito por favor, tome asientito por favor, tome asientito",
+    "start_ms": 1200480,
+    "text": "mire, uno, dos, tres, cuatro, rafita, tome asientito por favor, tome asientito por favor, tome asientito",
+    "time_label": "20:00-20:16",
+    "window_index": 4,
+    "word_count": 16
+  },
+  {
+    "end_ms": 1227360,
+    "index": 128,
+    "normalized_text": "por favor, muy bien, ve a cuatro, cinco y para, leita, contamos hasta cinco y paramos, contamos",
+    "start_ms": 1216040,
+    "text": "por favor, muy bien, ve a cuatro, cinco y para, leíta, contamos hasta cinco y paramos, contamos",
+    "time_label": "20:16-20:27",
+    "window_index": 4,
+    "word_count": 17
+  },
+  {
+    "end_ms": 1239680,
+    "index": 129,
+    "normalized_text": "hasta cinco y paramos, ¿de acuerdo? la elbita le va a mirar, eso, muy bien, chicos, tome sus",
+    "start_ms": 1227360,
+    "text": "hasta cinco y paramos, ¿de acuerdo? La elbita le va a mirar, eso, muy bien, chicos, tome sus",
+    "time_label": "20:27-20:39",
+    "window_index": 4,
+    "word_count": 18
+  },
+  {
+    "end_ms": 1249520,
+    "index": 130,
+    "normalized_text": "maderitos, hacemos una torre, hacemos una torre, chicos, hacemos una torre, ya le di su material,",
+    "start_ms": 1239680,
+    "text": "maderitos, hacemos una torre, hacemos una torre, chicos, hacemos una torre, ya le di su material,",
+    "time_label": "20:39-20:49",
+    "window_index": 4,
+    "word_count": 16
+  },
+  {
+    "end_ms": 1259960,
+    "index": 131,
+    "normalized_text": "ya le haga una torre, ya no se por que sale la puerta, muy bien, y ahora vamos a recordar los",
+    "start_ms": 1249520,
+    "text": "ya le haga una torre, ya no sé por qué sale la puerta, muy bien, y ahora vamos a recordar los",
+    "time_label": "20:49-20:59",
+    "window_index": 4,
+    "word_count": 21
+  },
+  {
+    "end_ms": 1268000,
+    "index": 132,
+    "normalized_text": "acuerdos que dijimos, si, es para los dos amiguitos, hay que compartir, hay que compartir, ya, no, no, no,",
+    "start_ms": 1259960,
+    "text": "acuerdos que dijimos, sí, es para los dos amiguitos, hay que compartir, hay que compartir, ya, no, no, no,",
+    "time_label": "20:59-21:08",
+    "window_index": 4,
+    "word_count": 19
+  },
+  {
+    "end_ms": 1276960,
+    "index": 133,
+    "normalized_text": "no, si le comparte el amiguito, si, porque esta respetando los acuerdos, cuenta hasta cinco y para,",
+    "start_ms": 1268000,
+    "text": "no, si le comparte el amiguito, sí, porque está respetando los acuerdos, cuenta hasta cinco y para,",
+    "time_label": "21:08-21:16",
+    "window_index": 4,
+    "word_count": 17
+  },
+  {
+    "end_ms": 1290120,
+    "index": 134,
+    "normalized_text": "cuentas hasta cinco y para, chicos, a ver, a ver, contamos rapidito, comparta con el amiguito,",
+    "start_ms": 1280080,
+    "text": "cuentas hasta cinco y para, chicos, a ver, a ver, contamos rapidito, comparta con el amiguito,",
+    "time_label": "21:20-21:30",
+    "window_index": 4,
+    "word_count": 16
+  },
+  {
+    "end_ms": 1298720,
+    "index": 135,
+    "normalized_text": "comparte con el amiguito, a ver, uno, dos, tres, cuatro, cinco, muy bien, muy bien,",
+    "start_ms": 1290120,
+    "text": "comparte con el amiguito, a ver, uno, dos, tres, cuatro, cinco, muy bien, muy bien,",
+    "time_label": "21:30-21:38",
+    "window_index": 4,
+    "word_count": 15
+  },
+  {
+    "end_ms": 1310240,
+    "index": 136,
+    "normalized_text": "ya, uno, dos, tres, muy bien, perfecto, equipo, este equipo ya, ya termino, a ver,",
+    "start_ms": 1299720,
+    "text": "ya, uno, dos, tres, muy bien, perfecto, equipo, este equipo ya, ya terminó, a ver,",
+    "time_label": "21:39-21:50",
+    "window_index": 4,
+    "word_count": 15
+  },
+  {
+    "end_ms": 1320040,
+    "index": 137,
+    "normalized_text": "cual mas termina, cual mas termina, muy bien, muy bien, excelente, excelente, muy bien,",
+    "start_ms": 1310240,
+    "text": "cual más termina, cual más termina, muy bien, muy bien, excelente, excelente, muy bien,",
+    "time_label": "21:50-22:00",
+    "window_index": 4,
+    "word_count": 14
+  },
+  {
+    "end_ms": 1330600,
+    "index": 138,
+    "normalized_text": "uno, uno mas, uno, dos, tres, cuatro, cinco, cinco, uno mas, uno mas arriba, muy bien, muy bien,",
+    "start_ms": 1321040,
+    "text": "uno, uno más, uno, dos, tres, cuatro, cinco, cinco, uno más, uno más arriba, muy bien, muy bien,",
+    "time_label": "22:01-22:10",
+    "window_index": 4,
+    "word_count": 18
+  },
+  {
+    "end_ms": 1347160,
+    "index": 139,
+    "normalized_text": "eso, uno, dos, tres, cuatro, cinco, eso, muy bien, excelente, a ver, cuantos hay aqui, cinco,",
+    "start_ms": 1330600,
+    "text": "eso, uno, dos, tres, cuatro, cinco, eso, muy bien, excelente, a ver, cuántos hay aquí, cinco,",
+    "time_label": "22:10-22:27",
+    "window_index": 4,
+    "word_count": 16
+  },
+  {
+    "end_ms": 1362760,
+    "index": 140,
+    "normalized_text": "muy bien, cinco, muy bien, muy bien, a ver, usted, uno, dos, sentaditos, dos,",
+    "start_ms": 1347600,
+    "text": "muy bien, cinco, muy bien, muy bien, a ver, usted, uno, dos, sentaditos, dos,",
+    "time_label": "22:27-22:42",
+    "window_index": 4,
+    "word_count": 14
+  },
+  {
+    "end_ms": 1379760,
+    "index": 141,
+    "normalized_text": "tres, cuatro, cinco, muy bien, eso, perfecto, uno mas, uno, dos, tres, cuatro, cinco,",
+    "start_ms": 1362760,
+    "text": "tres, cuatro, cinco, muy bien, eso, perfecto, uno más, uno, dos, tres, cuatro, cinco,",
+    "time_label": "22:42-22:59",
+    "window_index": 4,
+    "word_count": 14
+  },
+  {
+    "end_ms": 1390480,
+    "index": 142,
+    "normalized_text": "muy bien, perfecto, chicos, muy bien, si, correcto, a ver, no, uno, dos, tres, cuatro, cinco, seis,",
+    "start_ms": 1379760,
+    "text": "muy bien, perfecto, chicos, muy bien, sí, correcto, a ver, no, uno, dos, tres, cuatro, cinco, seis,",
+    "time_label": "22:59-23:10",
+    "window_index": 4,
+    "word_count": 17
+  },
+  {
+    "end_ms": 1398640,
+    "index": 143,
+    "normalized_text": "uno de mas, retiramos uno, retiramos uno, uno, eso, ahi, cinco, cinco, uno, dos, excelente,",
+    "start_ms": 1390480,
+    "text": "uno de más, retiramos uno, retiramos uno, uno, eso, ahí, cinco, cinco, uno, dos, excelente,",
+    "time_label": "23:10-23:18",
+    "window_index": 4,
+    "word_count": 15
+  },
+  {
+    "end_ms": 1406160,
+    "index": 144,
+    "normalized_text": "muy bien, chicos, excelente, muy bien, chicos, bien, miren lo que vamos hasta ahora, bien,",
+    "start_ms": 1398640,
+    "text": "muy bien, chicos, excelente, muy bien, chicos, bien, miren lo que vamos hasta ahora, bien,",
+    "time_label": "23:18-23:26",
+    "window_index": 4,
+    "word_count": 15
+  },
+  {
+    "end_ms": 1415760,
+    "index": 145,
+    "normalized_text": "paulita, muy bien, muy bien, muy bien, dos, cuatro y cinco, muy bien, seis, seis, se derrumbo, uno,",
+    "start_ms": 1406160,
+    "text": "paulita, muy bien, muy bien, muy bien, dos, cuatro y cinco, muy bien, seis, seis, se derrumbó, uno,",
+    "time_label": "23:26-23:35",
+    "window_index": 4,
+    "word_count": 18
+  },
+  {
+    "end_ms": 1428640,
+    "index": 146,
+    "normalized_text": "dos, tres, cuatro, cinco, eso, muy bien, ratita nos sentamos a seguir trabajando, miren lo que yo",
+    "start_ms": 1415760,
+    "text": "dos, tres, cuatro, cinco, eso, muy bien, ratita nos sentamos a seguir trabajando, miren lo que yo",
+    "time_label": "23:35-23:48",
+    "window_index": 4,
+    "word_count": 17
+  },
+  {
+    "end_ms": 1438280,
+    "index": 147,
+    "normalized_text": "tengo aqui y ahora si la tarea mas importante del dia, miren, aqui tengo yo el numero cinco,",
+    "start_ms": 1428640,
+    "text": "tengo aquí y ahora sí la tarea más importante del día, miren, aquí tengo yo el número cinco,",
+    "time_label": "23:48-23:58",
+    "window_index": 4,
+    "word_count": 18
+  },
+  {
+    "end_ms": 1441200,
+    "index": 148,
+    "normalized_text": "miren lo que vamos a hacer,",
+    "start_ms": 1439640,
+    "text": "miren lo que vamos a hacer,",
+    "time_label": "23:59-24:01",
+    "window_index": 4,
+    "word_count": 6
+  },
+  {
+    "end_ms": 1453440,
+    "index": 149,
+    "normalized_text": "la vale le esta molestando, ya, valentinita, hay que respetar el acuerdo, mire, hay que respetar el",
+    "start_ms": 1446800,
+    "text": "la Vale le está molestando, ya, Valentinita, hay que respetar el acuerdo, mire, hay que respetar el",
+    "time_label": "24:06-24:13",
+    "window_index": 4,
+    "word_count": 17
+  },
+  {
+    "end_ms": 1461120,
+    "index": 150,
+    "normalized_text": "acuerdo y llevarse bien con los amiguitos, si, ya, ok, tome asintito por favor, muy bien, mire,",
+    "start_ms": 1453440,
+    "text": "acuerdo y llevarse bien con los amiguitos, sí, ya, ok, tome asintito por favor, muy bien, mire,",
+    "time_label": "24:13-24:21",
+    "window_index": 4,
+    "word_count": 17
+  },
+  {
+    "end_ms": 1470280,
+    "index": 151,
+    "normalized_text": "la albita tiene estos lindos dados, mire, mire, mire, mire, mire para aca, la albita le va a dar",
+    "start_ms": 1461120,
+    "text": "la albita tiene estos lindos dados, mire, mire, mire, mire, mire para acá, la albita le va a dar",
+    "time_label": "24:21-24:30",
+    "window_index": 4,
+    "word_count": 19
+  },
+  {
+    "end_ms": 1478600,
+    "index": 152,
+    "normalized_text": "del color que ustedes se, mire, el cinco indica que tenemos que poner aqui cinco dados, despega y",
+    "start_ms": 1470280,
+    "text": "del color que ustedes se, mire, el cinco indica que tenemos que poner aquí cinco dados, despega y",
+    "time_label": "24:30-24:38",
+    "window_index": 4,
+    "word_count": 18
+  },
+  {
+    "end_ms": 1498080,
+    "index": 153,
+    "normalized_text": "pone uno, mire, tome una foto, seis, seis, mire, dos, tres, cuatro y cinco, muy bien, ahora si va a",
+    "start_ms": 1478600,
+    "text": "pone uno, mire, tome una foto, seis, seis, mire, dos, tres, cuatro y cinco, muy bien, ahora sí va a",
+    "time_label": "24:38-24:58",
+    "window_index": 4,
+    "word_count": 20
+  },
+  {
+    "end_ms": 1507160,
+    "index": 154,
+    "normalized_text": "tener manitas debajo de la mesita, vaya para alla, janita por favor, ya, ya le vamos a dar el color,",
+    "start_ms": 1498080,
+    "text": "tener manitas debajo de la mesita, vaya para allá, jañita por favor, ya, ya le vamos a dar el color,",
+    "time_label": "24:58-25:07",
+    "window_index": 4,
+    "word_count": 20
+  },
+  {
+    "end_ms": 1514640,
+    "index": 155,
+    "normalized_text": "ya, ya le doy mi amor, ya le damos, ya, muy bien, vamos a seguir trabajando, uno,",
+    "start_ms": 1507160,
+    "text": "ya, ya le doy mi amor, ya le damos, ya, muy bien, vamos a seguir trabajando, uno,",
+    "time_label": "25:07-25:14",
+    "window_index": 5,
+    "word_count": 17
+  },
+  {
+    "end_ms": 1524620,
+    "index": 156,
+    "normalized_text": "siga, a ver, ya le voy a dar manitas debajo de la mesita, rapidito, rapidito, rapidito, rapidito,",
+    "start_ms": 1517400,
+    "text": "siga, a ver, ya le voy a dar manitas debajo de la mesita, rapidito, rapidito, rapidito, rapidito,",
+    "time_label": "25:17-25:24",
+    "window_index": 5,
+    "word_count": 17
+  },
+  {
+    "end_ms": 1538740,
+    "index": 157,
+    "normalized_text": "tome su tarea, tome su tarea, muy bien, a ver, la lechusa, la lechusa, sientese bien lejito por",
+    "start_ms": 1525620,
+    "text": "tome su tarea, tome su tarea, muy bien, a ver, la lechusa, la lechusa, siéntese bien lejito por",
+    "time_label": "25:25-25:38",
+    "window_index": 5,
+    "word_count": 18
+  },
+  {
+    "end_ms": 1555420,
+    "index": 158,
+    "normalized_text": "favor, abajo los pies, hace, hace, todos calladitos, como la lechusa, que hace, que hace, a ver,",
+    "start_ms": 1538740,
+    "text": "favor, abajo los pies, hace, hace, todos calladitos, como la lechusa, que hace, que hace, a ver,",
+    "time_label": "25:38-25:55",
+    "window_index": 5,
+    "word_count": 17
+  },
+  {
+    "end_ms": 1563700,
+    "index": 159,
+    "normalized_text": "muy bien, coja un poca y ponga unos, ponga los stickers, solo cinco, cualquiera de ustedes, cualquiera,",
+    "start_ms": 1555420,
+    "text": "muy bien, coja un poca y ponga unos, ponga los stickers, solo cinco, cualquiera de ustedes, cualquiera,",
+    "time_label": "25:55-26:03",
+    "window_index": 5,
+    "word_count": 17
+  },
+  {
+    "end_ms": 1571300,
+    "index": 160,
+    "normalized_text": "coja, coja, dos, muy bien, solo cinco, pondras solo cinco, tome, quien quiere escoger, que color desea,",
+    "start_ms": 1563700,
+    "text": "coja, coja, dos, muy bien, solo cinco, pondrás solo cinco, tome, quién quiere escoger, qué color desea,",
+    "time_label": "26:03-26:11",
+    "window_index": 5,
+    "word_count": 17
+  },
+  {
+    "end_ms": 1581420,
+    "index": 161,
+    "normalized_text": "ya, coja rojo, ya, ya muy bien, rapidamente, rapidamente, rapidamente, a ver quien termina mas",
+    "start_ms": 1571300,
+    "text": "ya, coja rojo, ya, ya muy bien, rápidamente, rápidamente, rápidamente, a ver quién termina más",
+    "time_label": "26:11-26:21",
+    "window_index": 5,
+    "word_count": 15
+  },
+  {
+    "end_ms": 1592060,
+    "index": 162,
+    "normalized_text": "pronto, a ver, escoja uno, atlet, escoja uno, escoja uno por favor, rapidamente, rapidamente,",
+    "start_ms": 1581420,
+    "text": "pronto, a ver, escoja uno, atlet, escoja uno, escoja uno por favor, rápidamente, rápidamente,",
+    "time_label": "26:21-26:32",
+    "window_index": 5,
+    "word_count": 14
+  },
+  {
+    "end_ms": 1598180,
+    "index": 163,
+    "normalized_text": "ya, eso, muy bien, siga, siga,",
+    "start_ms": 1593700,
+    "text": "ya, eso, muy bien, siga, siga,",
+    "time_label": "26:33-26:38",
+    "window_index": 5,
+    "word_count": 6
+  },
+  {
+    "end_ms": 1606260,
+    "index": 164,
+    "normalized_text": "tenga,",
+    "start_ms": 1605460,
+    "text": "tenga,",
+    "time_label": "26:45-26:46",
+    "window_index": 5,
+    "word_count": 1
+  },
+  {
+    "end_ms": 1618820,
+    "index": 165,
+    "normalized_text": "siga trabajando, siga trabajando, rapidito, a ver, me avisa quien termina primero, me avisa por favor,",
+    "start_ms": 1609700,
+    "text": "siga trabajando, siga trabajando, rapidito, a ver, me avisa quién termina primero, me avisa por favor,",
+    "time_label": "26:49-26:58",
+    "window_index": 5,
+    "word_count": 16
+  },
+  {
+    "end_ms": 1629180,
+    "index": 166,
+    "normalized_text": "me avisa por favor, quien ha terminado primero, siga mi amor, ponga ahi, tome vale, siga,",
+    "start_ms": 1618820,
+    "text": "me avisa por favor, quién ha terminado primero, siga mi amor, ponga ahí, tome vale, siga,",
+    "time_label": "26:58-27:09",
+    "window_index": 5,
+    "word_count": 16
+  },
+  {
+    "end_ms": 1636420,
+    "index": 167,
+    "normalized_text": "si, que lindo, tome, solo cinco, contara, a ver, que le evita, le hizo una campita, si, muy bien,",
+    "start_ms": 1630700,
+    "text": "sí, qué lindo, tome, solo cinco, contará, a ver, que le evita, le hizo una campita, sí, muy bien,",
+    "time_label": "27:10-27:16",
+    "window_index": 5,
+    "word_count": 19
+  },
+  {
+    "end_ms": 1647020,
+    "index": 168,
+    "normalized_text": "levante su tarea, quien termino, acurese, acurese mi amor, pronto, pronto, eso, muy bien, eso,",
+    "start_ms": 1636420,
+    "text": "levante su tarea, quién terminó, acúrese, acúrese mi amor, pronto, pronto, eso, muy bien, eso,",
+    "time_label": "27:16-27:27",
+    "window_index": 5,
+    "word_count": 15
+  },
+  {
+    "end_ms": 1655900,
+    "index": 169,
+    "normalized_text": "solo cinco y para, uno, dos, tres, cuatro, cinco y para, pronto, pronto, muy bien, eso, ya terminaron,",
+    "start_ms": 1647020,
+    "text": "solo cinco y para, uno, dos, tres, cuatro, cinco y para, pronto, pronto, muy bien, eso, ya terminaron,",
+    "time_label": "27:27-27:35",
+    "window_index": 5,
+    "word_count": 18
+  },
+  {
+    "end_ms": 1666980,
+    "index": 170,
+    "normalized_text": "bravo, ya terminaron, tres, pronto, pronto, a ver, tenemos dificultad con este por el otro lado,",
+    "start_ms": 1655900,
+    "text": "bravo, ya terminaron, tres, pronto, pronto, a ver, tenemos dificultad con este por el otro lado,",
+    "time_label": "27:35-27:46",
+    "window_index": 5,
+    "word_count": 16
+  },
+  {
+    "end_ms": 1674700,
+    "index": 171,
+    "normalized_text": "muy bien, muy bien, termine, termine, levante, levante su tarea, el que termino, asi mire,",
+    "start_ms": 1666980,
+    "text": "muy bien, muy bien, termine, termine, levante, levante su tarea, el que terminó, así mire,",
+    "time_label": "27:46-27:54",
+    "window_index": 5,
+    "word_count": 15
+  },
+  {
+    "end_ms": 1684620,
+    "index": 172,
+    "normalized_text": "para tomarle una fotito, levante, quien termino, tres, cuatro, muy bien, tome mi amor,",
+    "start_ms": 1675340,
+    "text": "para tomarle una fotito, levante, quién terminó, tres, cuatro, muy bien, tome mi amor,",
+    "time_label": "27:55-28:04",
+    "window_index": 5,
+    "word_count": 14
+  },
+  {
+    "end_ms": 1701260,
+    "index": 173,
+    "normalized_text": "prontamente, prontamente, muy bien, mati, muy bien, uno, ya, tome otro, dos, ya le doy uno mi amor,",
+    "start_ms": 1686140,
+    "text": "prontamente, prontamente, muy bien, Mati, muy bien, uno, ya, tome otro, dos, ya le doy uno mi amor,",
+    "time_label": "28:06-28:21",
+    "window_index": 5,
+    "word_count": 18
+  },
+  {
+    "end_ms": 1714100,
+    "index": 174,
+    "normalized_text": "ponga aqui mi amor, pegue aqui, aqui, asi, dos, tres, tres, y a mi amor, ya, esperame ya,",
+    "start_ms": 1702220,
+    "text": "ponga aquí mi amor, pegue aquí, aquí, así, dos, tres, tres, y a mi amor, ya, espérame ya,",
+    "time_label": "28:22-28:34",
+    "window_index": 5,
+    "word_count": 18
+  },
+  {
+    "end_ms": 1724980,
+    "index": 175,
+    "normalized_text": "que ya le doy mi amor, muy bien, siga, ya terminaron, ya, levante su tarea, aqui mi amor, aqui pegue,",
+    "start_ms": 1714100,
+    "text": "que ya le doy mi amor, muy bien, siga, ya terminaron, ya, levante su tarea, aquí mi amor, aquí pegue,",
+    "time_label": "28:34-28:44",
+    "window_index": 5,
+    "word_count": 20
+  },
+  {
+    "end_ms": 1729620,
+    "index": 176,
+    "normalized_text": "levante su tarea, que la elbita le va a tomar una fotito,",
+    "start_ms": 1725500,
+    "text": "levante su tarea, que la elbita le va a tomar una fotito,",
+    "time_label": "28:45-28:49",
+    "window_index": 5,
+    "word_count": 12
+  },
+  {
+    "end_ms": 1738500,
+    "index": 177,
+    "normalized_text": "cuatro, ahi estan cinco, muy bien, ese le sobro, guardense el su bolsillo, porque si le ponemos",
+    "start_ms": 1732180,
+    "text": "cuatro, ahí están cinco, muy bien, ese le sobró, guardense el su bolsillo, porque si le ponemos",
+    "time_label": "28:52-28:58",
+    "window_index": 5,
+    "word_count": 17
+  },
+  {
+    "end_ms": 1744460,
+    "index": 178,
+    "normalized_text": "uno mas, hay seis, muy bien, a ver, arriba, arriba, arriba, arriba, arriba, arriba, arriba su tarea,",
+    "start_ms": 1738500,
+    "text": "uno más, hay seis, muy bien, a ver, arriba, arriba, arriba, arriba, arriba, arriba, arriba su tarea,",
+    "time_label": "28:58-29:04",
+    "window_index": 5,
+    "word_count": 17
+  },
+  {
+    "end_ms": 1756180,
+    "index": 179,
+    "normalized_text": "eso, muy bien chicos, este cinco nos indica que hay cinco dados, muy bien, hoy aprendimos,",
+    "start_ms": 1744940,
+    "text": "eso, muy bien chicos, este cinco nos indica que hay cinco dados, muy bien, hoy aprendimos,",
+    "time_label": "29:04-29:16",
+    "window_index": 5,
+    "word_count": 16
+  },
+  {
+    "end_ms": 1762940,
+    "index": 180,
+    "normalized_text": "¿que aprendimos hoy? el numero cinco, el numero cinco indica que hay cinco cosas,",
+    "start_ms": 1756180,
+    "text": "¿qué aprendimos hoy? El número cinco, el número cinco indica que hay cinco cosas,",
+    "time_label": "29:16-29:22",
+    "window_index": 5,
+    "word_count": 14
+  },
+  {
+    "end_ms": 1770060,
+    "index": 181,
+    "normalized_text": "el numero cinco esta en todas partes, cuando llega a casa, busque cinco cosas y cuente con",
+    "start_ms": 1762940,
+    "text": "el número cinco está en todas partes, cuando llega a casa, busque cinco cosas y cuente con",
+    "time_label": "29:22-29:30",
+    "window_index": 5,
+    "word_count": 17
+  },
+  {
+    "end_ms": 1776980,
+    "index": 182,
+    "normalized_text": "papa y mama, ¿de acuerdo? muy bien, muy bien chicos, felicitaciones, hoy trabajaron como",
+    "start_ms": 1770060,
+    "text": "papá y mamá, ¿de acuerdo? Muy bien, muy bien chicos, felicitaciones, hoy trabajaron como",
+    "time_label": "29:30-29:36",
+    "window_index": 5,
+    "word_count": 14
+  },
+  {
+    "end_ms": 1781980,
+    "index": 183,
+    "normalized_text": "unos verdaderos matematicos, muy bien, bravo, muchas gracias.",
+    "start_ms": 1776980,
+    "text": "unos verdaderos matemáticos, muy bien, bravo, muchas gracias.",
+    "time_label": "29:36-29:41",
+    "window_index": 5,
+    "word_count": 8
+  }
+]

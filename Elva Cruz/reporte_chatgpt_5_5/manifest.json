@@ -1,0 +1,31 @@
+{
+  "report_type": "chatgpt_independent_rubric_review_with_deterministic_comparison",
+  "runtime_note": "Generated in the current ChatGPT session from transcript and rubric criteria first; deterministic scores were used afterward only for comparison. No external API call was made.",
+  "teacher_folder": "Elva Cruz",
+  "output_files": [
+    "reporte_chatgpt_5_5.html",
+    "prompt_usado.md",
+    "manifest.json"
+  ],
+  "source_files": [
+    "Elva Cruz/text-data/1.tsv",
+    "Elva Cruz/reportes/artifacts/rubric_indicators.json",
+    "Elva Cruz/reportes/artifacts/indicator_scores.json",
+    "Elva Cruz/reportes/artifacts/report_metadata.json",
+    "Planificacion_Clase_Dado_Numero5.md"
+  ],
+  "decision": "Aprobar con observaciones",
+  "llm_class_rating": "2.24/3",
+  "llm_class_rating_percent": "74.7/100",
+  "deterministic_class_rating": "2.30/3",
+  "material_disagreements": [
+    "5.1 deterministic Alto vs LLM Medio",
+    "5.2 deterministic Alto vs LLM Medio",
+    "10.c deterministic Medio vs LLM NA"
+  ],
+  "limitations": [
+    "Transcript-only evaluation cannot verify visual indicators.",
+    "The report should not replace official human video observation.",
+    "The deterministic report remains available in Elva Cruz/reportes/."
+  ]
+}

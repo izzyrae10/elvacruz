@@ -1,0 +1,625 @@
+[
+  {
+    "code": "1.1",
+    "confidence": "Alta",
+    "domain": "Tiempo de aprendizaje",
+    "evidence_limit": 4,
+    "indicator": "El o la docente enseña u ofrece una actividad de aprendizaje para la mayoria de los estudiantes.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "numero cinco",
+      "contamos",
+      "cuente",
+      "dado",
+      "pinzas",
+      "torre",
+      "stickers",
+      "saltitos",
+      "cancion",
+      "cinco cosas"
+    ],
+    "rating": "Sí",
+    "rationale": "La clase mantiene una secuencia de actividades sobre el numero 5: objetivo, cancion, dado, conteo con pinzas, torres y stickers. Coincidencias textuales: {match_count}.",
+    "recommendation": "Mantener las transiciones cortas y anticipar materiales para que la actividad no se detenga.",
+    "visual_review_required": false
+  },
+  {
+    "code": "1.2",
+    "confidence": "Baja",
+    "domain": "Tiempo de aprendizaje",
+    "evidence_limit": 4,
+    "indicator": "El estudiantado se mantiene enfocado en la actividad.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "sentadito",
+      "silencio",
+      "atentos",
+      "calladitos",
+      "sin gritar"
+    ],
+    "rating": "Medio",
+    "rationale": "El audio muestra llamados a sentarse, guardar silencio, mirar o respetar acuerdos. Como no hay video, no se puede contar estudiantes desenfocados. Coincidencias textuales: {match_count}.",
+    "recommendation": "Reducir instrucciones simultaneas y usar señales breves para recuperar foco sin cortar la actividad.",
+    "visual_review_required": true
+  },
+  {
+    "code": "1.3",
+    "confidence": "Media",
+    "domain": "Tiempo de aprendizaje",
+    "evidence_limit": 5,
+    "indicator": "El estudiantado participa activamente en las actividades de aprendizaje.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "saltitos",
+      "lance",
+      "pinzas",
+      "torre",
+      "stickers",
+      "levante su tarea"
+    ],
+    "rating": "Sí",
+    "rationale": "Hay participacion corporal y manipulativa: cantar, contar, lanzar el dado, saltar, poner pinzas, armar torres y colocar stickers. Coincidencias textuales: {match_count}.",
+    "recommendation": "Conservar la variedad de acciones y cerrar cada actividad con una comprobacion breve de comprension.",
+    "visual_review_required": true
+  },
+  {
+    "code": "2.1",
+    "confidence": "Alta",
+    "domain": "Cultura de aula - Ambiente de aprendizaje",
+    "evidence_limit": 5,
+    "indicator": "El o la docente trata respetuosamente al estudiantado.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "por favor",
+      "gracias",
+      "mi amor",
+      "mi corazon",
+      "buenos dias",
+      "bienvenidos"
+    ],
+    "rating": "Alto",
+    "rationale": "Se detectan expresiones de trato cortes o afectivo, con uso frecuente de 'por favor', 'gracias' y formas de cercania. Coincidencias textuales: {match_count}.",
+    "recommendation": "Mantener el trato calido, cuidando que las correcciones con nombres propios no se vuelvan exposicion publica.",
+    "visual_review_required": false
+  },
+  {
+    "code": "2.2",
+    "confidence": "Alta",
+    "domain": "Cultura de aula - Ambiente de aprendizaje",
+    "evidence_limit": 5,
+    "indicator": "El o la docente usa lenguaje positivo con el estudiantado.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "muy bien",
+      "excelente",
+      "correcto",
+      "bravo",
+      "felicitaciones",
+      "carita feliz",
+      "perfecto",
+      "que lindo"
+    ],
+    "rating": "Alto",
+    "rationale": "El elogio aparece de forma sostenida durante la clase. Coincidencias textuales positivas: {match_count}.",
+    "recommendation": "Elevar la calidad del elogio agregando que hizo bien el estudiante, no solo 'muy bien'.",
+    "visual_review_required": false
+  },
+  {
+    "code": "2.3",
+    "confidence": "Media",
+    "domain": "Cultura de aula - Ambiente de aprendizaje",
+    "evidence_limit": 5,
+    "indicator": "El o la docente responde a las necesidades del estudiantado.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "que paso",
+      "venga para aca",
+      "no tiene",
+      "aqui tiene",
+      "falta una",
+      "ayuda"
+    ],
+    "rating": "Medio",
+    "rationale": "El audio evidencia apoyos puntuales: reubicar estudiantes, entregar material faltante y acompañar conteos individuales. Coincidencias textuales: {match_count}.",
+    "recommendation": "Nombrar con claridad la necesidad y la solucion: 'te falta un material, aqui tienes uno' o 'vamos a contar juntos'.",
+    "visual_review_required": true
+  },
+  {
+    "code": "2.4",
+    "confidence": "Baja",
+    "domain": "Cultura de aula - Ambiente de aprendizaje",
+    "evidence_limit": 5,
+    "indicator": "El o la docente no exhibe sesgos y desafia los estereotipos en el aula.",
+    "min_gap_ms": 25000,
+    "patterns": [],
+    "rating": "NA",
+    "rationale": "La transcripcion no permite verificar distribucion de oportunidades por genero ni acciones para desafiar estereotipos.",
+    "recommendation": "Para una evaluacion completa, complementar el reporte con revision de video y lista de participaciones por genero.",
+    "visual_review_required": true
+  },
+  {
+    "code": "3.1",
+    "confidence": "Alta",
+    "domain": "Cultura de aula - Expectativas positivas de comportamiento",
+    "evidence_limit": 6,
+    "indicator": "El o la docente establece expectativas claras de comportamientos para las actividades de la clase.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "acuerdo",
+      "silencio",
+      "levantar la mano",
+      "respetar",
+      "compartir",
+      "turno",
+      "sentadito",
+      "sin gritar",
+      "calladitos",
+      "tranquilitos"
+    ],
+    "rating": "Alto",
+    "rationale": "Las normas se trabajan al inicio y se retoman durante la clase. Coincidencias textuales sobre acuerdos, silencio, respeto, turnos o compartir: {match_count}.",
+    "recommendation": "Antes de cada nueva actividad, repetir solo la expectativa clave para evitar sobrecargar instrucciones.",
+    "visual_review_required": false
+  },
+  {
+    "code": "3.2",
+    "confidence": "Media",
+    "domain": "Cultura de aula - Expectativas positivas de comportamiento",
+    "evidence_limit": 5,
+    "indicator": "El o la docente reconoce el buen comportamiento de los estudiantes.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "carita feliz",
+      "ordenadita",
+      "educaditos",
+      "muy bien",
+      "gracias"
+    ],
+    "rating": "Medio",
+    "rationale": "Hay reconocimiento frecuente, pero muchas frases son generales. La rubrica exige reconocer el comportamiento especifico esperado. Coincidencias textuales: {match_count}.",
+    "recommendation": "Cambiar elogios generales por evidencias: 'gracias por esperar tu turno' o 'este equipo compartio el material'.",
+    "visual_review_required": false
+  },
+  {
+    "code": "3.3",
+    "confidence": "Media",
+    "domain": "Cultura de aula - Expectativas positivas de comportamiento",
+    "evidence_limit": 5,
+    "indicator": "El o la docente redirige el mal comportamiento y se enfoca en una conducta esperada.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "respetando el turno",
+      "hay que respetar",
+      "sin gritar",
+      "recordar los acuerdos",
+      "sentadito"
+    ],
+    "rating": "Medio",
+    "rationale": "Las redirecciones suelen funcionar como recordatorios de acuerdos, aunque varias se formulan como orden directa o prohibicion. Coincidencias textuales: {match_count}.",
+    "recommendation": "Redirigir siempre hacia la accion esperada: 'manos quietas y ojos al material' en lugar de solo 'no gritar'.",
+    "visual_review_required": true
+  },
+  {
+    "code": "4.1",
+    "confidence": "Alta",
+    "domain": "Aprendizaje guiado - Facilitacion de la clase",
+    "evidence_limit": 5,
+    "indicator": "El o la docente articula explicitamente los objetivos de la clase y relaciona las actividades con tales objetivos.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "vamos a trabajar el numero cinco",
+      "identificar el numero cinco",
+      "cinco cosas",
+      "estudiando el numero cinco"
+    ],
+    "rating": "Alto",
+    "rationale": "El objetivo se expresa al inicio y las actividades observadas se mantienen alineadas con relacion numero-cantidad hasta 5. Coincidencias textuales: {match_count}.",
+    "recommendation": "Cerrar cada bloque preguntando 'que hicimos para saber que son cinco' para reforzar la relacion con el objetivo.",
+    "visual_review_required": false
+  },
+  {
+    "code": "4.2",
+    "confidence": "Alta",
+    "domain": "Aprendizaje guiado - Facilitacion de la clase",
+    "evidence_limit": 7,
+    "indicator": "El o la docente explica el contenido usando multiples formas de representacion.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "video",
+      "cancion",
+      "guante",
+      "dedito",
+      "dado",
+      "cd",
+      "pinzas",
+      "maderitos",
+      "stickers",
+      "color"
+    ],
+    "rating": "Alto",
+    "rationale": "Aparecen representaciones auditivas, corporales, visuales y manipulativas: cancion, video, dedos, dado, pinzas, torres y stickers. Coincidencias textuales: {match_count}.",
+    "recommendation": "Conservar tres representaciones por concepto y verbalizar explicitamente que todas representan la misma cantidad.",
+    "visual_review_required": false
+  },
+  {
+    "code": "4.3",
+    "confidence": "Media",
+    "domain": "Aprendizaje guiado - Facilitacion de la clase",
+    "evidence_limit": 5,
+    "indicator": "El o la docente conecta la clase con otros conocimientos, experiencias cotidianas o problemas del mundo real.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "dedos",
+      "en el salon",
+      "cuando llega a casa",
+      "papa y mama",
+      "cinco cosas"
+    ],
+    "rating": "Alto",
+    "rationale": "El numero 5 se conecta con dedos, objetos del aula y una tarea de busqueda en casa con la familia. Coincidencias textuales: {match_count}.",
+    "recommendation": "Hacer mas visibles las conexiones cotidianas: cinco juguetes, cinco frutas, cinco pasos o cinco integrantes.",
+    "visual_review_required": false
+  },
+  {
+    "code": "4.4",
+    "confidence": "Alta",
+    "domain": "Aprendizaje guiado - Facilitacion de la clase",
+    "evidence_limit": 6,
+    "indicator": "El o la docente modela los procesos de aprendizaje mediante demostraciones o verbalizacion en voz alta.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "vea, uno",
+      "uno, dos, tres, cuatro, cinco",
+      "le puedo sacar una",
+      "retiramos esta",
+      "de mas"
+    ],
+    "rating": "Alto",
+    "rationale": "La docente muestra el procedimiento de contar hasta cinco, detenerse y retirar elementos de mas. Coincidencias textuales: {match_count}.",
+    "recommendation": "Aumentar verbalizacion metacognitiva: 'me detengo porque ya llegue a cinco'.",
+    "visual_review_required": false
+  },
+  {
+    "code": "5.1",
+    "confidence": "Media",
+    "domain": "Aprendizaje guiado - Verificacion de la comprension",
+    "evidence_limit": 6,
+    "indicator": "El o la docente hace preguntas o usa estrategias para determinar el nivel de comprension.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "que significara",
+      "de que hablaba",
+      "habra",
+      "por que",
+      "como sabemos",
+      "que aprendimos",
+      "que color desea",
+      "sera que",
+      "cuente",
+      "cuantos",
+      "sera que nos falta"
+    ],
+    "rating": "Alto",
+    "rationale": "Hay preguntas abiertas o de comprobacion, junto con conteos individuales y revisiones de productos. Coincidencias textuales: {match_count}.",
+    "recommendation": "Diferenciar preguntas de coro de preguntas individuales para asegurar evidencia de comprension de la mayoria.",
+    "visual_review_required": false
+  },
+  {
+    "code": "5.2",
+    "confidence": "Media",
+    "domain": "Aprendizaje guiado - Verificacion de la comprension",
+    "evidence_limit": 6,
+    "indicator": "El o la docente supervisa a la mayoria de los estudiantes durante el trabajo individual/grupal.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "le va a visitar",
+      "a ver, contamos",
+      "siga trabajando",
+      "levante su tarea",
+      "aqui tiene"
+    ],
+    "rating": "Alto",
+    "rationale": "El audio muestra circulacion o revision sistematica: la docente 'visita' trabajos, nombra estudiantes y corrige cantidades. Coincidencias textuales: {match_count}.",
+    "recommendation": "Registrar mentalmente quienes ya fueron observados para equilibrar la supervision del grupo completo.",
+    "visual_review_required": true
+  },
+  {
+    "code": "5.3",
+    "confidence": "Media",
+    "domain": "Aprendizaje guiado - Verificacion de la comprension",
+    "evidence_limit": 6,
+    "indicator": "El o la docente ajusta la clase al nivel de conocimiento del grupo.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "le va a visitar",
+      "cuente mi amor",
+      "falta una",
+      "uno de mas",
+      "retiramos",
+      "vuelva a contar",
+      "contamos hasta cinco",
+      "siga trabajando"
+    ],
+    "rating": "Medio",
+    "rationale": "Hay ajustes puntuales: agregar una pieza, retirar una de mas y volver a contar. No se observa una re-ensenanza sustancial o un reto diferenciado. Coincidencias textuales: {match_count}.",
+    "recommendation": "Preparar dos respuestas: apoyo concreto para quien aun no llega a cinco y reto adicional para quien termina temprano.",
+    "visual_review_required": false
+  },
+  {
+    "code": "6.1",
+    "confidence": "Media",
+    "domain": "Aprendizaje guiado - Retroalimentacion especifica",
+    "evidence_limit": 6,
+    "indicator": "El o la docente hace comentarios especificos o cuestiona para clarificar confusiones.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "falta una",
+      "uno de mas",
+      "retiramos",
+      "vuelva a contar",
+      "cuente con su dedito"
+    ],
+    "rating": "Medio",
+    "rationale": "La retroalimentacion corrige errores de cantidad, pero suele quedarse en 'falta una' o 'hay una de mas' sin explicar la estrategia. Coincidencias textuales: {match_count}.",
+    "recommendation": "Agregar pista especifica: 'toca cada pinza una sola vez mientras cuentas' o 'compara con tus cinco dedos'.",
+    "visual_review_required": false
+  },
+  {
+    "code": "6.2",
+    "confidence": "Media",
+    "domain": "Aprendizaje guiado - Retroalimentacion especifica",
+    "evidence_limit": 6,
+    "indicator": "El o la docente hace comentarios especificos para ayudar a identificar logros.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "correcto",
+      "excelente",
+      "perfecto",
+      "muy bien",
+      "hoy trabajaron"
+    ],
+    "rating": "Medio",
+    "rationale": "Hay muchos reconocimientos de logro, pero predominan 'muy bien', 'correcto' y 'excelente', con poca descripcion del logro especifico. Coincidencias textuales: {match_count}.",
+    "recommendation": "Nombrar el logro: 'contaste cinco y te detuviste' o 'compartiste el material con tu companero'.",
+    "visual_review_required": false
+  },
+  {
+    "code": "7.1",
+    "confidence": "Media",
+    "domain": "Aprendizaje guiado - Pensamiento critico",
+    "evidence_limit": 6,
+    "indicator": "El o la docente hace preguntas abiertas.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "que significara",
+      "de que hablaba",
+      "habra",
+      "por que",
+      "como sabemos",
+      "que aprendimos",
+      "que color desea",
+      "sera que"
+    ],
+    "rating": "Medio",
+    "rationale": "Hay preguntas abiertas o semiabiertas, pero pocas piden justificar o ampliar el razonamiento infantil. Coincidencias textuales: {match_count}.",
+    "recommendation": "Incluir preguntas breves de explicacion: 'como sabes que hay cinco' y 'que pasaria si pongo uno mas'.",
+    "visual_review_required": false
+  },
+  {
+    "code": "7.2",
+    "confidence": "Media",
+    "domain": "Aprendizaje guiado - Pensamiento critico",
+    "evidence_limit": 6,
+    "indicator": "El o la docente ofrece actividades de pensamiento critico.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "sera que le pongo otra",
+      "le puedo sacar una",
+      "falta una",
+      "uno de mas",
+      "hay seis"
+    ],
+    "rating": "Medio",
+    "rationale": "Las actividades piden identificar, contar, comparar si falta o sobra y relacionar simbolo-cantidad. Son pertinentes, aunque repetitivas. Coincidencias textuales: {match_count}.",
+    "recommendation": "Agregar un pequeno problema nuevo: 'tenemos cuatro, que hacemos para llegar a cinco' o clasificar conjuntos que si/no son cinco.",
+    "visual_review_required": false
+  },
+  {
+    "code": "7.3",
+    "confidence": "Baja",
+    "domain": "Aprendizaje guiado - Pensamiento critico",
+    "evidence_limit": 6,
+    "indicator": "El estudiantado desarrolla actividades de pensamiento critico.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "cuente",
+      "falta una",
+      "uno de mas",
+      "levante su tarea",
+      "hay cinco"
+    ],
+    "rating": "Medio",
+    "rationale": "El transcript indica acciones de conteo y correccion de cantidades, pero no permite ver cuanta reflexion realiza cada estudiante. Coincidencias textuales: {match_count}.",
+    "recommendation": "Pedir a varios estudiantes que muestren y expliquen como decidieron que ya tienen cinco.",
+    "visual_review_required": true
+  },
+  {
+    "code": "7.4",
+    "confidence": "Baja",
+    "domain": "Aprendizaje guiado - Pensamiento critico",
+    "evidence_limit": 4,
+    "indicator": "El estudiantado explica sus ideas o hace preguntas abiertas.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "por que",
+      "que aprendimos",
+      "cinco cosas"
+    ],
+    "rating": "Bajo",
+    "rationale": "La transcripcion no separa voces ni registra explicaciones extensas de estudiantes; la mayoria de respuestas aparentan ser breves. Coincidencias textuales: {match_count}.",
+    "recommendation": "Reservar momentos para que uno o dos ninos verbalicen: 'tengo cinco porque conte...'.",
+    "visual_review_required": true
+  },
+  {
+    "code": "8.1",
+    "confidence": "Media",
+    "domain": "Habilidades socioemocionales - Autonomia",
+    "evidence_limit": 5,
+    "indicator": "El o la docente ofrece opciones al estudiantado para que desarrollen sus tareas.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "quien quiere escoger",
+      "que color desea",
+      "escoja",
+      "lance",
+      "quien termino"
+    ],
+    "rating": "Medio",
+    "rationale": "Se observan opciones superficiales como escoger color o turno; no se confirma una eleccion sustancial de estrategia o producto. Coincidencias textuales: {match_count}.",
+    "recommendation": "Ofrecer dos formas de demostrar el cinco: construir torre, pegar stickers o agrupar objetos, y dejar que el estudiante elija.",
+    "visual_review_required": false
+  },
+  {
+    "code": "8.2",
+    "confidence": "Media",
+    "domain": "Habilidades socioemocionales - Autonomia",
+    "evidence_limit": 5,
+    "indicator": "El o la docente ofrece oportunidades para asumir roles dentro de la clase.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "va a lanzar",
+      "otro participante",
+      "levante su tarea",
+      "quien termino",
+      "equipo numero"
+    ],
+    "rating": "Medio",
+    "rationale": "Los estudiantes lanzan el dado y muestran sus trabajos; son roles de participacion, pero no roles significativos de liderazgo o apoyo a pares. Coincidencias textuales: {match_count}.",
+    "recommendation": "Asignar roles breves: lider de conteo, ayudante de materiales o verificador de cinco en pareja.",
+    "visual_review_required": false
+  },
+  {
+    "code": "8.3",
+    "confidence": "Baja",
+    "domain": "Habilidades socioemocionales - Autonomia",
+    "evidence_limit": 5,
+    "indicator": "El estudiantado se ofrece para participar en la clase.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "levante la manito",
+      "quien aqui",
+      "quien termino",
+      "levante su tarea",
+      "venga para aca"
+    ],
+    "rating": "Medio",
+    "rationale": "La docente invita a levantar la mano y participar, pero el audio no permite confirmar si participa la mayoria. Coincidencias textuales: {match_count}.",
+    "recommendation": "Usar una rutina de participacion equitativa: todos muestran dedos, luego algunos explican, luego rotan roles.",
+    "visual_review_required": true
+  },
+  {
+    "code": "9.1",
+    "confidence": "Media",
+    "domain": "Habilidades socioemocionales - Perseverancia",
+    "evidence_limit": 5,
+    "indicator": "El o la docente reconoce los esfuerzos del estudiantado.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "esfuerzo",
+      "intent",
+      "siga trabajando",
+      "hoy trabajaron",
+      "verdaderos matematicos",
+      "muy bien",
+      "excelente",
+      "correcto",
+      "bravo",
+      "felicitaciones",
+      "carita feliz",
+      "perfecto",
+      "que lindo"
+    ],
+    "rating": "Bajo",
+    "rationale": "Aunque hay elogios frecuentes, casi ninguno identifica esfuerzo, estrategia, persistencia o progreso. Coincidencias textuales relacionadas: {match_count}.",
+    "recommendation": "Nombrar esfuerzo: 'seguiste contando aunque era dificil' o 'probaste otra vez hasta llegar a cinco'.",
+    "visual_review_required": false
+  },
+  {
+    "code": "9.2",
+    "confidence": "Media",
+    "domain": "Habilidades socioemocionales - Perseverancia",
+    "evidence_limit": 5,
+    "indicator": "El o la docente tiene una actitud positiva hacia los desafios del estudiantado.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "falta una",
+      "uno de mas",
+      "vuelva a contar",
+      "siga trabajando",
+      "muy bien"
+    ],
+    "rating": "Medio",
+    "rationale": "No hay reganos fuertes ante errores; la docente ayuda a corregir. Falta explicitar que equivocarse es parte del aprendizaje. Coincidencias textuales: {match_count}.",
+    "recommendation": "Cuando haya error, decir: 'esta bien, probemos otra vez; contar nos ayuda a corregir'.",
+    "visual_review_required": false
+  },
+  {
+    "code": "10.a",
+    "confidence": "Media",
+    "domain": "Habilidades socioemocionales - Habilidades sociales y colaborativas",
+    "evidence_limit": 6,
+    "indicator": "El o la docente promueve la colaboracion entre el estudiantado a traves de sus interacciones.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "equipo",
+      "parejitas",
+      "compartir",
+      "comparta",
+      "amiguito",
+      "respetando el turno"
+    ],
+    "rating": "Medio",
+    "rationale": "Hay equipos, parejas y pedidos de compartir material, pero la colaboracion parece centrada en turnos/materiales, no en resolver juntos. Coincidencias textuales: {match_count}.",
+    "recommendation": "Convertir una actividad en tarea cooperativa: una pareja cuenta, otra verifica y ambas explican el resultado.",
+    "visual_review_required": true
+  },
+  {
+    "code": "10.b",
+    "confidence": "Media",
+    "domain": "Habilidades socioemocionales - Habilidades sociales y colaborativas",
+    "evidence_limit": 6,
+    "indicator": "El o la docente promueve habilidades interpersonales como empatia, regulacion emocional o resolucion de conflictos.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "enojado",
+      "triste",
+      "feliz",
+      "respetar",
+      "compartir",
+      "llevarse bien"
+    ],
+    "rating": "Medio",
+    "rationale": "Se trabajan emociones iniciales, respeto y compartir. La promocion interpersonal es positiva, aunque breve y poco elaborada. Coincidencias textuales: {match_count}.",
+    "recommendation": "Ante un conflicto, guiar perspectiva: 'como se siente tu amigo cuando le quitamos el material'.",
+    "visual_review_required": false
+  },
+  {
+    "code": "10.c",
+    "confidence": "Baja",
+    "domain": "Habilidades socioemocionales - Habilidades sociales y colaborativas",
+    "evidence_limit": 6,
+    "indicator": "El estudiantado colabora entre ellos a traves de sus interacciones.",
+    "min_gap_ms": 25000,
+    "patterns": [
+      "parejitas",
+      "equipo",
+      "comparta",
+      "para los dos amiguitos",
+      "ayudar"
+    ],
+    "rating": "Medio",
+    "rationale": "El audio sugiere trabajo en equipos y parejas, pero no permite observar la calidad de colaboracion entre pares. Coincidencias textuales: {match_count}.",
+    "recommendation": "Complementar con video y observar si hay ayuda mutua real, reparto de tareas y lenguaje entre pares.",
+    "visual_review_required": true
+  }
+]

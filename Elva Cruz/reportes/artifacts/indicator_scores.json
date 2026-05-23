@@ -1,0 +1,1059 @@
+[
+  {
+    "code": "1.1",
+    "confidence": "Alta",
+    "domain": "Tiempo de aprendizaje",
+    "evidence": [
+      {
+        "text": "seis niñas, ocho niños. El tema en partir es el número cinco. Bienvenidos.",
+        "time_label": "00:22-00:28"
+      },
+      {
+        "text": "cinco. Sí. Vamos a identificar el número cinco y vamos a saber que cuando, que cuando decimos que",
+        "time_label": "03:23-03:34"
+      },
+      {
+        "text": "al lado de Paula. Muy bien. Tranquilitos. Chicos, vamos a mirar el video, el video del número cinco,",
+        "time_label": "03:58-04:07"
+      },
+      {
+        "text": "hasta cinco el número cinco el número cinco hasta cinco cuatro cinco",
+        "time_label": "04:46-05:10"
+      }
+    ],
+    "evidence_match_count": 96,
+    "indicator": "El o la docente enseña u ofrece una actividad de aprendizaje para la mayoria de los estudiantes.",
+    "rating": "Sí",
+    "rationale": "La clase mantiene una secuencia de actividades sobre el numero 5: objetivo, cancion, dado, conteo con pinzas, torres y stickers. Coincidencias textuales: 96.",
+    "recommendation": "Mantener las transiciones cortas y anticipar materiales para que la actividad no se detenga.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "1.2",
+    "confidence": "Baja",
+    "domain": "Tiempo de aprendizaje",
+    "evidence": [
+      {
+        "text": "Hace silencio. Y cuando la profe habla, usted hace silencio. Cuando la profe habla,",
+        "time_label": "01:38-01:46"
+      },
+      {
+        "text": "acá. Venga encito. Váyase para allá, al lado de leíto y usted viene para acá. Es bien atentos,",
+        "time_label": "03:51-03:58"
+      },
+      {
+        "text": "este ha sido un dado, mire, atentos, este ha sido un dado, mire, este dado tiene el número cinco,",
+        "time_label": "06:49-06:56"
+      },
+      {
+        "text": "hacer rodar así, cayó número cinco, muy bien, ya, ajá, sentadito por favor, Dilan, esto muy",
+        "time_label": "07:46-07:54"
+      }
+    ],
+    "evidence_match_count": 17,
+    "indicator": "El estudiantado se mantiene enfocado en la actividad.",
+    "rating": "Medio",
+    "rationale": "El audio muestra llamados a sentarse, guardar silencio, mirar o respetar acuerdos. Como no hay video, no se puede contar estudiantes desenfocados. Coincidencias textuales: 17.",
+    "recommendation": "Reducir instrucciones simultaneas y usar señales breves para recuperar foco sin cortar la actividad.",
+    "visual_review_note": "Requiere revision humana del video para confirmar completamente este indicador.",
+    "visual_review_required": true
+  },
+  {
+    "code": "1.3",
+    "confidence": "Media",
+    "domain": "Tiempo de aprendizaje",
+    "evidence": [
+      {
+        "text": "nombrar a un amiguito que lance o haga rodar el dado o podemos lanzar para arriba o le podemos",
+        "time_label": "07:40-07:46"
+      },
+      {
+        "text": "allá, lance mi amor, el dado, lance bien fuerte. Oh, qué número salría, a ver qué número salría,",
+        "time_label": "08:25-08:33"
+      },
+      {
+        "text": "saltitos, equipo número uno, levántese, levántese equipo número uno y vamos a contar cinco saltos,",
+        "time_label": "08:53-08:59"
+      },
+      {
+        "text": "para movernos, el cuerpito, lancen mi amor, otra vez cayó en el número, no cayó en el número",
+        "time_label": "09:56-10:04"
+      },
+      {
+        "text": "vamos a hacer, mire, la albita tiene un CD y tiene unas pinzas, usted va a coger el CD y le va a",
+        "time_label": "10:59-11:13"
+      }
+    ],
+    "evidence_match_count": 20,
+    "indicator": "El estudiantado participa activamente en las actividades de aprendizaje.",
+    "rating": "Sí",
+    "rationale": "Hay participacion corporal y manipulativa: cantar, contar, lanzar el dado, saltar, poner pinzas, armar torres y colocar stickers. Coincidencias textuales: 20.",
+    "recommendation": "Conservar la variedad de acciones y cerrar cada actividad con una comprobacion breve de comprension.",
+    "visual_review_note": "Requiere revision humana del video para confirmar completamente este indicador.",
+    "visual_review_required": true
+  },
+  {
+    "code": "2.1",
+    "confidence": "Alta",
+    "domain": "Cultura de aula - Ambiente de aprendizaje",
+    "evidence": [
+      {
+        "text": "Buenos días. Mi nombre es Elva Esperanza Cruz Ruiz, mi cédula de identidad es 100,",
+        "time_label": "00:00-00:08"
+      },
+      {
+        "text": "feliz? Muy bien. sean todos ustedes bienvenidos a este día de clase.",
+        "time_label": "01:12-01:20"
+      },
+      {
+        "text": "ya nos vamos a sacar el saquito. Sientese mi amor. Tranquilito. ¿Qué pasó? Ya le molesto. Venga para",
+        "time_label": "03:42-03:51"
+      },
+      {
+        "text": "hacer rodar así, cayó número cinco, muy bien, ya, ajá, sentadito por favor, Dilan, esto muy",
+        "time_label": "07:46-07:54"
+      },
+      {
+        "text": "allá, lance mi amor, el dado, lance bien fuerte. Oh, qué número salría, a ver qué número salría,",
+        "time_label": "08:25-08:33"
+      }
+    ],
+    "evidence_match_count": 56,
+    "indicator": "El o la docente trata respetuosamente al estudiantado.",
+    "rating": "Alto",
+    "rationale": "Se detectan expresiones de trato cortes o afectivo, con uso frecuente de 'por favor', 'gracias' y formas de cercania. Coincidencias textuales: 56.",
+    "recommendation": "Mantener el trato calido, cuidando que las correcciones con nombres propios no se vuelvan exposicion publica.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "2.2",
+    "confidence": "Alta",
+    "domain": "Cultura de aula - Ambiente de aprendizaje",
+    "evidence": [
+      {
+        "text": "Hola chicos, ¿cómo están? Bien. Vea, ¿sabe que la elvita? Niños y niñas, muy bien. ¿Sabe",
+        "time_label": "00:31-00:42"
+      },
+      {
+        "text": "Oh, qué lindo. Es muy bueno trabajar con gente muy feliz. A ver, levante la mano. ¿Quién está",
+        "time_label": "01:03-01:12"
+      },
+      {
+        "text": "usted hace silencio. Muy bien. ¿Quién va a cumplir este acuerdo? Muy bien. El que cumple este",
+        "time_label": "01:46-01:53"
+      },
+      {
+        "text": "Sí, muy bien. No bullas de así. Muy bien. Tiene que levantar la mano para participar. Muy bien. Muy",
+        "time_label": "02:19-02:27"
+      },
+      {
+        "text": "esto. Muy bien, respetar a los amiguitos. ¿Le tiene que molestar al amiguito? ¿Le tiene que coger el cabello?",
+        "time_label": "02:44-02:53"
+      }
+    ],
+    "evidence_match_count": 145,
+    "indicator": "El o la docente usa lenguaje positivo con el estudiantado.",
+    "rating": "Alto",
+    "rationale": "El elogio aparece de forma sostenida durante la clase. Coincidencias textuales positivas: 145.",
+    "recommendation": "Elevar la calidad del elogio agregando que hizo bien el estudiante, no solo 'muy bien'.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "2.3",
+    "confidence": "Media",
+    "domain": "Cultura de aula - Ambiente de aprendizaje",
+    "evidence": [
+      {
+        "text": "recuerde todo el tiempo. Que no tiene que hacer bullitas. Muy bien. Acá tengo otro acuerdo,",
+        "time_label": "01:59-02:08"
+      },
+      {
+        "text": "ya nos vamos a sacar el saquito. Sientese mi amor. Tranquilito. ¿Qué pasó? Ya le molesto. Venga para",
+        "time_label": "03:42-03:51"
+      },
+      {
+        "text": "dado, a ver, Valentina va a lanzar el dado, venga para acá, venga, muy bien, lanza el dado para",
+        "time_label": "08:16-08:25"
+      },
+      {
+        "text": "por favor, vilan para atrás, muy bien, Arlet, a ver la ayuda, mi amor, siga, siga, siga, por favor,",
+        "time_label": "12:27-12:36"
+      },
+      {
+        "text": "estamos en silencio, muy bien, venga para acá mi amor, venga para acá, ya, silencio,",
+        "time_label": "14:31-14:39"
+      }
+    ],
+    "evidence_match_count": 14,
+    "indicator": "El o la docente responde a las necesidades del estudiantado.",
+    "rating": "Medio",
+    "rationale": "El audio evidencia apoyos puntuales: reubicar estudiantes, entregar material faltante y acompañar conteos individuales. Coincidencias textuales: 14.",
+    "recommendation": "Nombrar con claridad la necesidad y la solucion: 'te falta un material, aqui tienes uno' o 'vamos a contar juntos'.",
+    "visual_review_note": "Requiere revision humana del video para confirmar completamente este indicador.",
+    "visual_review_required": true
+  },
+  {
+    "code": "2.4",
+    "confidence": "Baja",
+    "domain": "Cultura de aula - Ambiente de aprendizaje",
+    "evidence": [],
+    "evidence_match_count": 0,
+    "indicator": "El o la docente no exhibe sesgos y desafia los estereotipos en el aula.",
+    "rating": "NA",
+    "rationale": "La transcripcion no permite verificar distribucion de oportunidades por genero ni acciones para desafiar estereotipos.",
+    "recommendation": "Para una evaluacion completa, complementar el reporte con revision de video y lista de participaciones por genero.",
+    "visual_review_note": "Requiere revision humana del video para confirmar completamente este indicador.",
+    "visual_review_required": true
+  },
+  {
+    "code": "3.1",
+    "confidence": "Alta",
+    "domain": "Cultura de aula - Expectativas positivas de comportamiento",
+    "evidence": [
+      {
+        "text": "Muy bien. Ahora vamos a hacer unos acuerdos. Vean, mire, mire, mire. ¿Qué significará este acuerdo?",
+        "time_label": "01:25-01:38"
+      },
+      {
+        "text": "acuerdo tendrá carita feliz. Mire, le voy a poner aquí. Le voy a poner aquí para que usted",
+        "time_label": "01:53-01:59"
+      },
+      {
+        "text": "Sí, muy bien. No bullas de así. Muy bien. Tiene que levantar la mano para participar. Muy bien. Muy",
+        "time_label": "02:19-02:27"
+      },
+      {
+        "text": "esto. Muy bien, respetar a los amiguitos. ¿Le tiene que molestar al amiguito? ¿Le tiene que coger el cabello?",
+        "time_label": "02:44-02:53"
+      },
+      {
+        "text": "al lado de Paula. Muy bien. Tranquilitos. Chicos, vamos a mirar el video, el video del número cinco,",
+        "time_label": "03:58-04:07"
+      },
+      {
+        "text": "un aplauso, de acuerdo, pero trabajamos en equipos, primero trabaja el equipo de acá y después",
+        "time_label": "07:25-07:32"
+      }
+    ],
+    "evidence_match_count": 48,
+    "indicator": "El o la docente establece expectativas claras de comportamientos para las actividades de la clase.",
+    "rating": "Alto",
+    "rationale": "Las normas se trabajan al inicio y se retoman durante la clase. Coincidencias textuales sobre acuerdos, silencio, respeto, turnos o compartir: 48.",
+    "recommendation": "Antes de cada nueva actividad, repetir solo la expectativa clave para evitar sobrecargar instrucciones.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "3.2",
+    "confidence": "Media",
+    "domain": "Cultura de aula - Expectativas positivas de comportamiento",
+    "evidence": [
+      {
+        "text": "Hola chicos, ¿cómo están? Bien. Vea, ¿sabe que la elvita? Niños y niñas, muy bien. ¿Sabe",
+        "time_label": "00:31-00:42"
+      },
+      {
+        "text": "feliz? Muy bien. sean todos ustedes bienvenidos a este día de clase.",
+        "time_label": "01:12-01:20"
+      },
+      {
+        "text": "usted hace silencio. Muy bien. ¿Quién va a cumplir este acuerdo? Muy bien. El que cumple este",
+        "time_label": "01:46-01:53"
+      },
+      {
+        "text": "Sí, muy bien. No bullas de así. Muy bien. Tiene que levantar la mano para participar. Muy bien. Muy",
+        "time_label": "02:19-02:27"
+      },
+      {
+        "text": "esto. Muy bien, respetar a los amiguitos. ¿Le tiene que molestar al amiguito? ¿Le tiene que coger el cabello?",
+        "time_label": "02:44-02:53"
+      }
+    ],
+    "evidence_match_count": 130,
+    "indicator": "El o la docente reconoce el buen comportamiento de los estudiantes.",
+    "rating": "Medio",
+    "rationale": "Hay reconocimiento frecuente, pero muchas frases son generales. La rubrica exige reconocer el comportamiento especifico esperado. Coincidencias textuales: 130.",
+    "recommendation": "Cambiar elogios generales por evidencias: 'gracias por esperar tu turno' o 'este equipo compartio el material'.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "3.3",
+    "confidence": "Media",
+    "domain": "Cultura de aula - Expectativas positivas de comportamiento",
+    "evidence": [
+      {
+        "text": "Muy bien, ni dar besos a los amigos. Hay que respetarles y hay que compartir. ¿De acuerdo? Muy bien.",
+        "time_label": "02:58-03:05"
+      },
+      {
+        "text": "hacer rodar así, cayó número cinco, muy bien, ya, ajá, sentadito por favor, Dilan, esto muy",
+        "time_label": "07:46-07:54"
+      },
+      {
+        "text": "primero equipo número uno, respetando el turno y después equipo número dos, muy bien, a ver chicos,",
+        "time_label": "09:20-09:26"
+      },
+      {
+        "text": "todo, guarde todo, guarde todo, guarde pronto, sentaditos ahí, sentaditos todos, vamos a hacer",
+        "time_label": "18:40-18:45"
+      },
+      {
+        "text": "parar, muy bien, mirará, ve, ve, hay que respetar a los amiguitos, eh, rafita, sin gritar, sin gritar,",
+        "time_label": "19:16-19:25"
+      }
+    ],
+    "evidence_match_count": 13,
+    "indicator": "El o la docente redirige el mal comportamiento y se enfoca en una conducta esperada.",
+    "rating": "Medio",
+    "rationale": "Las redirecciones suelen funcionar como recordatorios de acuerdos, aunque varias se formulan como orden directa o prohibicion. Coincidencias textuales: 13.",
+    "recommendation": "Redirigir siempre hacia la accion esperada: 'manos quietas y ojos al material' en lugar de solo 'no gritar'.",
+    "visual_review_note": "Requiere revision humana del video para confirmar completamente este indicador.",
+    "visual_review_required": true
+  },
+  {
+    "code": "4.1",
+    "confidence": "Alta",
+    "domain": "Aprendizaje guiado - Facilitacion de la clase",
+    "evidence": [
+      {
+        "text": "cinco. Sí. Vamos a identificar el número cinco y vamos a saber que cuando, que cuando decimos que",
+        "time_label": "03:23-03:34"
+      },
+      {
+        "text": "haya cinco cosas? Habrá algo. Los números, ¿O qué? Los números, muy bien, aquí será que hay",
+        "time_label": "05:36-05:49"
+      },
+      {
+        "text": "tómele una fotito, el número cinco nos indica que hay cinco cosas, vea como este guante, como",
+        "time_label": "06:07-06:18"
+      },
+      {
+        "text": "cinco, será que le pongo otra? No, ¿por qué? Porque estamos estudiando el número cinco,",
+        "time_label": "11:25-11:34"
+      },
+      {
+        "text": "¿qué aprendimos hoy? El número cinco, el número cinco indica que hay cinco cosas,",
+        "time_label": "29:16-29:22"
+      }
+    ],
+    "evidence_match_count": 8,
+    "indicator": "El o la docente articula explicitamente los objetivos de la clase y relaciona las actividades con tales objetivos.",
+    "rating": "Alto",
+    "rationale": "El objetivo se expresa al inicio y las actividades observadas se mantienen alineadas con relacion numero-cantidad hasta 5. Coincidencias textuales: 8.",
+    "recommendation": "Cerrar cada bloque preguntando 'que hicimos para saber que son cinco' para reforzar la relacion con el objetivo.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "4.2",
+    "confidence": "Alta",
+    "domain": "Aprendizaje guiado - Facilitacion de la clase",
+    "evidence": [
+      {
+        "text": "al lado de Paula. Muy bien. Tranquilitos. Chicos, vamos a mirar el video, el video del número cinco,",
+        "time_label": "03:58-04:07"
+      },
+      {
+        "text": "cuatro cinco fuerte, cuatro, sí, más fuerte muy bien, mire, hemos escuchado la canción,",
+        "time_label": "05:10-05:28"
+      },
+      {
+        "text": "tómele una fotito, el número cinco nos indica que hay cinco cosas, vea como este guante, como",
+        "time_label": "06:07-06:18"
+      },
+      {
+        "text": "correcto, muy bien, ahora vamos a jugar, vamos a jugar con el con el dado mágico, mire, mire,",
+        "time_label": "06:37-06:49"
+      },
+      {
+        "text": "en equipo, vamos a lanzar el dado, así le puede hacer rodar o le puede lanzar para arriba,",
+        "time_label": "07:13-07:19"
+      },
+      {
+        "text": "nombrar a un amiguito que lance o haga rodar el dado o podemos lanzar para arriba o le podemos",
+        "time_label": "07:40-07:46"
+      },
+      {
+        "text": "dado, a ver, Valentina va a lanzar el dado, venga para acá, venga, muy bien, lanza el dado para",
+        "time_label": "08:16-08:25"
+      }
+    ],
+    "evidence_match_count": 41,
+    "indicator": "El o la docente explica el contenido usando multiples formas de representacion.",
+    "rating": "Alto",
+    "rationale": "Aparecen representaciones auditivas, corporales, visuales y manipulativas: cancion, video, dedos, dado, pinzas, torres y stickers. Coincidencias textuales: 41.",
+    "recommendation": "Conservar tres representaciones por concepto y verbalizar explicitamente que todas representan la misma cantidad.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "4.3",
+    "confidence": "Media",
+    "domain": "Aprendizaje guiado - Facilitacion de la clase",
+    "evidence": [
+      {
+        "text": "tenemos el número cinco, también tenemos que tener cinco cosas, cinco objetos. Muy bien. Ya,",
+        "time_label": "03:34-03:42"
+      },
+      {
+        "text": "¿De qué hablaba la canción? El número cinco. Muy bien, ¿Y aquí en el salón habrá algo que",
+        "time_label": "05:28-05:36"
+      },
+      {
+        "text": "tómele una fotito, el número cinco nos indica que hay cinco cosas, vea como este guante, como",
+        "time_label": "06:07-06:18"
+      },
+      {
+        "text": "¿qué aprendimos hoy? El número cinco, el número cinco indica que hay cinco cosas,",
+        "time_label": "29:16-29:22"
+      }
+    ],
+    "evidence_match_count": 9,
+    "indicator": "El o la docente conecta la clase con otros conocimientos, experiencias cotidianas o problemas del mundo real.",
+    "rating": "Alto",
+    "rationale": "El numero 5 se conecta con dedos, objetos del aula y una tarea de busqueda en casa con la familia. Coincidencias textuales: 9.",
+    "recommendation": "Hacer mas visibles las conexiones cotidianas: cinco juguetes, cinco frutas, cinco pasos o cinco integrantes.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "4.4",
+    "confidence": "Alta",
+    "domain": "Aprendizaje guiado - Facilitacion de la clase",
+    "evidence": [
+      {
+        "text": "uno, dos, tres, cuatro, cinco, muy bien, el número cinco nos indica que hay cinco dedos,",
+        "time_label": "06:25-06:37"
+      },
+      {
+        "text": "uno, dos, tres, cuatro, cinco, muy bien, ahora se van a levantar los chicos y van a dar cinco",
+        "time_label": "08:46-08:53"
+      },
+      {
+        "text": "uno, dos, tres, cuatro, cinco, muy bien, todos a tomar asiento, bravo, bravo, bravo, muy bien,",
+        "time_label": "10:09-10:22"
+      },
+      {
+        "text": "sujetar con una mano y con la otra mano, con las pincitas, vea, uno, cuente, dos, tres, cuatro,",
+        "time_label": "11:13-11:25"
+      },
+      {
+        "text": "a poner solamente cinco pinzas, ¿de acuerdo? A ver, vamos, uno, dos, tres, cuatro, cinco, ¿de acuerdo?",
+        "time_label": "11:43-11:55"
+      },
+      {
+        "text": "aquí, retiramos esta, está de más, saquenle mi amor, eso, vuelva a contar, no, eso está bien,",
+        "time_label": "16:21-16:28"
+      }
+    ],
+    "evidence_match_count": 24,
+    "indicator": "El o la docente modela los procesos de aprendizaje mediante demostraciones o verbalizacion en voz alta.",
+    "rating": "Alto",
+    "rationale": "La docente muestra el procedimiento de contar hasta cinco, detenerse y retirar elementos de mas. Coincidencias textuales: 24.",
+    "recommendation": "Aumentar verbalizacion metacognitiva: 'me detengo porque ya llegue a cinco'.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "5.1",
+    "confidence": "Media",
+    "domain": "Aprendizaje guiado - Verificacion de la comprension",
+    "evidence": [
+      {
+        "text": "Muy bien. Ahora vamos a hacer unos acuerdos. Vean, mire, mire, mire. ¿Qué significará este acuerdo?",
+        "time_label": "01:25-01:38"
+      },
+      {
+        "text": "mire. Aquí tengo otro acuerdo. ¿Qué significará este? Para participar. Muy bien. Usted.",
+        "time_label": "02:08-02:17"
+      },
+      {
+        "text": "elbita le ha puesto esto, la profe, para que usted recuerde estas cartitas. Mire. A ver qué significará",
+        "time_label": "02:36-02:44"
+      },
+      {
+        "text": "¿De qué hablaba la canción? El número cinco. Muy bien, ¿Y aquí en el salón habrá algo que",
+        "time_label": "05:28-05:36"
+      },
+      {
+        "text": "equipo número uno, uno, dos, cuente, tres, cuatro, cinco, muy bien, tome asientito, tome asiento,",
+        "time_label": "09:27-09:40"
+      },
+      {
+        "text": "sujetar con una mano y con la otra mano, con las pincitas, vea, uno, cuente, dos, tres, cuatro,",
+        "time_label": "11:13-11:25"
+      }
+    ],
+    "evidence_match_count": 34,
+    "indicator": "El o la docente hace preguntas o usa estrategias para determinar el nivel de comprension.",
+    "rating": "Alto",
+    "rationale": "Hay preguntas abiertas o de comprobacion, junto con conteos individuales y revisiones de productos. Coincidencias textuales: 34.",
+    "recommendation": "Diferenciar preguntas de coro de preguntas individuales para asegurar evidencia de comprension de la mayoria.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "5.2",
+    "confidence": "Media",
+    "domain": "Aprendizaje guiado - Verificacion de la comprension",
+    "evidence": [
+      {
+        "text": "este súper guante, mire, la elbita ha tenido un súper guante, mire, a ver, contamos los deditos,",
+        "time_label": "06:18-06:25"
+      },
+      {
+        "text": "usted, eso, muy bien, hasta ahí equipo número uno, a ver, contamos, saltitos, saltamos, uno,",
+        "time_label": "09:04-09:11"
+      },
+      {
+        "text": "contamos, cuente, cuente, porque ya le va a visitar el número cinco, para ver si es que ha",
+        "time_label": "14:10-14:16"
+      },
+      {
+        "text": "cuente, ya le va a visitar el número cinco, aquí tiene mi amor, cuente, cuente, ya le va",
+        "time_label": "15:14-15:22"
+      },
+      {
+        "text": "cuente, a ver, contamos, uno, dos, uno, dos, tres, cuatro, será que nos falta uno, falta uno, a ver,",
+        "time_label": "15:39-15:54"
+      },
+      {
+        "text": "Cd, a ver, like, muy bien, like, a ver, contamos, Matías, una, dos, tres, cuatro, cinco, ya paramos",
+        "time_label": "16:08-16:21"
+      }
+    ],
+    "evidence_match_count": 19,
+    "indicator": "El o la docente supervisa a la mayoria de los estudiantes durante el trabajo individual/grupal.",
+    "rating": "Alto",
+    "rationale": "El audio muestra circulacion o revision sistematica: la docente 'visita' trabajos, nombra estudiantes y corrige cantidades. Coincidencias textuales: 19.",
+    "recommendation": "Registrar mentalmente quienes ya fueron observados para equilibrar la supervision del grupo completo.",
+    "visual_review_note": "Requiere revision humana del video para confirmar completamente este indicador.",
+    "visual_review_required": true
+  },
+  {
+    "code": "5.3",
+    "confidence": "Media",
+    "domain": "Aprendizaje guiado - Verificacion de la comprension",
+    "evidence": [
+      {
+        "text": "le ponemos una carita feliz, contamos hasta cinco y paramos, vea porque la albita tiene más pinzas,",
+        "time_label": "12:05-12:13"
+      },
+      {
+        "text": "contamos hasta cinco y paramos, o con Cd, de la su amigo un Cd, de la, al Rafa un Cd, a ver,",
+        "time_label": "14:03-14:10"
+      },
+      {
+        "text": "el leíto no tiene, sí, tome mi amor el Cd, es bravo, venga aquí, cuente mi amor,",
+        "time_label": "15:00-15:14"
+      },
+      {
+        "text": "ya mi amor, siga trabajando, mire el número cinco con estos ojitos le va a visitar, a ver,",
+        "time_label": "15:30-15:39"
+      },
+      {
+        "text": "aquí, retiramos esta, está de más, saquenle mi amor, eso, vuelva a contar, no, eso está bien,",
+        "time_label": "16:21-16:28"
+      },
+      {
+        "text": "cinco, muy bien chicos, muy bien, like, like, uno, dos, tres, cuatro, cinco, falta una, muy bien,",
+        "time_label": "17:13-17:22"
+      }
+    ],
+    "evidence_match_count": 18,
+    "indicator": "El o la docente ajusta la clase al nivel de conocimiento del grupo.",
+    "rating": "Medio",
+    "rationale": "Hay ajustes puntuales: agregar una pieza, retirar una de mas y volver a contar. No se observa una re-ensenanza sustancial o un reto diferenciado. Coincidencias textuales: 18.",
+    "recommendation": "Preparar dos respuestas: apoyo concreto para quien aun no llega a cinco y reto adicional para quien termina temprano.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "6.1",
+    "confidence": "Media",
+    "domain": "Aprendizaje guiado - Retroalimentacion especifica",
+    "evidence": [
+      {
+        "text": "aquí, retiramos esta, está de más, saquenle mi amor, eso, vuelva a contar, no, eso está bien,",
+        "time_label": "16:21-16:28"
+      },
+      {
+        "text": "cinco, muy bien chicos, muy bien, like, like, uno, dos, tres, cuatro, cinco, falta una, muy bien,",
+        "time_label": "17:13-17:22"
+      },
+      {
+        "text": "uno de más, retiramos uno, retiramos uno, uno, eso, ahí, cinco, cinco, uno, dos, excelente,",
+        "time_label": "23:10-23:18"
+      }
+    ],
+    "evidence_match_count": 9,
+    "indicator": "El o la docente hace comentarios especificos o cuestiona para clarificar confusiones.",
+    "rating": "Medio",
+    "rationale": "La retroalimentacion corrige errores de cantidad, pero suele quedarse en 'falta una' o 'hay una de mas' sin explicar la estrategia. Coincidencias textuales: 9.",
+    "recommendation": "Agregar pista especifica: 'toca cada pinza una sola vez mientras cuentas' o 'compara con tus cinco dedos'.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "6.2",
+    "confidence": "Media",
+    "domain": "Aprendizaje guiado - Retroalimentacion especifica",
+    "evidence": [
+      {
+        "text": "Hola chicos, ¿cómo están? Bien. Vea, ¿sabe que la elvita? Niños y niñas, muy bien. ¿Sabe",
+        "time_label": "00:31-00:42"
+      },
+      {
+        "text": "feliz? Muy bien. sean todos ustedes bienvenidos a este día de clase.",
+        "time_label": "01:12-01:20"
+      },
+      {
+        "text": "usted hace silencio. Muy bien. ¿Quién va a cumplir este acuerdo? Muy bien. El que cumple este",
+        "time_label": "01:46-01:53"
+      },
+      {
+        "text": "Sí, muy bien. No bullas de así. Muy bien. Tiene que levantar la mano para participar. Muy bien. Muy",
+        "time_label": "02:19-02:27"
+      },
+      {
+        "text": "esto. Muy bien, respetar a los amiguitos. ¿Le tiene que molestar al amiguito? ¿Le tiene que coger el cabello?",
+        "time_label": "02:44-02:53"
+      },
+      {
+        "text": "fotito. Muy bien. Saben que el día de hoy, ya, saben que el día de hoy vamos a trabajar el número",
+        "time_label": "03:12-03:23"
+      }
+    ],
+    "evidence_match_count": 134,
+    "indicator": "El o la docente hace comentarios especificos para ayudar a identificar logros.",
+    "rating": "Medio",
+    "rationale": "Hay muchos reconocimientos de logro, pero predominan 'muy bien', 'correcto' y 'excelente', con poca descripcion del logro especifico. Coincidencias textuales: 134.",
+    "recommendation": "Nombrar el logro: 'contaste cinco y te detuviste' o 'compartiste el material con tu companero'.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "7.1",
+    "confidence": "Media",
+    "domain": "Aprendizaje guiado - Pensamiento critico",
+    "evidence": [
+      {
+        "text": "Muy bien. Ahora vamos a hacer unos acuerdos. Vean, mire, mire, mire. ¿Qué significará este acuerdo?",
+        "time_label": "01:25-01:38"
+      },
+      {
+        "text": "mire. Aquí tengo otro acuerdo. ¿Qué significará este? Para participar. Muy bien. Usted.",
+        "time_label": "02:08-02:17"
+      },
+      {
+        "text": "elbita le ha puesto esto, la profe, para que usted recuerde estas cartitas. Mire. A ver qué significará",
+        "time_label": "02:36-02:44"
+      },
+      {
+        "text": "¿De qué hablaba la canción? El número cinco. Muy bien, ¿Y aquí en el salón habrá algo que",
+        "time_label": "05:28-05:36"
+      },
+      {
+        "text": "cinco, será que le pongo otra? No, ¿por qué? Porque estamos estudiando el número cinco,",
+        "time_label": "11:25-11:34"
+      },
+      {
+        "text": "cuente, a ver, contamos, uno, dos, uno, dos, tres, cuatro, será que nos falta uno, falta uno, a ver,",
+        "time_label": "15:39-15:54"
+      }
+    ],
+    "evidence_match_count": 15,
+    "indicator": "El o la docente hace preguntas abiertas.",
+    "rating": "Medio",
+    "rationale": "Hay preguntas abiertas o semiabiertas, pero pocas piden justificar o ampliar el razonamiento infantil. Coincidencias textuales: 15.",
+    "recommendation": "Incluir preguntas breves de explicacion: 'como sabes que hay cinco' y 'que pasaria si pongo uno mas'.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "7.2",
+    "confidence": "Media",
+    "domain": "Aprendizaje guiado - Pensamiento critico",
+    "evidence": [
+      {
+        "text": "cinco, será que le pongo otra? No, ¿por qué? Porque estamos estudiando el número cinco,",
+        "time_label": "11:25-11:34"
+      },
+      {
+        "text": "cinco, muy bien chicos, muy bien, like, like, uno, dos, tres, cuatro, cinco, falta una, muy bien,",
+        "time_label": "17:13-17:22"
+      },
+      {
+        "text": "uno de más, retiramos uno, retiramos uno, uno, eso, ahí, cinco, cinco, uno, dos, excelente,",
+        "time_label": "23:10-23:18"
+      },
+      {
+        "text": "uno más, hay seis, muy bien, a ver, arriba, arriba, arriba, arriba, arriba, arriba, arriba su tarea,",
+        "time_label": "28:58-29:04"
+      }
+    ],
+    "evidence_match_count": 6,
+    "indicator": "El o la docente ofrece actividades de pensamiento critico.",
+    "rating": "Medio",
+    "rationale": "Las actividades piden identificar, contar, comparar si falta o sobra y relacionar simbolo-cantidad. Son pertinentes, aunque repetitivas. Coincidencias textuales: 6.",
+    "recommendation": "Agregar un pequeno problema nuevo: 'tenemos cuatro, que hacemos para llegar a cinco' o clasificar conjuntos que si/no son cinco.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "7.3",
+    "confidence": "Baja",
+    "domain": "Aprendizaje guiado - Pensamiento critico",
+    "evidence": [
+      {
+        "text": "tómele una fotito, el número cinco nos indica que hay cinco cosas, vea como este guante, como",
+        "time_label": "06:07-06:18"
+      },
+      {
+        "text": "equipo número uno, uno, dos, cuente, tres, cuatro, cinco, muy bien, tome asientito, tome asiento,",
+        "time_label": "09:27-09:40"
+      },
+      {
+        "text": "sujetar con una mano y con la otra mano, con las pincitas, vea, uno, cuente, dos, tres, cuatro,",
+        "time_label": "11:13-11:25"
+      },
+      {
+        "text": "contamos, cuente, cuente, porque ya le va a visitar el número cinco, para ver si es que ha",
+        "time_label": "14:10-14:16"
+      },
+      {
+        "text": "el leíto no tiene, sí, tome mi amor el Cd, es bravo, venga aquí, cuente mi amor,",
+        "time_label": "15:00-15:14"
+      },
+      {
+        "text": "cuente, a ver, contamos, uno, dos, uno, dos, tres, cuatro, será que nos falta uno, falta uno, a ver,",
+        "time_label": "15:39-15:54"
+      }
+    ],
+    "evidence_match_count": 28,
+    "indicator": "El estudiantado desarrolla actividades de pensamiento critico.",
+    "rating": "Medio",
+    "rationale": "El transcript indica acciones de conteo y correccion de cantidades, pero no permite ver cuanta reflexion realiza cada estudiante. Coincidencias textuales: 28.",
+    "recommendation": "Pedir a varios estudiantes que muestren y expliquen como decidieron que ya tienen cinco.",
+    "visual_review_note": "Requiere revision humana del video para confirmar completamente este indicador.",
+    "visual_review_required": true
+  },
+  {
+    "code": "7.4",
+    "confidence": "Baja",
+    "domain": "Aprendizaje guiado - Pensamiento critico",
+    "evidence": [
+      {
+        "text": "tenemos el número cinco, también tenemos que tener cinco cosas, cinco objetos. Muy bien. Ya,",
+        "time_label": "03:34-03:42"
+      },
+      {
+        "text": "haya cinco cosas? Habrá algo. Los números, ¿O qué? Los números, muy bien, aquí será que hay",
+        "time_label": "05:36-05:49"
+      },
+      {
+        "text": "tómele una fotito, el número cinco nos indica que hay cinco cosas, vea como este guante, como",
+        "time_label": "06:07-06:18"
+      },
+      {
+        "text": "cinco, será que le pongo otra? No, ¿por qué? Porque estamos estudiando el número cinco,",
+        "time_label": "11:25-11:34"
+      }
+    ],
+    "evidence_match_count": 9,
+    "indicator": "El estudiantado explica sus ideas o hace preguntas abiertas.",
+    "rating": "Bajo",
+    "rationale": "La transcripcion no separa voces ni registra explicaciones extensas de estudiantes; la mayoria de respuestas aparentan ser breves. Coincidencias textuales: 9.",
+    "recommendation": "Reservar momentos para que uno o dos ninos verbalicen: 'tengo cinco porque conte...'.",
+    "visual_review_note": "Requiere revision humana del video para confirmar completamente este indicador.",
+    "visual_review_required": true
+  },
+  {
+    "code": "8.1",
+    "confidence": "Media",
+    "domain": "Habilidades socioemocionales - Autonomia",
+    "evidence": [
+      {
+        "text": "nombrar a un amiguito que lance o haga rodar el dado o podemos lanzar para arriba o le podemos",
+        "time_label": "07:40-07:46"
+      },
+      {
+        "text": "allá, lance mi amor, el dado, lance bien fuerte. Oh, qué número salría, a ver qué número salría,",
+        "time_label": "08:25-08:33"
+      },
+      {
+        "text": "para movernos, el cuerpito, lancen mi amor, otra vez cayó en el número, no cayó en el número",
+        "time_label": "09:56-10:04"
+      },
+      {
+        "text": "coja, coja, dos, muy bien, solo cinco, pondrás solo cinco, tome, quién quiere escoger, qué color desea,",
+        "time_label": "26:03-26:11"
+      },
+      {
+        "text": "levante su tarea, quién terminó, acúrese, acúrese mi amor, pronto, pronto, eso, muy bien, eso,",
+        "time_label": "27:16-27:27"
+      }
+    ],
+    "evidence_match_count": 11,
+    "indicator": "El o la docente ofrece opciones al estudiantado para que desarrollen sus tareas.",
+    "rating": "Medio",
+    "rationale": "Se observan opciones superficiales como escoger color o turno; no se confirma una eleccion sustancial de estrategia o producto. Coincidencias textuales: 11.",
+    "recommendation": "Ofrecer dos formas de demostrar el cinco: construir torre, pegar stickers o agrupar objetos, y dejar que el estudiante elija.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "8.2",
+    "confidence": "Media",
+    "domain": "Habilidades socioemocionales - Autonomia",
+    "evidence": [
+      {
+        "text": "el otro equipo de acá, equipo número uno, equipo número dos, muy bien, mire, la elbita le va a",
+        "time_label": "07:32-07:40"
+      },
+      {
+        "text": "el turno, muy bien, a ver equipo número uno se va a poner de pie, equipo número uno, levántese",
+        "time_label": "08:03-08:11"
+      },
+      {
+        "text": "saltitos, equipo número uno, levántese, levántese equipo número uno y vamos a contar cinco saltos,",
+        "time_label": "08:53-08:59"
+      },
+      {
+        "text": "primero equipo número uno, respetando el turno y después equipo número dos, muy bien, a ver chicos,",
+        "time_label": "09:20-09:26"
+      },
+      {
+        "text": "para acá, levántese equipo número dos, arleve, levántese por favor mi amor, para saltar y para",
+        "time_label": "09:48-09:56"
+      }
+    ],
+    "evidence_match_count": 24,
+    "indicator": "El o la docente ofrece oportunidades para asumir roles dentro de la clase.",
+    "rating": "Medio",
+    "rationale": "Los estudiantes lanzan el dado y muestran sus trabajos; son roles de participacion, pero no roles significativos de liderazgo o apoyo a pares. Coincidencias textuales: 24.",
+    "recommendation": "Asignar roles breves: lider de conteo, ayudante de materiales o verificador de cinco en pareja.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "8.3",
+    "confidence": "Baja",
+    "domain": "Habilidades socioemocionales - Autonomia",
+    "evidence": [
+      {
+        "text": "que la elvita? ¿Quieres saber cómo está cada uno de ustedes? ¿Y quién aquí? Diferentes caritas,",
+        "time_label": "00:42-00:49"
+      },
+      {
+        "text": "dado, a ver, Valentina va a lanzar el dado, venga para acá, venga, muy bien, lanza el dado para",
+        "time_label": "08:16-08:25"
+      },
+      {
+        "text": "muy bien, venga, muy bien, ahí Arlet, venga, Said, venga para acá, Said, venga, Said,",
+        "time_label": "12:36-12:50"
+      },
+      {
+        "text": "estamos en silencio, muy bien, venga para acá mi amor, venga para acá, ya, silencio,",
+        "time_label": "14:31-14:39"
+      },
+      {
+        "text": "levante su tarea, quién terminó, acúrese, acúrese mi amor, pronto, pronto, eso, muy bien, eso,",
+        "time_label": "27:16-27:27"
+      }
+    ],
+    "evidence_match_count": 16,
+    "indicator": "El estudiantado se ofrece para participar en la clase.",
+    "rating": "Medio",
+    "rationale": "La docente invita a levantar la mano y participar, pero el audio no permite confirmar si participa la mayoria. Coincidencias textuales: 16.",
+    "recommendation": "Usar una rutina de participacion equitativa: todos muestran dedos, luego algunos explican, luego rotan roles.",
+    "visual_review_note": "Requiere revision humana del video para confirmar completamente este indicador.",
+    "visual_review_required": true
+  },
+  {
+    "code": "9.1",
+    "confidence": "Media",
+    "domain": "Habilidades socioemocionales - Perseverancia",
+    "evidence": [
+      {
+        "text": "Hola chicos, ¿cómo están? Bien. Vea, ¿sabe que la elvita? Niños y niñas, muy bien. ¿Sabe",
+        "time_label": "00:31-00:42"
+      },
+      {
+        "text": "Oh, qué lindo. Es muy bueno trabajar con gente muy feliz. A ver, levante la mano. ¿Quién está",
+        "time_label": "01:03-01:12"
+      },
+      {
+        "text": "usted hace silencio. Muy bien. ¿Quién va a cumplir este acuerdo? Muy bien. El que cumple este",
+        "time_label": "01:46-01:53"
+      },
+      {
+        "text": "Sí, muy bien. No bullas de así. Muy bien. Tiene que levantar la mano para participar. Muy bien. Muy",
+        "time_label": "02:19-02:27"
+      },
+      {
+        "text": "esto. Muy bien, respetar a los amiguitos. ¿Le tiene que molestar al amiguito? ¿Le tiene que coger el cabello?",
+        "time_label": "02:44-02:53"
+      }
+    ],
+    "evidence_match_count": 150,
+    "indicator": "El o la docente reconoce los esfuerzos del estudiantado.",
+    "rating": "Bajo",
+    "rationale": "Aunque hay elogios frecuentes, casi ninguno identifica esfuerzo, estrategia, persistencia o progreso. Coincidencias textuales relacionadas: 150.",
+    "recommendation": "Nombrar esfuerzo: 'seguiste contando aunque era dificil' o 'probaste otra vez hasta llegar a cinco'.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "9.2",
+    "confidence": "Media",
+    "domain": "Habilidades socioemocionales - Perseverancia",
+    "evidence": [
+      {
+        "text": "Hola chicos, ¿cómo están? Bien. Vea, ¿sabe que la elvita? Niños y niñas, muy bien. ¿Sabe",
+        "time_label": "00:31-00:42"
+      },
+      {
+        "text": "feliz? Muy bien. sean todos ustedes bienvenidos a este día de clase.",
+        "time_label": "01:12-01:20"
+      },
+      {
+        "text": "usted hace silencio. Muy bien. ¿Quién va a cumplir este acuerdo? Muy bien. El que cumple este",
+        "time_label": "01:46-01:53"
+      },
+      {
+        "text": "Sí, muy bien. No bullas de así. Muy bien. Tiene que levantar la mano para participar. Muy bien. Muy",
+        "time_label": "02:19-02:27"
+      },
+      {
+        "text": "esto. Muy bien, respetar a los amiguitos. ¿Le tiene que molestar al amiguito? ¿Le tiene que coger el cabello?",
+        "time_label": "02:44-02:53"
+      }
+    ],
+    "evidence_match_count": 126,
+    "indicator": "El o la docente tiene una actitud positiva hacia los desafios del estudiantado.",
+    "rating": "Medio",
+    "rationale": "No hay reganos fuertes ante errores; la docente ayuda a corregir. Falta explicitar que equivocarse es parte del aprendizaje. Coincidencias textuales: 126.",
+    "recommendation": "Cuando haya error, decir: 'esta bien, probemos otra vez; contar nos ayuda a corregir'.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "10.a",
+    "confidence": "Media",
+    "domain": "Habilidades socioemocionales - Habilidades sociales y colaborativas",
+    "evidence": [
+      {
+        "text": "esto. Muy bien, respetar a los amiguitos. ¿Le tiene que molestar al amiguito? ¿Le tiene que coger el cabello?",
+        "time_label": "02:44-02:53"
+      },
+      {
+        "text": "en equipo, vamos a lanzar el dado, así le puede hacer rodar o le puede lanzar para arriba,",
+        "time_label": "07:13-07:19"
+      },
+      {
+        "text": "nombrar a un amiguito que lance o haga rodar el dado o podemos lanzar para arriba o le podemos",
+        "time_label": "07:40-07:46"
+      },
+      {
+        "text": "por favor, equipo número uno, levántese, levántese, póngase de pie porque ya vamos a jugar con el",
+        "time_label": "08:11-08:16"
+      },
+      {
+        "text": "saltitos, equipo número uno, levántese, levántese equipo número uno y vamos a contar cinco saltos,",
+        "time_label": "08:53-08:59"
+      },
+      {
+        "text": "primero equipo número uno, respetando el turno y después equipo número dos, muy bien, a ver chicos,",
+        "time_label": "09:20-09:26"
+      }
+    ],
+    "evidence_match_count": 40,
+    "indicator": "El o la docente promueve la colaboracion entre el estudiantado a traves de sus interacciones.",
+    "rating": "Medio",
+    "rationale": "Hay equipos, parejas y pedidos de compartir material, pero la colaboracion parece centrada en turnos/materiales, no en resolver juntos. Coincidencias textuales: 40.",
+    "recommendation": "Convertir una actividad en tarea cooperativa: una pareja cuenta, otra verifica y ambas explican el resultado.",
+    "visual_review_note": "Requiere revision humana del video para confirmar completamente este indicador.",
+    "visual_review_required": true
+  },
+  {
+    "code": "10.b",
+    "confidence": "Media",
+    "domain": "Habilidades socioemocionales - Habilidades sociales y colaborativas",
+    "evidence": [
+      {
+        "text": "levante la manito. ¿Quién está enojado? Levante la manito. ¿Quién está enojado?",
+        "time_label": "00:49-00:55"
+      },
+      {
+        "text": "acuerdo tendrá carita feliz. Mire, le voy a poner aquí. Le voy a poner aquí para que usted",
+        "time_label": "01:53-01:59"
+      },
+      {
+        "text": "esto. Muy bien, respetar a los amiguitos. ¿Le tiene que molestar al amiguito? ¿Le tiene que coger el cabello?",
+        "time_label": "02:44-02:53"
+      },
+      {
+        "text": "le ponemos una carita feliz, contamos hasta cinco y paramos, vea porque la albita tiene más pinzas,",
+        "time_label": "12:05-12:13"
+      },
+      {
+        "text": "pero tiene que compartir entre parejitas, tiene que compartir entre parejitas, muy bien,",
+        "time_label": "13:52-14:01"
+      },
+      {
+        "text": "gracias, gracias, gracias, sentaditos, educaditos, a ver, muy bien, muy bien, carita feliz para mis",
+        "time_label": "19:00-19:08"
+      }
+    ],
+    "evidence_match_count": 20,
+    "indicator": "El o la docente promueve habilidades interpersonales como empatia, regulacion emocional o resolucion de conflictos.",
+    "rating": "Medio",
+    "rationale": "Se trabajan emociones iniciales, respeto y compartir. La promocion interpersonal es positiva, aunque breve y poco elaborada. Coincidencias textuales: 20.",
+    "recommendation": "Ante un conflicto, guiar perspectiva: 'como se siente tu amigo cuando le quitamos el material'.",
+    "visual_review_note": "La evidencia textual es suficiente para una lectura preliminar.",
+    "visual_review_required": false
+  },
+  {
+    "code": "10.c",
+    "confidence": "Baja",
+    "domain": "Habilidades socioemocionales - Habilidades sociales y colaborativas",
+    "evidence": [
+      {
+        "text": "en equipo, vamos a lanzar el dado, así le puede hacer rodar o le puede lanzar para arriba,",
+        "time_label": "07:13-07:19"
+      },
+      {
+        "text": "el turno, muy bien, a ver equipo número uno se va a poner de pie, equipo número uno, levántese",
+        "time_label": "08:03-08:11"
+      },
+      {
+        "text": "saltitos, equipo número uno, levántese, levántese equipo número uno y vamos a contar cinco saltos,",
+        "time_label": "08:53-08:59"
+      },
+      {
+        "text": "primero equipo número uno, respetando el turno y después equipo número dos, muy bien, a ver chicos,",
+        "time_label": "09:20-09:26"
+      },
+      {
+        "text": "para acá, levántese equipo número dos, arleve, levántese por favor mi amor, para saltar y para",
+        "time_label": "09:48-09:56"
+      },
+      {
+        "text": "pero tiene que compartir entre parejitas, tiene que compartir entre parejitas, muy bien,",
+        "time_label": "13:52-14:01"
+      }
+    ],
+    "evidence_match_count": 26,
+    "indicator": "El estudiantado colabora entre ellos a traves de sus interacciones.",
+    "rating": "Medio",
+    "rationale": "El audio sugiere trabajo en equipos y parejas, pero no permite observar la calidad de colaboracion entre pares. Coincidencias textuales: 26.",
+    "recommendation": "Complementar con video y observar si hay ayuda mutua real, reparto de tareas y lenguaje entre pares.",
+    "visual_review_note": "Requiere revision humana del video para confirmar completamente este indicador.",
+    "visual_review_required": true
+  }
+]

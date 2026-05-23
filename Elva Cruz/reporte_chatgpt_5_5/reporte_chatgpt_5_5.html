@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evaluacion independiente ChatGPT 5.5 - Elva Cruz</title>
+  <style>
+    :root {
+      --ink: #17212f;
+      --muted: #637083;
+      --line: #d8e1ec;
+      --paper: #f7f9fc;
+      --panel: #ffffff;
+      --navy: #17324d;
+      --teal: #0f766e;
+      --gold: #b7791f;
+      --red: #b42318;
+      --purple: #5b21b6;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #e7edf4;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.46;
+    }
+    .page {
+      width: min(1180px, calc(100% - 32px));
+      margin: 24px auto;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 44px rgba(15, 23, 42, .13);
+    }
+    header.cover {
+      padding: 42px 48px 30px;
+      color: #fff;
+      background: var(--navy);
+      border-bottom: 6px solid var(--teal);
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      color: #9ee6dd;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3, h4 { letter-spacing: 0; }
+    h1 {
+      max-width: 920px;
+      margin: 0;
+      font-size: 34px;
+      line-height: 1.12;
+    }
+    h2 { margin: 0 0 16px; font-size: 22px; }
+    h3 { margin: 0 0 8px; font-size: 16px; }
+    h4 {
+      margin: 0 0 6px;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+    }
+    p { margin: 0 0 10px; }
+    main { padding: 34px 48px 50px; }
+    section { margin: 0 0 32px; }
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .metric {
+      min-height: 112px;
+      padding: 15px;
+      border: 1px solid rgba(255,255,255,.22);
+      background: rgba(255,255,255,.08);
+    }
+    .metric span { display: block; color: #bad0e8; font-size: 13px; }
+    .metric strong { display: block; margin-top: 8px; font-size: 22px; }
+    .panel {
+      padding: 18px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 18px;
+    }
+    .three-col {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 72px;
+      padding: 5px 8px;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .alto, .si { background: var(--teal); }
+    .medio { background: var(--gold); }
+    .bajo, .no { background: var(--red); }
+    .na { background: var(--muted); }
+    .domain-card {
+      padding: 15px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+    .domain-card p { color: var(--muted); font-size: 13px; }
+    .indicator {
+      margin: 0 0 14px;
+      padding: 17px;
+      border: 1px solid var(--line);
+      background: #fff;
+      break-inside: avoid;
+    }
+    .indicator header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      align-items: start;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #e8eef5;
+      margin-bottom: 12px;
+    }
+    .code {
+      display: inline-block;
+      margin-bottom: 5px;
+      color: var(--purple);
+      font-weight: 700;
+    }
+    .rating { text-align: right; }
+    .rating small {
+      display: block;
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .grid2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    ul { margin: 0; padding-left: 20px; }
+    li { margin-bottom: 7px; }
+    .evidence {
+      margin-top: 10px;
+      padding: 10px 12px;
+      border-left: 4px solid var(--purple);
+      background: #f4f0ff;
+      font-size: 13px;
+    }
+    .evidence b { color: var(--purple); }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      border: 1px solid var(--line);
+    }
+    th, td {
+      padding: 10px;
+      border-top: 1px solid #e8eef5;
+      text-align: left;
+      vertical-align: top;
+      font-size: 13px;
+    }
+    th {
+      background: #eef3f8;
+      color: var(--navy);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    .muted { color: var(--muted); }
+    .warning {
+      border-left: 5px solid var(--gold);
+      background: #fff8e8;
+    }
+    .strong {
+      border-left: 5px solid var(--teal);
+      background: #eefbf8;
+    }
+    .disagree {
+      border-left: 5px solid var(--purple);
+      background: #f7f3ff;
+    }
+    @media print {
+      body { background: #fff; }
+      .page { width: 100%; margin: 0; border: 0; box-shadow: none; }
+      header.cover, main { padding-left: 24px; padding-right: 24px; }
+      .indicator, .panel { page-break-inside: avoid; }
+    }
+    @media (max-width: 860px) {
+      header.cover, main { padding-left: 20px; padding-right: 20px; }
+      .metrics, .two-col, .three-col, .grid2 { grid-template-columns: 1fr; }
+      .indicator header { grid-template-columns: 1fr; }
+      .rating { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="cover">
+      <p class="eyebrow">Evaluacion independiente asistida por ChatGPT 5.5</p>
+      <h1>Comparacion entre evaluacion LLM independiente y reporte deterministico</h1>
+      <div class="metrics">
+        <div class="metric"><span>Decision LLM</span><strong>Aprobar con observaciones</strong></div>
+        <div class="metric"><span>Rating de clase</span><strong>2.24/3 · 74.7/100</strong></div>
+        <div class="metric"><span>Comparacion deterministica</span><strong>2.30/3</strong></div>
+        <div class="metric"><span>Duracion / segmentos</span><strong>29:41 · 184</strong></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="two-col">
+        <div class="panel strong">
+          <h2>Conclusion Objetiva</h2>
+          <p>La evaluacion LLM independiente llega a una conclusion muy cercana al reporte deterministico: la clase debe <b>aprobar con observaciones</b>. La diferencia principal es que la evaluacion LLM es mas conservadora en indicadores que la transcripcion no puede probar completamente, especialmente verificacion de la comprension, supervision sistematica y colaboracion real entre estudiantes.</p>
+          <p>La calificacion LLM computable es <b>2.24/3</b>, equivalente aproximado a <b>74.7/100</b>. Es una clase competente, afectiva y alineada al objetivo, con brechas claras en retroalimentacion especifica, explicacion de ideas por parte de los estudiantes, perseverancia y colaboracion sustancial.</p>
+        </div>
+        <div class="panel warning">
+          <h2>Metodo Independiente</h2>
+          <p>Para esta version, el juicio LLM se hizo desde la transcripcion completa y los criterios de la rubrica. Las calificaciones deterministicas se usaron solamente despues, en la tabla de comparacion.</p>
+          <p>No se inventaron datos visuales. Cuando un criterio exige observar cantidad de estudiantes, foco, participacion real, igualdad de oportunidades o colaboracion entre pares, la calificacion se mantiene conservadora o se marca como <b>NA</b>.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Resultado Por Dominio</h2>
+        <div class="three-col">
+          <div class="domain-card"><h3>D1 Tiempo</h3><p><span class="badge medio">Medio-Alto</span></p><p>Actividades activas y alineadas; foco del grupo requiere video.</p></div>
+          <div class="domain-card"><h3>D2 Ambiente</h3><p><span class="badge alto">Alto</span></p><p>Trato respetuoso y lenguaje positivo muy consistente; sesgos no evaluables por texto.</p></div>
+          <div class="domain-card"><h3>D3 Conducta</h3><p><span class="badge medio">Medio-Alto</span></p><p>Acuerdos claros; redireccion positiva pero repetitiva.</p></div>
+          <div class="domain-card"><h3>D4 Facilitacion</h3><p><span class="badge alto">Alto</span></p><p>Objetivo claro, multiples representaciones y modelado concreto.</p></div>
+          <div class="domain-card"><h3>D5 Comprension</h3><p><span class="badge medio">Medio</span></p><p>Monitoreo visible en audio, pero no prueba verificacion de la mayoria.</p></div>
+          <div class="domain-card"><h3>D6 Feedback</h3><p><span class="badge medio">Medio</span></p><p>Correcciones oportunas, poca especificidad conceptual.</p></div>
+          <div class="domain-card"><h3>D7 Pensamiento</h3><p><span class="badge medio">Medio-Bajo</span></p><p>Conteo y comparacion falta/sobra; pocas explicaciones infantiles.</p></div>
+          <div class="domain-card"><h3>D8 Autonomia</h3><p><span class="badge medio">Medio</span></p><p>Opciones superficiales y participacion guiada; roles no significativos.</p></div>
+          <div class="domain-card"><h3>D9 Perseverancia</h3><p><span class="badge bajo">Bajo-Medio</span></p><p>Ambiente positivo, pero esfuerzo y error como aprendizaje no se nombran.</p></div>
+          <div class="domain-card"><h3>D10 Colaboracion</h3><p><span class="badge medio">Medio</span></p><p>Turnos y compartir materiales; colaboracion sustancial no comprobable.</p></div>
+        </div>
+      </section>
+
+      <section class="panel disagree">
+        <h2>Comparacion Con El Reporte Deterministico</h2>
+        <p>Las dos evaluaciones coinciden en la decision general. Hay tres desacuerdos materiales. En los tres, el juicio LLM es mas conservador porque exige evidencia directa de la rubrica y no infiere desde palabras clave.</p>
+        <table>
+          <thead><tr><th>Indicador</th><th>Deterministico</th><th>LLM independiente</th><th>Mas defendible</th><th>Razon</th></tr></thead>
+          <tbody>
+            <tr><td>5.1 Verifica comprension</td><td>Alto</td><td>Medio</td><td>LLM</td><td>Hay preguntas y conteos, pero la transcripcion no prueba que la estrategia determine comprension de la mayoria.</td></tr>
+            <tr><td>5.2 Supervision de la mayoria</td><td>Alto</td><td>Medio</td><td>LLM</td><td>El audio sugiere circulacion y revision, pero solo el video confirma supervision sistematica de la mayoria.</td></tr>
+            <tr><td>10.c Colaboracion entre estudiantes</td><td>Medio</td><td>NA</td><td>LLM</td><td>La docente pide compartir y trabajar en equipos, pero el texto no muestra interaccion real entre estudiantes.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h2>Evaluacion Independiente De Los 31 Indicadores</h2>
+
+        <article class="indicator">
+          <header><div><span class="code">1.1</span><h3>Actividad de aprendizaje para la mayoria</h3></div><div class="rating"><span class="badge si">Si</span><small>Confianza alta</small></div></header>
+          <div class="grid2"><p>La clase ofrece actividades de aprendizaje durante casi toda la sesion: cancion, dado, pinzas, torre y stickers.</p><p><b>Justificacion:</b> el objetivo de numero-cantidad se mantiene como hilo conductor.</p></div>
+          <div class="evidence"><b>03:23-03:42</b> “vamos a trabajar el numero cinco... identificar el numero cinco...”</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">1.2</span><h3>Estudiantes enfocados</h3></div><div class="rating"><span class="badge medio">Medio</span><small>Revision visual necesaria</small></div></header>
+          <div class="grid2"><p>Hay varios llamados a silencio, sentarse, mirar y respetar acuerdos. Eso impide sostener un Alto solo con texto.</p><p><b>Mejora:</b> señales breves de transicion y menos repeticion verbal.</p></div>
+          <div class="evidence"><b>12:27-13:45</b> reubicaciones, “calladitos”, “escuchad” y preparacion de material.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">1.3</span><h3>Participacion activa</h3></div><div class="rating"><span class="badge si">Si</span><small>Confianza media</small></div></header>
+          <div class="grid2"><p>El diseño propone movimiento y manipulacion. El texto muestra saltos, lanzamientos, conteos y producciones.</p><p><b>Limite:</b> la proporcion exacta de estudiantes activos requiere video.</p></div>
+          <div class="evidence"><b>08:53-10:22</b> equipos saltan y cuentan; <b>15:39-17:22</b> conteo con materiales.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">2.1</span><h3>Trato respetuoso</h3></div><div class="rating"><span class="badge alto">Alto</span><small>Confianza alta</small></div></header>
+          <div class="grid2"><p>Predominan expresiones corteses y afectivas. No hay insultos ni ridiculizacion en la transcripcion.</p><p><b>Cuidado:</b> evitar que llamados repetidos por nombre expongan a estudiantes.</p></div>
+          <div class="evidence"><b>03:42-03:58</b> reubica con tono afectivo: “mi amor”, “tranquilito”.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">2.2</span><h3>Lenguaje positivo</h3></div><div class="rating"><span class="badge alto">Alto</span><small>Confianza alta</small></div></header>
+          <div class="grid2"><p>El lenguaje positivo es constante: “muy bien”, “excelente”, “bravo”, “felicitaciones”.</p><p><b>Observacion:</b> la frecuencia es alta, aunque la especificidad del elogio se evalua en 6.2 y 9.1.</p></div>
+          <div class="evidence"><b>29:29-29:41</b> “felicitaciones, hoy trabajaron como unos verdaderos matematicos”.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">2.3</span><h3>Respuesta a necesidades</h3></div><div class="rating"><span class="badge medio">Medio</span><small>Revision visual necesaria</small></div></header>
+          <div class="grid2"><p>Responde a materiales faltantes, ubicacion y apoyo de conteo. No siempre explicita la necesidad o solucion.</p><p><b>Para Alto:</b> resolver y nombrar con claridad: “te falta un material, aqui tienes uno”.</p></div>
+          <div class="evidence"><b>15:00-15:22</b> “el leito no tiene... tome mi amor el CD... cuente mi amor”.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">2.4</span><h3>Ausencia de sesgos y desafio de estereotipos</h3></div><div class="rating"><span class="badge na">NA</span><small>Revision visual necesaria</small></div></header>
+          <div class="grid2"><p>No se puede evaluar distribucion de oportunidades por genero desde la transcripcion.</p><p><b>Necesario:</b> observar video y registrar participacion, correcciones y elogios por estudiante.</p></div>
+          <div class="evidence"><b>Sin evidencia textual suficiente.</b></div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">3.1</span><h3>Expectativas claras de comportamiento</h3></div><div class="rating"><span class="badge alto">Alto</span><small>Confianza alta</small></div></header>
+          <div class="grid2"><p>Presenta acuerdos al inicio y los retoma durante la clase.</p><p><b>Fortaleza:</b> los acuerdos son funcionales: silencio, levantar mano, respetar y compartir.</p></div>
+          <div class="evidence"><b>01:25-03:05</b> acuerdos de silencio, participacion, respeto y compartir.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">3.2</span><h3>Reconocimiento del buen comportamiento</h3></div><div class="rating"><span class="badge medio">Medio</span><small>Confianza media</small></div></header>
+          <div class="grid2"><p>Reconoce buen comportamiento, pero en frases generales.</p><p><b>Para Alto:</b> “gracias por esperar tu turno” o “compartiste el material con tu compañero”.</p></div>
+          <div class="evidence"><b>19:00-19:08</b> “sentaditos, educaditos... carita feliz para mis chicos”.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">3.3</span><h3>Redireccion del comportamiento</h3></div><div class="rating"><span class="badge medio">Medio</span><small>Revision visual necesaria</small></div></header>
+          <div class="grid2"><p>La redireccion no parece punitiva, pero a veces se centra en la prohibicion o en apurar.</p><p><b>Mejora:</b> orientar hacia conducta esperada: “manos quietas, ojos al material, esperamos turno”.</p></div>
+          <div class="evidence"><b>19:16-19:25</b> “hay que respetar... sin gritar... recordar los acuerdos”.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">4.1</span><h3>Objetivos y alineacion</h3></div><div class="rating"><span class="badge alto">Alto</span><small>Confianza alta</small></div></header>
+          <div class="grid2"><p>El objetivo esta explicitado y las actividades se sostienen en relacion numero-cantidad hasta 5.</p><p><b>Fortaleza:</b> el cierre vuelve al mismo aprendizaje.</p></div>
+          <div class="evidence"><b>03:23-03:42</b> objetivo; <b>29:16-29:29</b> cierre y transferencia a casa.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">4.2</span><h3>Multiples representaciones</h3></div><div class="rating"><span class="badge alto">Alto</span><small>Confianza alta</small></div></header>
+          <div class="grid2"><p>Usa cancion/video, dedos, dado, CD, pinzas, maderos y stickers.</p><p><b>Valor:</b> es muy adecuado para Educacion Inicial y DUA.</p></div>
+          <div class="evidence"><b>04:07-06:37</b> video/cancion, numero, guante y dedos.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">4.3</span><h3>Conexiones con vida cotidiana</h3></div><div class="rating"><span class="badge alto">Alto</span><small>Confianza media</small></div></header>
+          <div class="grid2"><p>Conecta el numero 5 con dedos, objetos del aula y una tarea en casa.</p><p><b>Para robustecer:</b> tomar mas ejemplos propuestos por niños.</p></div>
+          <div class="evidence"><b>29:22-29:29</b> “busque cinco cosas y cuente con papa y mama”.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">4.4</span><h3>Modelado de procesos</h3></div><div class="rating"><span class="badge alto">Alto</span><small>Confianza alta</small></div></header>
+          <div class="grid2"><p>Modela contar hasta cinco, detenerse y retirar elementos de mas.</p><p><b>Mejora fina:</b> verbalizar pensamiento: “ya llegue a cinco, por eso me detengo”.</p></div>
+          <div class="evidence"><b>11:13-12:21</b> muestra pinzas, cuenta hasta cinco y explica detenerse.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">5.1</span><h3>Preguntas para verificar comprension</h3></div><div class="rating"><span class="badge medio">Medio</span><small>Confianza media</small></div></header>
+          <div class="grid2"><p>Hay preguntas y conteos, pero muchas respuestas parecen cerradas o corales. No se prueba comprension de la mayoria.</p><p><b>Para Alto:</b> pedir respuestas individuales o muestras de todos.</p></div>
+          <div class="evidence"><b>05:28-05:49</b> pregunta sobre la cancion y objetos con cinco; <b>15:39-16:08</b> revisa conteo.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">5.2</span><h3>Supervision durante trabajo individual/grupal</h3></div><div class="rating"><span class="badge medio">Medio</span><small>Revision visual necesaria</small></div></header>
+          <div class="grid2"><p>El audio sugiere que revisa a varios estudiantes, pero no confirma supervision sistematica de la mayoria.</p><p><b>Por eso no es Alto:</b> la rubrica exige alcance observable sobre la mayoria.</p></div>
+          <div class="evidence"><b>15:39-17:59</b> revisa conteos de varios niños y ajusta cantidades.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">5.3</span><h3>Ajuste al nivel del grupo</h3></div><div class="rating"><span class="badge medio">Medio</span><small>Confianza media</small></div></header>
+          <div class="grid2"><p>Ajusta cuando falta o sobra, pero no hay reenseñanza sustancial ni extension para avanzados.</p><p><b>Mejora:</b> apoyo de conteo uno-a-uno y reto adicional para quienes terminan.</p></div>
+          <div class="evidence"><b>16:20-17:13</b> retira piezas de mas, pide volver a contar y corrige.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">6.1</span><h3>Retroalimentacion sobre confusiones</h3></div><div class="rating"><span class="badge medio">Medio</span><small>Confianza media</small></div></header>
+          <div class="grid2"><p>La retroalimentacion corrige errores de cantidad, pero no siempre explica la estrategia.</p><p><b>Para Alto:</b> “toca cada objeto una vez mientras cuentas”.</p></div>
+          <div class="evidence"><b>16:20-16:57</b> “esta de mas... le sacamos... cuente hasta cinco y pare”.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">6.2</span><h3>Retroalimentacion sobre logros</h3></div><div class="rating"><span class="badge medio">Medio</span><small>Confianza media</small></div></header>
+          <div class="grid2"><p>Hay mucho elogio, pero poco descriptivo del logro exacto.</p><p><b>Formula recomendada:</b> “contaste cinco objetos y te detuviste”.</p></div>
+          <div class="evidence"><b>23:10-23:26</b> “cinco... excelente... muy bien”, sin describir estrategia.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">7.1</span><h3>Preguntas abiertas</h3></div><div class="rating"><span class="badge medio">Medio</span><small>Confianza media</small></div></header>
+          <div class="grid2"><p>Hay preguntas como “¿por que?” y “¿que aprendimos?”, pero no se sostienen con justificacion.</p><p><b>Mejora:</b> preguntar “¿como sabes que son cinco?” y esperar explicacion.</p></div>
+          <div class="evidence"><b>11:25-11:43</b> “¿por que? Porque estamos estudiando el numero cinco”.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">7.2</span><h3>Actividades de pensamiento critico</h3></div><div class="rating"><span class="badge medio">Medio</span><small>Confianza media</small></div></header>
+          <div class="grid2"><p>Comparar falta/sobra y llegar a cinco es pensamiento matematico inicial, aunque repetitivo.</p><p><b>Para Alto:</b> proponer problemas nuevos: “si tengo cuatro, ¿que hago para llegar a cinco?”.</p></div>
+          <div class="evidence"><b>23:10-23:18</b> detecta seis y retira uno para volver a cinco.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">7.3</span><h3>Estudiantes hacen pensamiento critico</h3></div><div class="rating"><span class="badge medio">Medio</span><small>Revision visual necesaria</small></div></header>
+          <div class="grid2"><p>La transcripcion muestra conteo y correccion, pero no prueba que la mayoria razone activamente.</p><p><b>Necesario:</b> video y explicaciones de varios estudiantes.</p></div>
+          <div class="evidence"><b>15:39-17:22</b> conteos, faltantes y sobrantes durante la actividad.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">7.4</span><h3>Estudiantes explican ideas o preguntan</h3></div><div class="rating"><span class="badge bajo">Bajo</span><small>Confianza baja</small></div></header>
+          <div class="grid2"><p>No se observan explicaciones extensas de estudiantes en la transcripcion.</p><p><b>Mejora prioritaria:</b> cerrar cada actividad con una explicacion breve de uno o dos niños.</p></div>
+          <div class="evidence"><b>29:16-29:22</b> respuesta de cierre parece breve: “el numero cinco”.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">8.1</span><h3>Opciones para desarrollar tareas</h3></div><div class="rating"><span class="badge medio">Medio</span><small>Confianza media</small></div></header>
+          <div class="grid2"><p>Hay eleccion de color y participacion, pero no opciones sustanciales de producto o estrategia.</p><p><b>Mejora:</b> elegir entre torre, pinzas, stickers o dibujo para demostrar cinco.</p></div>
+          <div class="evidence"><b>26:03-26:21</b> “quien quiere escoger, que color desea”.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">8.2</span><h3>Roles dentro de la clase</h3></div><div class="rating"><span class="badge medio">Medio</span><small>Confianza media</small></div></header>
+          <div class="grid2"><p>Los niños lanzan el dado y muestran tareas, pero no asumen roles significativos de liderazgo.</p><p><b>Mejora:</b> lider de conteo, verificador de cinco, ayudante de materiales.</p></div>
+          <div class="evidence"><b>07:40-08:33</b> se nombra a estudiantes para lanzar el dado.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">8.3</span><h3>Estudiantes se ofrecen para participar</h3></div><div class="rating"><span class="badge medio">Medio</span><small>Revision visual necesaria</small></div></header>
+          <div class="grid2"><p>La docente invita a levantar mano y mostrar tareas, pero no se puede saber si se ofrece la mayoria.</p><p><b>Revision:</b> observar video y contar participaciones voluntarias.</p></div>
+          <div class="evidence"><b>00:42-01:20</b> preguntas de emociones con mano levantada.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">9.1</span><h3>Reconocimiento del esfuerzo</h3></div><div class="rating"><span class="badge bajo">Bajo</span><small>Confianza media</small></div></header>
+          <div class="grid2"><p>Hay elogio positivo, pero casi no se nombra esfuerzo, estrategia o perseverancia.</p><p><b>Mejora prioritaria:</b> “volviste a contar y corregiste”, “seguiste intentando”.</p></div>
+          <div class="evidence"><b>29:29-29:41</b> “hoy trabajaron como unos verdaderos matematicos”, positivo pero general.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">9.2</span><h3>Actitud positiva hacia desafios</h3></div><div class="rating"><span class="badge medio">Medio</span><small>Confianza media</small></div></header>
+          <div class="grid2"><p>No hay castigo por errores; ayuda a corregir. Falta explicitar que equivocarse es parte del aprendizaje.</p><p><b>Mejora:</b> “esta bien equivocarnos; contamos otra vez para aprender”.</p></div>
+          <div class="evidence"><b>16:20-17:13</b> corrige piezas de mas sin regaño fuerte.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">10.a</span><h3>Promocion de colaboracion</h3></div><div class="rating"><span class="badge medio">Medio</span><small>Revision visual necesaria</small></div></header>
+          <div class="grid2"><p>Hay equipos, parejas, turnos y compartir materiales. No se observa una tarea que requiera resolver juntos.</p><p><b>Mejora:</b> parejas con roles: uno cuenta, otro verifica, ambos explican.</p></div>
+          <div class="evidence"><b>13:52-14:10</b> “compartir entre parejitas”.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">10.b</span><h3>Habilidades interpersonales</h3></div><div class="rating"><span class="badge medio">Medio</span><small>Confianza media</small></div></header>
+          <div class="grid2"><p>Trabaja emociones, respeto y compartir. La intervencion es positiva pero breve.</p><p><b>Para Alto:</b> guiar perspectiva o empatia ante conflicto concreto.</p></div>
+          <div class="evidence"><b>00:42-01:20</b> emociones; <b>24:06-24:21</b> “hay que respetar el acuerdo y llevarse bien”.</div>
+        </article>
+
+        <article class="indicator">
+          <header><div><span class="code">10.c</span><h3>Colaboracion entre estudiantes</h3></div><div class="rating"><span class="badge na">NA</span><small>Revision visual necesaria</small></div></header>
+          <div class="grid2"><p>El texto dice que deben compartir, pero no muestra colaboracion real entre estudiantes.</p><p><b>Necesario:</b> video para verificar ayuda mutua, reparto de tareas y comunicacion entre pares.</p></div>
+          <div class="evidence"><b>21:39-21:49</b> “comparta con el amiguito”, evidencia de instruccion docente, no de colaboracion observable.</div>
+        </article>
+      </section>
+
+      <section>
+        <h2>Plan De Mejora Prioritario</h2>
+        <table>
+          <thead><tr><th>Prioridad</th><th>Accion concreta</th><th>Indicadores</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td>Convertir elogios generales en retroalimentacion especifica: “contaste cinco y te detuviste”.</td><td>3.2, 6.2, 9.1</td></tr>
+            <tr><td>2</td><td>Agregar preguntas de justificacion: “¿como sabes que son cinco?”, “¿que pasa si pongo uno mas?”.</td><td>5.1, 7.1, 7.4</td></tr>
+            <tr><td>3</td><td>Diseñar una mini-tarea cooperativa con roles: contador, verificador y portavoz.</td><td>8.2, 10.a, 10.c</td></tr>
+            <tr><td>4</td><td>Nombrar el error como oportunidad: “probemos otra vez; contar nos ayuda a aprender”.</td><td>6.1, 9.2</td></tr>
+            <tr><td>5</td><td>Registrar en video si participa la mayoria y si niñas y niños reciben oportunidades equivalentes.</td><td>1.2, 1.3, 2.4, 8.3</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="panel">
+        <h2>Rating Final De La Clase</h2>
+        <p><b>Rating LLM independiente:</b> 2.24/3, equivalente aproximado a 74.7/100.</p>
+        <p><b>Categoria:</b> Aprobar con observaciones.</p>
+        <p><b>Lectura profesional:</b> La clase es competente para Educacion Inicial: tiene clima afectivo, objetivo claro, actividades concretas y seguimiento del conteo. No alcanza una valoracion mas alta porque la evidencia muestra poca explicacion del razonamiento por parte de los estudiantes, retroalimentacion poco especifica y colaboracion aun superficial. Para una calificacion definitiva, el video debe confirmar los indicadores visuales.</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

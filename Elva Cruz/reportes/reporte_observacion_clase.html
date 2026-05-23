@@ -1,0 +1,1673 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reporte de observacion de clase - INEVAL/TEACH</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1f2933;
+      --muted: #64748b;
+      --line: #d7dee8;
+      --paper: #fbfcfe;
+      --panel: #ffffff;
+      --blue: #1d4ed8;
+      --teal: #0f766e;
+      --amber: #b45309;
+      --red: #b91c1c;
+      --violet: #6d28d9;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #e8edf3;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.45;
+    }
+    .page {
+      width: min(1120px, calc(100% - 32px));
+      margin: 24px auto;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 45px rgba(15, 23, 42, .12);
+    }
+    .cover {
+      padding: 40px 48px 28px;
+      border-bottom: 6px solid var(--blue);
+      background: linear-gradient(180deg, #fff, #f5f8fb);
+    }
+    .eyebrow {
+      margin: 0 0 12px;
+      color: var(--teal);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 0;
+      font-size: 34px;
+      line-height: 1.12;
+      letter-spacing: 0;
+    }
+    h2 {
+      margin: 0 0 16px;
+      font-size: 22px;
+      letter-spacing: 0;
+    }
+    h3 {
+      margin: 0;
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+    h4 {
+      margin: 0 0 6px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: var(--muted);
+    }
+    p { margin: 0 0 10px; }
+    .summary-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .metric {
+      min-height: 104px;
+      padding: 16px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+    .metric strong {
+      display: block;
+      margin-top: 8px;
+      font-size: 24px;
+    }
+    .metric span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    main { padding: 32px 48px 48px; }
+    section.report-section { margin: 0 0 32px; }
+    .two-col {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 24px;
+    }
+    .note-box, .source-box {
+      padding: 16px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+    }
+    .source-box dl {
+      display: grid;
+      grid-template-columns: 140px 1fr;
+      gap: 8px 12px;
+      margin: 0;
+      font-size: 13px;
+    }
+    .source-box dt { color: var(--muted); }
+    .source-box dd { margin: 0; overflow-wrap: anywhere; }
+    .domain-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .domain-card {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 8px 14px;
+      align-items: start;
+      padding: 14px;
+      border: 1px solid var(--line);
+      background: #fff;
+    }
+    .domain-card p {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .domain-card small {
+      grid-column: 2;
+      color: var(--muted);
+      text-align: right;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 72px;
+      padding: 5px 9px;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 12px;
+      line-height: 1;
+      text-transform: uppercase;
+    }
+    .badge.good { background: var(--teal); }
+    .badge.mid { background: var(--amber); }
+    .badge.low { background: var(--red); }
+    .badge.na { background: var(--muted); }
+    .review-flag {
+      display: inline-block;
+      padding: 4px 7px;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1;
+      text-transform: uppercase;
+      white-space: normal;
+      text-align: right;
+    }
+    .indicator {
+      margin: 0 0 16px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      background: #fff;
+      break-inside: avoid;
+    }
+    .indicator header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 16px;
+      margin-bottom: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--line);
+    }
+    .indicator header p {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .code {
+      display: inline-block;
+      margin-bottom: 6px;
+      color: var(--blue);
+      font-weight: 700;
+    }
+    .rating-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 7px;
+      white-space: nowrap;
+    }
+    .rating-block span {
+      color: var(--muted);
+      font-size: 12px;
+    }
+    .indicator-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      margin-bottom: 12px;
+    }
+    .evidence-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .evidence-list li {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 10px;
+      padding: 8px 0;
+      border-top: 1px solid #edf1f6;
+      font-size: 13px;
+    }
+    .evidence-list b { color: var(--violet); }
+    .muted { color: var(--muted); }
+    ul.clean {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .method-list {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .method-list li { margin-bottom: 8px; }
+    details.transcript-appendix {
+      border: 1px solid var(--line);
+      background: #fff;
+      padding: 14px;
+    }
+    details.transcript-appendix summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
+    .transcript-table {
+      width: 100%;
+      margin-top: 14px;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    .transcript-table td {
+      vertical-align: top;
+      padding: 7px 8px;
+      border-top: 1px solid #edf1f6;
+    }
+    .transcript-table td:first-child {
+      width: 110px;
+      color: var(--violet);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    @media print {
+      body { background: #fff; }
+      .page {
+        width: 100%;
+        margin: 0;
+        border: 0;
+        box-shadow: none;
+      }
+      .cover, main { padding-left: 24px; padding-right: 24px; }
+      .indicator { page-break-inside: avoid; }
+    }
+    @media (max-width: 820px) {
+      .cover, main { padding-left: 20px; padding-right: 20px; }
+      .summary-strip, .two-col, .domain-grid, .indicator-grid {
+        grid-template-columns: 1fr;
+      }
+      .indicator header {
+        grid-template-columns: 1fr;
+      }
+      .rating-block {
+        align-items: flex-start;
+      }
+      .evidence-list li {
+        grid-template-columns: 1fr;
+      }
+    }
+    </style>
+</head>
+<body>
+  <div class="page">
+    <header class="cover">
+      <p class="eyebrow">Reporte local de observacion de clase</p>
+      <h1>Analisis de clase demostrativa contra rubrica INEVAL/TEACH</h1>
+      <div class="summary-strip">
+        <div class="metric"><span>Decision sugerida</span><strong>Aprobar con observaciones</strong></div>
+        <div class="metric"><span>Puntaje medio computable</span><strong>2.30/3</strong></div>
+        <div class="metric"><span>Duracion transcriptiva</span><strong>29:41</strong></div>
+        <div class="metric"><span>Segmentos / palabras</span><strong>184 / 3020</strong></div>
+      </div>
+    </header>
+
+    <main>
+      <section class="report-section two-col">
+        <div class="note-box">
+          <h2>Lectura Ejecutiva</h2>
+          <p>La clase evidencia una estructura clara, trato respetuoso, lenguaje positivo constante y multiples actividades manipulativas alineadas con el numero 5. La recomendacion automatica es <b>Aprobar con observaciones</b>.</p>
+          <p>Las mejoras mas importantes estan en hacer mas especifica la retroalimentacion, promover explicaciones de los estudiantes, profundizar el pensamiento critico y documentar mejor autonomia, perseverancia y colaboracion sustancial.</p>
+        </div>
+        <div class="source-box">
+          <h2>Fuentes</h2>
+          <dl>
+            <dt>Transcripcion</dt><dd>text-data/1.tsv</dd>
+            <dt>Rubrica PDF</dt><dd>INEVAL_EVDO_Rúbrica-de-observación-de-clase.pdf</dd>
+            <dt>SHA rubrica</dt><dd>421525c68ca4a1fe</dd>
+            <dt>Planificacion</dt><dd>Planificacion_Clase_Dado_Numero5.md</dd>
+            <dt>Reporte</dt><dd>reportes/reporte_observacion_clase.html</dd>
+          </dl>
+        </div>
+      </section>
+
+      <section class="report-section">
+        <h2>Metodo De Comparacion</h2>
+        <ul class="method-list">
+          <li>Se usa <b>TSV</b> como entrada principal porque conserva marcas de tiempo por segmento; el TXT sirve solo como respaldo sin trazabilidad temporal.</li>
+          <li>La rubrica INEVAL/TEACH se representa como 10 dominios y 31 indicadores. Cada indicador se compara contra evidencia textual del transcript mediante artefactos JSON intermedios.</li>
+          <li>La calificacion es conservadora: cuando el audio no permite verificar una condicion visual, se baja la confianza o se marca <b>NA</b>.</li>
+          <li>Este reporte no reemplaza la observacion humana del video. Sirve para preparar revision, aprobacion y retroalimentacion con evidencias localizables.</li>
+        </ul>
+      </section>
+
+      <section class="report-section">
+        <h2>Separacion Texto / Video</h2>
+        <p>Los siguientes indicadores tienen evidencia preliminar desde la transcripcion, pero necesitan revision humana del video para confirmar cantidad de estudiantes, foco, participacion real o calidad de interacciones.</p>
+        <ul class="clean"><li><b>1.2</b>: El estudiantado se mantiene enfocado en la actividad.</li>
+<li><b>1.3</b>: El estudiantado participa activamente en las actividades de aprendizaje.</li>
+<li><b>2.3</b>: El o la docente responde a las necesidades del estudiantado.</li>
+<li><b>2.4</b>: El o la docente no exhibe sesgos y desafia los estereotipos en el aula.</li>
+<li><b>3.3</b>: El o la docente redirige el mal comportamiento y se enfoca en una conducta esperada.</li>
+<li><b>5.2</b>: El o la docente supervisa a la mayoria de los estudiantes durante el trabajo individual/grupal.</li>
+<li><b>7.3</b>: El estudiantado desarrolla actividades de pensamiento critico.</li>
+<li><b>7.4</b>: El estudiantado explica sus ideas o hace preguntas abiertas.</li>
+<li><b>8.3</b>: El estudiantado se ofrece para participar en la clase.</li>
+<li><b>10.a</b>: El o la docente promueve la colaboracion entre el estudiantado a traves de sus interacciones.</li>
+<li><b>10.c</b>: El estudiantado colabora entre ellos a traves de sus interacciones.</li></ul>
+      </section>
+
+      <section class="report-section two-col">
+        <div>
+          <h2>Fortalezas Principales</h2>
+          <ul class="clean"><li><b>Tiempo de aprendizaje</b>: nivel Alto.</li>
+<li><b>Cultura de aula - Ambiente de aprendizaje</b>: nivel Alto.</li>
+<li><b>Aprendizaje guiado - Facilitacion de la clase</b>: nivel Alto.</li>
+<li><b>Aprendizaje guiado - Verificacion de la comprension</b>: nivel Alto.</li></ul>
+        </div>
+        <div>
+          <h2>Prioridades De Mejora</h2>
+          <ul class="clean"><li><b>Cultura de aula - Expectativas positivas de comportamiento</b>: reforzar indicadores con nivel Medio.</li>
+<li><b>Aprendizaje guiado - Retroalimentacion especifica</b>: reforzar indicadores con nivel Medio.</li>
+<li><b>Aprendizaje guiado - Pensamiento critico</b>: reforzar indicadores con nivel Bajo.</li>
+<li><b>Habilidades socioemocionales - Autonomia</b>: reforzar indicadores con nivel Medio.</li>
+<li><b>Habilidades socioemocionales - Perseverancia</b>: reforzar indicadores con nivel Bajo.</li></ul>
+        </div>
+      </section>
+
+      <section class="report-section">
+        <h2>Resumen Por Dominio</h2>
+        <div class="domain-grid">
+        <section class="domain-card">
+          <div>
+            <h3>Tiempo de aprendizaje</h3>
+            <p>3 de 3 indicadores con calificacion computable.</p>
+          </div>
+          <strong class="badge good">Alto</strong>
+          <small>2.67/3</small>
+        </section>
+        
+
+        <section class="domain-card">
+          <div>
+            <h3>Cultura de aula - Ambiente de aprendizaje</h3>
+            <p>3 de 4 indicadores con calificacion computable.</p>
+          </div>
+          <strong class="badge good">Alto</strong>
+          <small>2.67/3</small>
+        </section>
+        
+
+        <section class="domain-card">
+          <div>
+            <h3>Cultura de aula - Expectativas positivas de comportamiento</h3>
+            <p>3 de 3 indicadores con calificacion computable.</p>
+          </div>
+          <strong class="badge mid">Medio</strong>
+          <small>2.33/3</small>
+        </section>
+        
+
+        <section class="domain-card">
+          <div>
+            <h3>Aprendizaje guiado - Facilitacion de la clase</h3>
+            <p>4 de 4 indicadores con calificacion computable.</p>
+          </div>
+          <strong class="badge good">Alto</strong>
+          <small>3.00/3</small>
+        </section>
+        
+
+        <section class="domain-card">
+          <div>
+            <h3>Aprendizaje guiado - Verificacion de la comprension</h3>
+            <p>3 de 3 indicadores con calificacion computable.</p>
+          </div>
+          <strong class="badge good">Alto</strong>
+          <small>2.67/3</small>
+        </section>
+        
+
+        <section class="domain-card">
+          <div>
+            <h3>Aprendizaje guiado - Retroalimentacion especifica</h3>
+            <p>2 de 2 indicadores con calificacion computable.</p>
+          </div>
+          <strong class="badge mid">Medio</strong>
+          <small>2.00/3</small>
+        </section>
+        
+
+        <section class="domain-card">
+          <div>
+            <h3>Aprendizaje guiado - Pensamiento critico</h3>
+            <p>4 de 4 indicadores con calificacion computable.</p>
+          </div>
+          <strong class="badge low">Bajo</strong>
+          <small>1.75/3</small>
+        </section>
+        
+
+        <section class="domain-card">
+          <div>
+            <h3>Habilidades socioemocionales - Autonomia</h3>
+            <p>3 de 3 indicadores con calificacion computable.</p>
+          </div>
+          <strong class="badge mid">Medio</strong>
+          <small>2.00/3</small>
+        </section>
+        
+
+        <section class="domain-card">
+          <div>
+            <h3>Habilidades socioemocionales - Perseverancia</h3>
+            <p>2 de 2 indicadores con calificacion computable.</p>
+          </div>
+          <strong class="badge low">Bajo</strong>
+          <small>1.50/3</small>
+        </section>
+        
+
+        <section class="domain-card">
+          <div>
+            <h3>Habilidades socioemocionales - Habilidades sociales y colaborativas</h3>
+            <p>3 de 3 indicadores con calificacion computable.</p>
+          </div>
+          <strong class="badge mid">Medio</strong>
+          <small>2.00/3</small>
+        </section>
+        </div>
+      </section>
+
+      <section class="report-section">
+        <h2>Alineacion Con La Planificacion</h2>
+        <p>La planificacion declara una secuencia Inicio - Desarrollo - Cierre para trabajar la relacion numero-cantidad hasta 5. En la transcripcion aparecen saludo, activacion emocional, acuerdos, objetivo, cancion/video, dado, manipulacion de objetos, produccion con stickers y cierre.</p>
+        <p class="muted">Actividades detectadas en el archivo de planificacion:</p>
+        <ul class="clean"><li>Actividad 1.1 — Bienvenida y activación emocional (2 min)</li>
+<li>Actividad 1.2 — Establecimiento de normas y acuerdos (2 min)</li>
+<li>Actividad 1.3 — Activación de conocimientos previos y motivación (4 min)</li>
+<li>Actividad 2.1 — Exploración guiada: &quot;La aventura del número 5&quot; (5 min)</li>
+<li>Actividad 2.2 — Juego grupal: &quot;El dado mágico del 5&quot; (5 min)</li>
+<li>Actividad 2.3 — Rincón creativo: &quot;Decoro mi número 5&quot; (6 min)</li>
+<li>Actividad 3.1 — Socialización y verificación colectiva (3 min)</li>
+<li>Actividad 3.2 — Canción de despedida y transferencia (3 min)</li></ul>
+      </section>
+
+      <section class="report-section">
+        <h2>Evaluacion Detallada De Indicadores</h2>
+        
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">1.1</span>
+              <h3>El o la docente enseña u ofrece una actividad de aprendizaje para la mayoria de los estudiantes.</h3>
+              <p>Tiempo de aprendizaje</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge good">Sí</strong>
+              <span>Confianza: Alta</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>La clase mantiene una secuencia de actividades sobre el numero 5: objetivo, cancion, dado, conteo con pinzas, torres y stickers. Coincidencias textuales: 96.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Mantener las transiciones cortas y anticipar materiales para que la actividad no se detenga.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>00:22-00:28</b><span>seis niñas, ocho niños. El tema en partir es el número cinco. Bienvenidos.</span></li>
+<li><b>03:23-03:34</b><span>cinco. Sí. Vamos a identificar el número cinco y vamos a saber que cuando, que cuando decimos que</span></li>
+<li><b>03:58-04:07</b><span>al lado de Paula. Muy bien. Tranquilitos. Chicos, vamos a mirar el video, el video del número cinco,</span></li>
+<li><b>04:46-05:10</b><span>hasta cinco el número cinco el número cinco hasta cinco cuatro cinco</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">1.2</span>
+              <h3>El estudiantado se mantiene enfocado en la actividad.</h3>
+              <p>Tiempo de aprendizaje</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge mid">Medio</strong>
+              <span>Confianza: Baja</span>
+              <span class="review-flag">Requiere revision visual</span>
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>El audio muestra llamados a sentarse, guardar silencio, mirar o respetar acuerdos. Como no hay video, no se puede contar estudiantes desenfocados. Coincidencias textuales: 17.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Reducir instrucciones simultaneas y usar señales breves para recuperar foco sin cortar la actividad.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>01:38-01:46</b><span>Hace silencio. Y cuando la profe habla, usted hace silencio. Cuando la profe habla,</span></li>
+<li><b>03:51-03:58</b><span>acá. Venga encito. Váyase para allá, al lado de leíto y usted viene para acá. Es bien atentos,</span></li>
+<li><b>06:49-06:56</b><span>este ha sido un dado, mire, atentos, este ha sido un dado, mire, este dado tiene el número cinco,</span></li>
+<li><b>07:46-07:54</b><span>hacer rodar así, cayó número cinco, muy bien, ya, ajá, sentadito por favor, Dilan, esto muy</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">1.3</span>
+              <h3>El estudiantado participa activamente en las actividades de aprendizaje.</h3>
+              <p>Tiempo de aprendizaje</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge good">Sí</strong>
+              <span>Confianza: Media</span>
+              <span class="review-flag">Requiere revision visual</span>
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>Hay participacion corporal y manipulativa: cantar, contar, lanzar el dado, saltar, poner pinzas, armar torres y colocar stickers. Coincidencias textuales: 20.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Conservar la variedad de acciones y cerrar cada actividad con una comprobacion breve de comprension.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>07:40-07:46</b><span>nombrar a un amiguito que lance o haga rodar el dado o podemos lanzar para arriba o le podemos</span></li>
+<li><b>08:25-08:33</b><span>allá, lance mi amor, el dado, lance bien fuerte. Oh, qué número salría, a ver qué número salría,</span></li>
+<li><b>08:53-08:59</b><span>saltitos, equipo número uno, levántese, levántese equipo número uno y vamos a contar cinco saltos,</span></li>
+<li><b>09:56-10:04</b><span>para movernos, el cuerpito, lancen mi amor, otra vez cayó en el número, no cayó en el número</span></li>
+<li><b>10:59-11:13</b><span>vamos a hacer, mire, la albita tiene un CD y tiene unas pinzas, usted va a coger el CD y le va a</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">2.1</span>
+              <h3>El o la docente trata respetuosamente al estudiantado.</h3>
+              <p>Cultura de aula - Ambiente de aprendizaje</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge good">Alto</strong>
+              <span>Confianza: Alta</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>Se detectan expresiones de trato cortes o afectivo, con uso frecuente de &#x27;por favor&#x27;, &#x27;gracias&#x27; y formas de cercania. Coincidencias textuales: 56.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Mantener el trato calido, cuidando que las correcciones con nombres propios no se vuelvan exposicion publica.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>00:00-00:08</b><span>Buenos días. Mi nombre es Elva Esperanza Cruz Ruiz, mi cédula de identidad es 100,</span></li>
+<li><b>01:12-01:20</b><span>feliz? Muy bien. sean todos ustedes bienvenidos a este día de clase.</span></li>
+<li><b>03:42-03:51</b><span>ya nos vamos a sacar el saquito. Sientese mi amor. Tranquilito. ¿Qué pasó? Ya le molesto. Venga para</span></li>
+<li><b>07:46-07:54</b><span>hacer rodar así, cayó número cinco, muy bien, ya, ajá, sentadito por favor, Dilan, esto muy</span></li>
+<li><b>08:25-08:33</b><span>allá, lance mi amor, el dado, lance bien fuerte. Oh, qué número salría, a ver qué número salría,</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">2.2</span>
+              <h3>El o la docente usa lenguaje positivo con el estudiantado.</h3>
+              <p>Cultura de aula - Ambiente de aprendizaje</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge good">Alto</strong>
+              <span>Confianza: Alta</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>El elogio aparece de forma sostenida durante la clase. Coincidencias textuales positivas: 145.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Elevar la calidad del elogio agregando que hizo bien el estudiante, no solo &#x27;muy bien&#x27;.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>00:31-00:42</b><span>Hola chicos, ¿cómo están? Bien. Vea, ¿sabe que la elvita? Niños y niñas, muy bien. ¿Sabe</span></li>
+<li><b>01:03-01:12</b><span>Oh, qué lindo. Es muy bueno trabajar con gente muy feliz. A ver, levante la mano. ¿Quién está</span></li>
+<li><b>01:46-01:53</b><span>usted hace silencio. Muy bien. ¿Quién va a cumplir este acuerdo? Muy bien. El que cumple este</span></li>
+<li><b>02:19-02:27</b><span>Sí, muy bien. No bullas de así. Muy bien. Tiene que levantar la mano para participar. Muy bien. Muy</span></li>
+<li><b>02:44-02:53</b><span>esto. Muy bien, respetar a los amiguitos. ¿Le tiene que molestar al amiguito? ¿Le tiene que coger el cabello?</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">2.3</span>
+              <h3>El o la docente responde a las necesidades del estudiantado.</h3>
+              <p>Cultura de aula - Ambiente de aprendizaje</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge mid">Medio</strong>
+              <span>Confianza: Media</span>
+              <span class="review-flag">Requiere revision visual</span>
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>El audio evidencia apoyos puntuales: reubicar estudiantes, entregar material faltante y acompañar conteos individuales. Coincidencias textuales: 14.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Nombrar con claridad la necesidad y la solucion: &#x27;te falta un material, aqui tienes uno&#x27; o &#x27;vamos a contar juntos&#x27;.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>01:59-02:08</b><span>recuerde todo el tiempo. Que no tiene que hacer bullitas. Muy bien. Acá tengo otro acuerdo,</span></li>
+<li><b>03:42-03:51</b><span>ya nos vamos a sacar el saquito. Sientese mi amor. Tranquilito. ¿Qué pasó? Ya le molesto. Venga para</span></li>
+<li><b>08:16-08:25</b><span>dado, a ver, Valentina va a lanzar el dado, venga para acá, venga, muy bien, lanza el dado para</span></li>
+<li><b>12:27-12:36</b><span>por favor, vilan para atrás, muy bien, Arlet, a ver la ayuda, mi amor, siga, siga, siga, por favor,</span></li>
+<li><b>14:31-14:39</b><span>estamos en silencio, muy bien, venga para acá mi amor, venga para acá, ya, silencio,</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">2.4</span>
+              <h3>El o la docente no exhibe sesgos y desafia los estereotipos en el aula.</h3>
+              <p>Cultura de aula - Ambiente de aprendizaje</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge na">NA</strong>
+              <span>Confianza: Baja</span>
+              <span class="review-flag">Requiere revision visual</span>
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>La transcripcion no permite verificar distribucion de oportunidades por genero ni acciones para desafiar estereotipos.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Para una evaluacion completa, complementar el reporte con revision de video y lista de participaciones por genero.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <p class="muted">No hay evidencia textual suficiente en la transcripcion.</p>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">3.1</span>
+              <h3>El o la docente establece expectativas claras de comportamientos para las actividades de la clase.</h3>
+              <p>Cultura de aula - Expectativas positivas de comportamiento</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge good">Alto</strong>
+              <span>Confianza: Alta</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>Las normas se trabajan al inicio y se retoman durante la clase. Coincidencias textuales sobre acuerdos, silencio, respeto, turnos o compartir: 48.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Antes de cada nueva actividad, repetir solo la expectativa clave para evitar sobrecargar instrucciones.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>01:25-01:38</b><span>Muy bien. Ahora vamos a hacer unos acuerdos. Vean, mire, mire, mire. ¿Qué significará este acuerdo?</span></li>
+<li><b>01:53-01:59</b><span>acuerdo tendrá carita feliz. Mire, le voy a poner aquí. Le voy a poner aquí para que usted</span></li>
+<li><b>02:19-02:27</b><span>Sí, muy bien. No bullas de así. Muy bien. Tiene que levantar la mano para participar. Muy bien. Muy</span></li>
+<li><b>02:44-02:53</b><span>esto. Muy bien, respetar a los amiguitos. ¿Le tiene que molestar al amiguito? ¿Le tiene que coger el cabello?</span></li>
+<li><b>03:58-04:07</b><span>al lado de Paula. Muy bien. Tranquilitos. Chicos, vamos a mirar el video, el video del número cinco,</span></li>
+<li><b>07:25-07:32</b><span>un aplauso, de acuerdo, pero trabajamos en equipos, primero trabaja el equipo de acá y después</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">3.2</span>
+              <h3>El o la docente reconoce el buen comportamiento de los estudiantes.</h3>
+              <p>Cultura de aula - Expectativas positivas de comportamiento</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge mid">Medio</strong>
+              <span>Confianza: Media</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>Hay reconocimiento frecuente, pero muchas frases son generales. La rubrica exige reconocer el comportamiento especifico esperado. Coincidencias textuales: 130.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Cambiar elogios generales por evidencias: &#x27;gracias por esperar tu turno&#x27; o &#x27;este equipo compartio el material&#x27;.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>00:31-00:42</b><span>Hola chicos, ¿cómo están? Bien. Vea, ¿sabe que la elvita? Niños y niñas, muy bien. ¿Sabe</span></li>
+<li><b>01:12-01:20</b><span>feliz? Muy bien. sean todos ustedes bienvenidos a este día de clase.</span></li>
+<li><b>01:46-01:53</b><span>usted hace silencio. Muy bien. ¿Quién va a cumplir este acuerdo? Muy bien. El que cumple este</span></li>
+<li><b>02:19-02:27</b><span>Sí, muy bien. No bullas de así. Muy bien. Tiene que levantar la mano para participar. Muy bien. Muy</span></li>
+<li><b>02:44-02:53</b><span>esto. Muy bien, respetar a los amiguitos. ¿Le tiene que molestar al amiguito? ¿Le tiene que coger el cabello?</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">3.3</span>
+              <h3>El o la docente redirige el mal comportamiento y se enfoca en una conducta esperada.</h3>
+              <p>Cultura de aula - Expectativas positivas de comportamiento</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge mid">Medio</strong>
+              <span>Confianza: Media</span>
+              <span class="review-flag">Requiere revision visual</span>
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>Las redirecciones suelen funcionar como recordatorios de acuerdos, aunque varias se formulan como orden directa o prohibicion. Coincidencias textuales: 13.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Redirigir siempre hacia la accion esperada: &#x27;manos quietas y ojos al material&#x27; en lugar de solo &#x27;no gritar&#x27;.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>02:58-03:05</b><span>Muy bien, ni dar besos a los amigos. Hay que respetarles y hay que compartir. ¿De acuerdo? Muy bien.</span></li>
+<li><b>07:46-07:54</b><span>hacer rodar así, cayó número cinco, muy bien, ya, ajá, sentadito por favor, Dilan, esto muy</span></li>
+<li><b>09:20-09:26</b><span>primero equipo número uno, respetando el turno y después equipo número dos, muy bien, a ver chicos,</span></li>
+<li><b>18:40-18:45</b><span>todo, guarde todo, guarde todo, guarde pronto, sentaditos ahí, sentaditos todos, vamos a hacer</span></li>
+<li><b>19:16-19:25</b><span>parar, muy bien, mirará, ve, ve, hay que respetar a los amiguitos, eh, rafita, sin gritar, sin gritar,</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">4.1</span>
+              <h3>El o la docente articula explicitamente los objetivos de la clase y relaciona las actividades con tales objetivos.</h3>
+              <p>Aprendizaje guiado - Facilitacion de la clase</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge good">Alto</strong>
+              <span>Confianza: Alta</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>El objetivo se expresa al inicio y las actividades observadas se mantienen alineadas con relacion numero-cantidad hasta 5. Coincidencias textuales: 8.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Cerrar cada bloque preguntando &#x27;que hicimos para saber que son cinco&#x27; para reforzar la relacion con el objetivo.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>03:23-03:34</b><span>cinco. Sí. Vamos a identificar el número cinco y vamos a saber que cuando, que cuando decimos que</span></li>
+<li><b>05:36-05:49</b><span>haya cinco cosas? Habrá algo. Los números, ¿O qué? Los números, muy bien, aquí será que hay</span></li>
+<li><b>06:07-06:18</b><span>tómele una fotito, el número cinco nos indica que hay cinco cosas, vea como este guante, como</span></li>
+<li><b>11:25-11:34</b><span>cinco, será que le pongo otra? No, ¿por qué? Porque estamos estudiando el número cinco,</span></li>
+<li><b>29:16-29:22</b><span>¿qué aprendimos hoy? El número cinco, el número cinco indica que hay cinco cosas,</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">4.2</span>
+              <h3>El o la docente explica el contenido usando multiples formas de representacion.</h3>
+              <p>Aprendizaje guiado - Facilitacion de la clase</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge good">Alto</strong>
+              <span>Confianza: Alta</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>Aparecen representaciones auditivas, corporales, visuales y manipulativas: cancion, video, dedos, dado, pinzas, torres y stickers. Coincidencias textuales: 41.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Conservar tres representaciones por concepto y verbalizar explicitamente que todas representan la misma cantidad.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>03:58-04:07</b><span>al lado de Paula. Muy bien. Tranquilitos. Chicos, vamos a mirar el video, el video del número cinco,</span></li>
+<li><b>05:10-05:28</b><span>cuatro cinco fuerte, cuatro, sí, más fuerte muy bien, mire, hemos escuchado la canción,</span></li>
+<li><b>06:07-06:18</b><span>tómele una fotito, el número cinco nos indica que hay cinco cosas, vea como este guante, como</span></li>
+<li><b>06:37-06:49</b><span>correcto, muy bien, ahora vamos a jugar, vamos a jugar con el con el dado mágico, mire, mire,</span></li>
+<li><b>07:13-07:19</b><span>en equipo, vamos a lanzar el dado, así le puede hacer rodar o le puede lanzar para arriba,</span></li>
+<li><b>07:40-07:46</b><span>nombrar a un amiguito que lance o haga rodar el dado o podemos lanzar para arriba o le podemos</span></li>
+<li><b>08:16-08:25</b><span>dado, a ver, Valentina va a lanzar el dado, venga para acá, venga, muy bien, lanza el dado para</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">4.3</span>
+              <h3>El o la docente conecta la clase con otros conocimientos, experiencias cotidianas o problemas del mundo real.</h3>
+              <p>Aprendizaje guiado - Facilitacion de la clase</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge good">Alto</strong>
+              <span>Confianza: Media</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>El numero 5 se conecta con dedos, objetos del aula y una tarea de busqueda en casa con la familia. Coincidencias textuales: 9.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Hacer mas visibles las conexiones cotidianas: cinco juguetes, cinco frutas, cinco pasos o cinco integrantes.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>03:34-03:42</b><span>tenemos el número cinco, también tenemos que tener cinco cosas, cinco objetos. Muy bien. Ya,</span></li>
+<li><b>05:28-05:36</b><span>¿De qué hablaba la canción? El número cinco. Muy bien, ¿Y aquí en el salón habrá algo que</span></li>
+<li><b>06:07-06:18</b><span>tómele una fotito, el número cinco nos indica que hay cinco cosas, vea como este guante, como</span></li>
+<li><b>29:16-29:22</b><span>¿qué aprendimos hoy? El número cinco, el número cinco indica que hay cinco cosas,</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">4.4</span>
+              <h3>El o la docente modela los procesos de aprendizaje mediante demostraciones o verbalizacion en voz alta.</h3>
+              <p>Aprendizaje guiado - Facilitacion de la clase</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge good">Alto</strong>
+              <span>Confianza: Alta</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>La docente muestra el procedimiento de contar hasta cinco, detenerse y retirar elementos de mas. Coincidencias textuales: 24.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Aumentar verbalizacion metacognitiva: &#x27;me detengo porque ya llegue a cinco&#x27;.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>06:25-06:37</b><span>uno, dos, tres, cuatro, cinco, muy bien, el número cinco nos indica que hay cinco dedos,</span></li>
+<li><b>08:46-08:53</b><span>uno, dos, tres, cuatro, cinco, muy bien, ahora se van a levantar los chicos y van a dar cinco</span></li>
+<li><b>10:09-10:22</b><span>uno, dos, tres, cuatro, cinco, muy bien, todos a tomar asiento, bravo, bravo, bravo, muy bien,</span></li>
+<li><b>11:13-11:25</b><span>sujetar con una mano y con la otra mano, con las pincitas, vea, uno, cuente, dos, tres, cuatro,</span></li>
+<li><b>11:43-11:55</b><span>a poner solamente cinco pinzas, ¿de acuerdo? A ver, vamos, uno, dos, tres, cuatro, cinco, ¿de acuerdo?</span></li>
+<li><b>16:21-16:28</b><span>aquí, retiramos esta, está de más, saquenle mi amor, eso, vuelva a contar, no, eso está bien,</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">5.1</span>
+              <h3>El o la docente hace preguntas o usa estrategias para determinar el nivel de comprension.</h3>
+              <p>Aprendizaje guiado - Verificacion de la comprension</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge good">Alto</strong>
+              <span>Confianza: Media</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>Hay preguntas abiertas o de comprobacion, junto con conteos individuales y revisiones de productos. Coincidencias textuales: 34.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Diferenciar preguntas de coro de preguntas individuales para asegurar evidencia de comprension de la mayoria.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>01:25-01:38</b><span>Muy bien. Ahora vamos a hacer unos acuerdos. Vean, mire, mire, mire. ¿Qué significará este acuerdo?</span></li>
+<li><b>02:08-02:17</b><span>mire. Aquí tengo otro acuerdo. ¿Qué significará este? Para participar. Muy bien. Usted.</span></li>
+<li><b>02:36-02:44</b><span>elbita le ha puesto esto, la profe, para que usted recuerde estas cartitas. Mire. A ver qué significará</span></li>
+<li><b>05:28-05:36</b><span>¿De qué hablaba la canción? El número cinco. Muy bien, ¿Y aquí en el salón habrá algo que</span></li>
+<li><b>09:27-09:40</b><span>equipo número uno, uno, dos, cuente, tres, cuatro, cinco, muy bien, tome asientito, tome asiento,</span></li>
+<li><b>11:13-11:25</b><span>sujetar con una mano y con la otra mano, con las pincitas, vea, uno, cuente, dos, tres, cuatro,</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">5.2</span>
+              <h3>El o la docente supervisa a la mayoria de los estudiantes durante el trabajo individual/grupal.</h3>
+              <p>Aprendizaje guiado - Verificacion de la comprension</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge good">Alto</strong>
+              <span>Confianza: Media</span>
+              <span class="review-flag">Requiere revision visual</span>
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>El audio muestra circulacion o revision sistematica: la docente &#x27;visita&#x27; trabajos, nombra estudiantes y corrige cantidades. Coincidencias textuales: 19.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Registrar mentalmente quienes ya fueron observados para equilibrar la supervision del grupo completo.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>06:18-06:25</b><span>este súper guante, mire, la elbita ha tenido un súper guante, mire, a ver, contamos los deditos,</span></li>
+<li><b>09:04-09:11</b><span>usted, eso, muy bien, hasta ahí equipo número uno, a ver, contamos, saltitos, saltamos, uno,</span></li>
+<li><b>14:10-14:16</b><span>contamos, cuente, cuente, porque ya le va a visitar el número cinco, para ver si es que ha</span></li>
+<li><b>15:14-15:22</b><span>cuente, ya le va a visitar el número cinco, aquí tiene mi amor, cuente, cuente, ya le va</span></li>
+<li><b>15:39-15:54</b><span>cuente, a ver, contamos, uno, dos, uno, dos, tres, cuatro, será que nos falta uno, falta uno, a ver,</span></li>
+<li><b>16:08-16:21</b><span>Cd, a ver, like, muy bien, like, a ver, contamos, Matías, una, dos, tres, cuatro, cinco, ya paramos</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">5.3</span>
+              <h3>El o la docente ajusta la clase al nivel de conocimiento del grupo.</h3>
+              <p>Aprendizaje guiado - Verificacion de la comprension</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge mid">Medio</strong>
+              <span>Confianza: Media</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>Hay ajustes puntuales: agregar una pieza, retirar una de mas y volver a contar. No se observa una re-ensenanza sustancial o un reto diferenciado. Coincidencias textuales: 18.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Preparar dos respuestas: apoyo concreto para quien aun no llega a cinco y reto adicional para quien termina temprano.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>12:05-12:13</b><span>le ponemos una carita feliz, contamos hasta cinco y paramos, vea porque la albita tiene más pinzas,</span></li>
+<li><b>14:03-14:10</b><span>contamos hasta cinco y paramos, o con Cd, de la su amigo un Cd, de la, al Rafa un Cd, a ver,</span></li>
+<li><b>15:00-15:14</b><span>el leíto no tiene, sí, tome mi amor el Cd, es bravo, venga aquí, cuente mi amor,</span></li>
+<li><b>15:30-15:39</b><span>ya mi amor, siga trabajando, mire el número cinco con estos ojitos le va a visitar, a ver,</span></li>
+<li><b>16:21-16:28</b><span>aquí, retiramos esta, está de más, saquenle mi amor, eso, vuelva a contar, no, eso está bien,</span></li>
+<li><b>17:13-17:22</b><span>cinco, muy bien chicos, muy bien, like, like, uno, dos, tres, cuatro, cinco, falta una, muy bien,</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">6.1</span>
+              <h3>El o la docente hace comentarios especificos o cuestiona para clarificar confusiones.</h3>
+              <p>Aprendizaje guiado - Retroalimentacion especifica</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge mid">Medio</strong>
+              <span>Confianza: Media</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>La retroalimentacion corrige errores de cantidad, pero suele quedarse en &#x27;falta una&#x27; o &#x27;hay una de mas&#x27; sin explicar la estrategia. Coincidencias textuales: 9.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Agregar pista especifica: &#x27;toca cada pinza una sola vez mientras cuentas&#x27; o &#x27;compara con tus cinco dedos&#x27;.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>16:21-16:28</b><span>aquí, retiramos esta, está de más, saquenle mi amor, eso, vuelva a contar, no, eso está bien,</span></li>
+<li><b>17:13-17:22</b><span>cinco, muy bien chicos, muy bien, like, like, uno, dos, tres, cuatro, cinco, falta una, muy bien,</span></li>
+<li><b>23:10-23:18</b><span>uno de más, retiramos uno, retiramos uno, uno, eso, ahí, cinco, cinco, uno, dos, excelente,</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">6.2</span>
+              <h3>El o la docente hace comentarios especificos para ayudar a identificar logros.</h3>
+              <p>Aprendizaje guiado - Retroalimentacion especifica</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge mid">Medio</strong>
+              <span>Confianza: Media</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>Hay muchos reconocimientos de logro, pero predominan &#x27;muy bien&#x27;, &#x27;correcto&#x27; y &#x27;excelente&#x27;, con poca descripcion del logro especifico. Coincidencias textuales: 134.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Nombrar el logro: &#x27;contaste cinco y te detuviste&#x27; o &#x27;compartiste el material con tu companero&#x27;.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>00:31-00:42</b><span>Hola chicos, ¿cómo están? Bien. Vea, ¿sabe que la elvita? Niños y niñas, muy bien. ¿Sabe</span></li>
+<li><b>01:12-01:20</b><span>feliz? Muy bien. sean todos ustedes bienvenidos a este día de clase.</span></li>
+<li><b>01:46-01:53</b><span>usted hace silencio. Muy bien. ¿Quién va a cumplir este acuerdo? Muy bien. El que cumple este</span></li>
+<li><b>02:19-02:27</b><span>Sí, muy bien. No bullas de así. Muy bien. Tiene que levantar la mano para participar. Muy bien. Muy</span></li>
+<li><b>02:44-02:53</b><span>esto. Muy bien, respetar a los amiguitos. ¿Le tiene que molestar al amiguito? ¿Le tiene que coger el cabello?</span></li>
+<li><b>03:12-03:23</b><span>fotito. Muy bien. Saben que el día de hoy, ya, saben que el día de hoy vamos a trabajar el número</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">7.1</span>
+              <h3>El o la docente hace preguntas abiertas.</h3>
+              <p>Aprendizaje guiado - Pensamiento critico</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge mid">Medio</strong>
+              <span>Confianza: Media</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>Hay preguntas abiertas o semiabiertas, pero pocas piden justificar o ampliar el razonamiento infantil. Coincidencias textuales: 15.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Incluir preguntas breves de explicacion: &#x27;como sabes que hay cinco&#x27; y &#x27;que pasaria si pongo uno mas&#x27;.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>01:25-01:38</b><span>Muy bien. Ahora vamos a hacer unos acuerdos. Vean, mire, mire, mire. ¿Qué significará este acuerdo?</span></li>
+<li><b>02:08-02:17</b><span>mire. Aquí tengo otro acuerdo. ¿Qué significará este? Para participar. Muy bien. Usted.</span></li>
+<li><b>02:36-02:44</b><span>elbita le ha puesto esto, la profe, para que usted recuerde estas cartitas. Mire. A ver qué significará</span></li>
+<li><b>05:28-05:36</b><span>¿De qué hablaba la canción? El número cinco. Muy bien, ¿Y aquí en el salón habrá algo que</span></li>
+<li><b>11:25-11:34</b><span>cinco, será que le pongo otra? No, ¿por qué? Porque estamos estudiando el número cinco,</span></li>
+<li><b>15:39-15:54</b><span>cuente, a ver, contamos, uno, dos, uno, dos, tres, cuatro, será que nos falta uno, falta uno, a ver,</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">7.2</span>
+              <h3>El o la docente ofrece actividades de pensamiento critico.</h3>
+              <p>Aprendizaje guiado - Pensamiento critico</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge mid">Medio</strong>
+              <span>Confianza: Media</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>Las actividades piden identificar, contar, comparar si falta o sobra y relacionar simbolo-cantidad. Son pertinentes, aunque repetitivas. Coincidencias textuales: 6.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Agregar un pequeno problema nuevo: &#x27;tenemos cuatro, que hacemos para llegar a cinco&#x27; o clasificar conjuntos que si/no son cinco.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>11:25-11:34</b><span>cinco, será que le pongo otra? No, ¿por qué? Porque estamos estudiando el número cinco,</span></li>
+<li><b>17:13-17:22</b><span>cinco, muy bien chicos, muy bien, like, like, uno, dos, tres, cuatro, cinco, falta una, muy bien,</span></li>
+<li><b>23:10-23:18</b><span>uno de más, retiramos uno, retiramos uno, uno, eso, ahí, cinco, cinco, uno, dos, excelente,</span></li>
+<li><b>28:58-29:04</b><span>uno más, hay seis, muy bien, a ver, arriba, arriba, arriba, arriba, arriba, arriba, arriba su tarea,</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">7.3</span>
+              <h3>El estudiantado desarrolla actividades de pensamiento critico.</h3>
+              <p>Aprendizaje guiado - Pensamiento critico</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge mid">Medio</strong>
+              <span>Confianza: Baja</span>
+              <span class="review-flag">Requiere revision visual</span>
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>El transcript indica acciones de conteo y correccion de cantidades, pero no permite ver cuanta reflexion realiza cada estudiante. Coincidencias textuales: 28.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Pedir a varios estudiantes que muestren y expliquen como decidieron que ya tienen cinco.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>06:07-06:18</b><span>tómele una fotito, el número cinco nos indica que hay cinco cosas, vea como este guante, como</span></li>
+<li><b>09:27-09:40</b><span>equipo número uno, uno, dos, cuente, tres, cuatro, cinco, muy bien, tome asientito, tome asiento,</span></li>
+<li><b>11:13-11:25</b><span>sujetar con una mano y con la otra mano, con las pincitas, vea, uno, cuente, dos, tres, cuatro,</span></li>
+<li><b>14:10-14:16</b><span>contamos, cuente, cuente, porque ya le va a visitar el número cinco, para ver si es que ha</span></li>
+<li><b>15:00-15:14</b><span>el leíto no tiene, sí, tome mi amor el Cd, es bravo, venga aquí, cuente mi amor,</span></li>
+<li><b>15:39-15:54</b><span>cuente, a ver, contamos, uno, dos, uno, dos, tres, cuatro, será que nos falta uno, falta uno, a ver,</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">7.4</span>
+              <h3>El estudiantado explica sus ideas o hace preguntas abiertas.</h3>
+              <p>Aprendizaje guiado - Pensamiento critico</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge low">Bajo</strong>
+              <span>Confianza: Baja</span>
+              <span class="review-flag">Requiere revision visual</span>
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>La transcripcion no separa voces ni registra explicaciones extensas de estudiantes; la mayoria de respuestas aparentan ser breves. Coincidencias textuales: 9.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Reservar momentos para que uno o dos ninos verbalicen: &#x27;tengo cinco porque conte...&#x27;.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>03:34-03:42</b><span>tenemos el número cinco, también tenemos que tener cinco cosas, cinco objetos. Muy bien. Ya,</span></li>
+<li><b>05:36-05:49</b><span>haya cinco cosas? Habrá algo. Los números, ¿O qué? Los números, muy bien, aquí será que hay</span></li>
+<li><b>06:07-06:18</b><span>tómele una fotito, el número cinco nos indica que hay cinco cosas, vea como este guante, como</span></li>
+<li><b>11:25-11:34</b><span>cinco, será que le pongo otra? No, ¿por qué? Porque estamos estudiando el número cinco,</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">8.1</span>
+              <h3>El o la docente ofrece opciones al estudiantado para que desarrollen sus tareas.</h3>
+              <p>Habilidades socioemocionales - Autonomia</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge mid">Medio</strong>
+              <span>Confianza: Media</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>Se observan opciones superficiales como escoger color o turno; no se confirma una eleccion sustancial de estrategia o producto. Coincidencias textuales: 11.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Ofrecer dos formas de demostrar el cinco: construir torre, pegar stickers o agrupar objetos, y dejar que el estudiante elija.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>07:40-07:46</b><span>nombrar a un amiguito que lance o haga rodar el dado o podemos lanzar para arriba o le podemos</span></li>
+<li><b>08:25-08:33</b><span>allá, lance mi amor, el dado, lance bien fuerte. Oh, qué número salría, a ver qué número salría,</span></li>
+<li><b>09:56-10:04</b><span>para movernos, el cuerpito, lancen mi amor, otra vez cayó en el número, no cayó en el número</span></li>
+<li><b>26:03-26:11</b><span>coja, coja, dos, muy bien, solo cinco, pondrás solo cinco, tome, quién quiere escoger, qué color desea,</span></li>
+<li><b>27:16-27:27</b><span>levante su tarea, quién terminó, acúrese, acúrese mi amor, pronto, pronto, eso, muy bien, eso,</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">8.2</span>
+              <h3>El o la docente ofrece oportunidades para asumir roles dentro de la clase.</h3>
+              <p>Habilidades socioemocionales - Autonomia</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge mid">Medio</strong>
+              <span>Confianza: Media</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>Los estudiantes lanzan el dado y muestran sus trabajos; son roles de participacion, pero no roles significativos de liderazgo o apoyo a pares. Coincidencias textuales: 24.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Asignar roles breves: lider de conteo, ayudante de materiales o verificador de cinco en pareja.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>07:32-07:40</b><span>el otro equipo de acá, equipo número uno, equipo número dos, muy bien, mire, la elbita le va a</span></li>
+<li><b>08:03-08:11</b><span>el turno, muy bien, a ver equipo número uno se va a poner de pie, equipo número uno, levántese</span></li>
+<li><b>08:53-08:59</b><span>saltitos, equipo número uno, levántese, levántese equipo número uno y vamos a contar cinco saltos,</span></li>
+<li><b>09:20-09:26</b><span>primero equipo número uno, respetando el turno y después equipo número dos, muy bien, a ver chicos,</span></li>
+<li><b>09:48-09:56</b><span>para acá, levántese equipo número dos, arleve, levántese por favor mi amor, para saltar y para</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">8.3</span>
+              <h3>El estudiantado se ofrece para participar en la clase.</h3>
+              <p>Habilidades socioemocionales - Autonomia</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge mid">Medio</strong>
+              <span>Confianza: Baja</span>
+              <span class="review-flag">Requiere revision visual</span>
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>La docente invita a levantar la mano y participar, pero el audio no permite confirmar si participa la mayoria. Coincidencias textuales: 16.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Usar una rutina de participacion equitativa: todos muestran dedos, luego algunos explican, luego rotan roles.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>00:42-00:49</b><span>que la elvita? ¿Quieres saber cómo está cada uno de ustedes? ¿Y quién aquí? Diferentes caritas,</span></li>
+<li><b>08:16-08:25</b><span>dado, a ver, Valentina va a lanzar el dado, venga para acá, venga, muy bien, lanza el dado para</span></li>
+<li><b>12:36-12:50</b><span>muy bien, venga, muy bien, ahí Arlet, venga, Said, venga para acá, Said, venga, Said,</span></li>
+<li><b>14:31-14:39</b><span>estamos en silencio, muy bien, venga para acá mi amor, venga para acá, ya, silencio,</span></li>
+<li><b>27:16-27:27</b><span>levante su tarea, quién terminó, acúrese, acúrese mi amor, pronto, pronto, eso, muy bien, eso,</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">9.1</span>
+              <h3>El o la docente reconoce los esfuerzos del estudiantado.</h3>
+              <p>Habilidades socioemocionales - Perseverancia</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge low">Bajo</strong>
+              <span>Confianza: Media</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>Aunque hay elogios frecuentes, casi ninguno identifica esfuerzo, estrategia, persistencia o progreso. Coincidencias textuales relacionadas: 150.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Nombrar esfuerzo: &#x27;seguiste contando aunque era dificil&#x27; o &#x27;probaste otra vez hasta llegar a cinco&#x27;.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>00:31-00:42</b><span>Hola chicos, ¿cómo están? Bien. Vea, ¿sabe que la elvita? Niños y niñas, muy bien. ¿Sabe</span></li>
+<li><b>01:03-01:12</b><span>Oh, qué lindo. Es muy bueno trabajar con gente muy feliz. A ver, levante la mano. ¿Quién está</span></li>
+<li><b>01:46-01:53</b><span>usted hace silencio. Muy bien. ¿Quién va a cumplir este acuerdo? Muy bien. El que cumple este</span></li>
+<li><b>02:19-02:27</b><span>Sí, muy bien. No bullas de así. Muy bien. Tiene que levantar la mano para participar. Muy bien. Muy</span></li>
+<li><b>02:44-02:53</b><span>esto. Muy bien, respetar a los amiguitos. ¿Le tiene que molestar al amiguito? ¿Le tiene que coger el cabello?</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">9.2</span>
+              <h3>El o la docente tiene una actitud positiva hacia los desafios del estudiantado.</h3>
+              <p>Habilidades socioemocionales - Perseverancia</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge mid">Medio</strong>
+              <span>Confianza: Media</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>No hay reganos fuertes ante errores; la docente ayuda a corregir. Falta explicitar que equivocarse es parte del aprendizaje. Coincidencias textuales: 126.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Cuando haya error, decir: &#x27;esta bien, probemos otra vez; contar nos ayuda a corregir&#x27;.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>00:31-00:42</b><span>Hola chicos, ¿cómo están? Bien. Vea, ¿sabe que la elvita? Niños y niñas, muy bien. ¿Sabe</span></li>
+<li><b>01:12-01:20</b><span>feliz? Muy bien. sean todos ustedes bienvenidos a este día de clase.</span></li>
+<li><b>01:46-01:53</b><span>usted hace silencio. Muy bien. ¿Quién va a cumplir este acuerdo? Muy bien. El que cumple este</span></li>
+<li><b>02:19-02:27</b><span>Sí, muy bien. No bullas de así. Muy bien. Tiene que levantar la mano para participar. Muy bien. Muy</span></li>
+<li><b>02:44-02:53</b><span>esto. Muy bien, respetar a los amiguitos. ¿Le tiene que molestar al amiguito? ¿Le tiene que coger el cabello?</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">10.a</span>
+              <h3>El o la docente promueve la colaboracion entre el estudiantado a traves de sus interacciones.</h3>
+              <p>Habilidades socioemocionales - Habilidades sociales y colaborativas</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge mid">Medio</strong>
+              <span>Confianza: Media</span>
+              <span class="review-flag">Requiere revision visual</span>
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>Hay equipos, parejas y pedidos de compartir material, pero la colaboracion parece centrada en turnos/materiales, no en resolver juntos. Coincidencias textuales: 40.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Convertir una actividad en tarea cooperativa: una pareja cuenta, otra verifica y ambas explican el resultado.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>02:44-02:53</b><span>esto. Muy bien, respetar a los amiguitos. ¿Le tiene que molestar al amiguito? ¿Le tiene que coger el cabello?</span></li>
+<li><b>07:13-07:19</b><span>en equipo, vamos a lanzar el dado, así le puede hacer rodar o le puede lanzar para arriba,</span></li>
+<li><b>07:40-07:46</b><span>nombrar a un amiguito que lance o haga rodar el dado o podemos lanzar para arriba o le podemos</span></li>
+<li><b>08:11-08:16</b><span>por favor, equipo número uno, levántese, levántese, póngase de pie porque ya vamos a jugar con el</span></li>
+<li><b>08:53-08:59</b><span>saltitos, equipo número uno, levántese, levántese equipo número uno y vamos a contar cinco saltos,</span></li>
+<li><b>09:20-09:26</b><span>primero equipo número uno, respetando el turno y después equipo número dos, muy bien, a ver chicos,</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">10.b</span>
+              <h3>El o la docente promueve habilidades interpersonales como empatia, regulacion emocional o resolucion de conflictos.</h3>
+              <p>Habilidades socioemocionales - Habilidades sociales y colaborativas</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge mid">Medio</strong>
+              <span>Confianza: Media</span>
+              
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>Se trabajan emociones iniciales, respeto y compartir. La promocion interpersonal es positiva, aunque breve y poco elaborada. Coincidencias textuales: 20.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Ante un conflicto, guiar perspectiva: &#x27;como se siente tu amigo cuando le quitamos el material&#x27;.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>00:49-00:55</b><span>levante la manito. ¿Quién está enojado? Levante la manito. ¿Quién está enojado?</span></li>
+<li><b>01:53-01:59</b><span>acuerdo tendrá carita feliz. Mire, le voy a poner aquí. Le voy a poner aquí para que usted</span></li>
+<li><b>02:44-02:53</b><span>esto. Muy bien, respetar a los amiguitos. ¿Le tiene que molestar al amiguito? ¿Le tiene que coger el cabello?</span></li>
+<li><b>12:05-12:13</b><span>le ponemos una carita feliz, contamos hasta cinco y paramos, vea porque la albita tiene más pinzas,</span></li>
+<li><b>13:52-14:01</b><span>pero tiene que compartir entre parejitas, tiene que compartir entre parejitas, muy bien,</span></li>
+<li><b>19:00-19:08</b><span>gracias, gracias, gracias, sentaditos, educaditos, a ver, muy bien, muy bien, carita feliz para mis</span></li></ul>
+        </article>
+        
+
+        <article class="indicator">
+          <header>
+            <div>
+              <span class="code">10.c</span>
+              <h3>El estudiantado colabora entre ellos a traves de sus interacciones.</h3>
+              <p>Habilidades socioemocionales - Habilidades sociales y colaborativas</p>
+            </div>
+            <div class="rating-block">
+              <strong class="badge mid">Medio</strong>
+              <span>Confianza: Baja</span>
+              <span class="review-flag">Requiere revision visual</span>
+            </div>
+          </header>
+          <div class="indicator-grid">
+            <div>
+              <h4>Lectura evaluativa</h4>
+              <p>El audio sugiere trabajo en equipos y parejas, pero no permite observar la calidad de colaboracion entre pares. Coincidencias textuales: 26.</p>
+            </div>
+            <div>
+              <h4>Mejora recomendada</h4>
+              <p>Complementar con video y observar si hay ayuda mutua real, reparto de tareas y lenguaje entre pares.</p>
+            </div>
+          </div>
+          <h4>Evidencia textual</h4>
+          <ul class="evidence-list"><li><b>07:13-07:19</b><span>en equipo, vamos a lanzar el dado, así le puede hacer rodar o le puede lanzar para arriba,</span></li>
+<li><b>08:03-08:11</b><span>el turno, muy bien, a ver equipo número uno se va a poner de pie, equipo número uno, levántese</span></li>
+<li><b>08:53-08:59</b><span>saltitos, equipo número uno, levántese, levántese equipo número uno y vamos a contar cinco saltos,</span></li>
+<li><b>09:20-09:26</b><span>primero equipo número uno, respetando el turno y después equipo número dos, muy bien, a ver chicos,</span></li>
+<li><b>09:48-09:56</b><span>para acá, levántese equipo número dos, arleve, levántese por favor mi amor, para saltar y para</span></li>
+<li><b>13:52-14:01</b><span>pero tiene que compartir entre parejitas, tiene que compartir entre parejitas, muy bien,</span></li></ul>
+        </article>
+        
+      </section>
+
+      <section class="report-section">
+        <h2>Apendice De Transcripcion</h2>
+        <details class="transcript-appendix">
+          <summary>Mostrar segmentos transcriptivos con marcas de tiempo</summary>
+          <table class="transcript-table"><tbody><tr><td>00:00-00:08</td><td>Buenos días. Mi nombre es Elva Esperanza Cruz Ruiz, mi cédula de identidad es 100,</td></tr>
+<tr><td>00:08-00:16</td><td>207, 149, 3. Trabajo en la unidad educativa Presidente Velasco y Barra, en el nivel inicial,</td></tr>
+<tr><td>00:16-00:22</td><td>con el grupo de tres años de edad. Este día voy a trabajar con 14 estudiantes,</td></tr>
+<tr><td>00:22-00:28</td><td>seis niñas, ocho niños. El tema en partir es el número cinco. Bienvenidos.</td></tr>
+<tr><td>00:31-00:42</td><td>Hola chicos, ¿cómo están? Bien. Vea, ¿sabe que la elvita? Niños y niñas, muy bien. ¿Sabe</td></tr>
+<tr><td>00:42-00:49</td><td>que la elvita? ¿Quieres saber cómo está cada uno de ustedes? ¿Y quién aquí? Diferentes caritas,</td></tr>
+<tr><td>00:49-00:55</td><td>levante la manito. ¿Quién está enojado? Levante la manito. ¿Quién está enojado?</td></tr>
+<tr><td>00:55-01:03</td><td>Nadie. Muy bien. Qué bueno que no esté enojado. Levante la manito. ¿Quién está triste?</td></tr>
+<tr><td>01:03-01:12</td><td>Oh, qué lindo. Es muy bueno trabajar con gente muy feliz. A ver, levante la mano. ¿Quién está</td></tr>
+<tr><td>01:12-01:20</td><td>feliz? Muy bien. sean todos ustedes bienvenidos a este día de clase.</td></tr>
+<tr><td>01:25-01:38</td><td>Muy bien. Ahora vamos a hacer unos acuerdos. Vean, mire, mire, mire. ¿Qué significará este acuerdo?</td></tr>
+<tr><td>01:38-01:46</td><td>Hace silencio. Y cuando la profe habla, usted hace silencio. Cuando la profe habla,</td></tr>
+<tr><td>01:46-01:53</td><td>usted hace silencio. Muy bien. ¿Quién va a cumplir este acuerdo? Muy bien. El que cumple este</td></tr>
+<tr><td>01:53-01:59</td><td>acuerdo tendrá carita feliz. Mire, le voy a poner aquí. Le voy a poner aquí para que usted</td></tr>
+<tr><td>01:59-02:08</td><td>recuerde todo el tiempo. Que no tiene que hacer bullitas. Muy bien. Acá tengo otro acuerdo,</td></tr>
+<tr><td>02:08-02:17</td><td>mire. Aquí tengo otro acuerdo. ¿Qué significará este? Para participar. Muy bien. Usted.</td></tr>
+<tr><td>02:19-02:27</td><td>Sí, muy bien. No bullas de así. Muy bien. Tiene que levantar la mano para participar. Muy bien. Muy</td></tr>
+<tr><td>02:27-02:36</td><td>bien, chicos. Vamos a poner aquí para recordar porque usted a veces se puede olvidar, entonces la</td></tr>
+<tr><td>02:36-02:44</td><td>elbita le ha puesto esto, la profe, para que usted recuerde estas cartitas. Mire. A ver qué significará</td></tr>
+<tr><td>02:44-02:53</td><td>esto. Muy bien, respetar a los amiguitos. ¿Le tiene que molestar al amiguito? ¿Le tiene que coger el cabello?</td></tr>
+<tr><td>02:58-03:05</td><td>Muy bien, ni dar besos a los amigos. Hay que respetarles y hay que compartir. ¿De acuerdo? Muy bien.</td></tr>
+<tr><td>03:05-03:12</td><td>Le vamos a poner este acuerdo aquí para que usted le pueda ver. Yo me leo una fotito. Esto me leo una</td></tr>
+<tr><td>03:12-03:23</td><td>fotito. Muy bien. Saben que el día de hoy, ya, saben que el día de hoy vamos a trabajar el número</td></tr>
+<tr><td>03:23-03:34</td><td>cinco. Sí. Vamos a identificar el número cinco y vamos a saber que cuando, que cuando decimos que</td></tr>
+<tr><td>03:34-03:42</td><td>tenemos el número cinco, también tenemos que tener cinco cosas, cinco objetos. Muy bien. Ya,</td></tr>
+<tr><td>03:42-03:51</td><td>ya nos vamos a sacar el saquito. Sientese mi amor. Tranquilito. ¿Qué pasó? Ya le molesto. Venga para</td></tr>
+<tr><td>03:51-03:58</td><td>acá. Venga encito. Váyase para allá, al lado de leíto y usted viene para acá. Es bien atentos,</td></tr>
+<tr><td>03:58-04:07</td><td>al lado de Paula. Muy bien. Tranquilitos. Chicos, vamos a mirar el video, el video del número cinco,</td></tr>
+<tr><td>04:07-04:08</td><td>vamos a escuchar la canción.</td></tr>
+<tr><td>04:08-04:35</td><td>Todas cantamos. El número cinco. Hasta cinco. El número cinco. Hasta cinco. Uno, dos, tres.</td></tr>
+<tr><td>04:35-04:46</td><td>Quatro, cinco. Uno, dos, tres. Quatro, cinco. Uno, dos, tres.</td></tr>
+<tr><td>04:46-05:10</td><td>hasta cinco el número cinco el número cinco hasta cinco cuatro cinco</td></tr>
+<tr><td>05:10-05:28</td><td>cuatro cinco fuerte, cuatro, sí, más fuerte muy bien, mire, hemos escuchado la canción,</td></tr>
+<tr><td>05:28-05:36</td><td>¿De qué hablaba la canción? El número cinco. Muy bien, ¿Y aquí en el salón habrá algo que</td></tr>
+<tr><td>05:36-05:49</td><td>haya cinco cosas? Habrá algo. Los números, ¿O qué? Los números, muy bien, aquí será que hay</td></tr>
+<tr><td>05:49-05:59</td><td>cinco carteles, uno, dos, tres, no más habido. Habrá cinco pizarras, no, muy bien, ¿Quiere</td></tr>
+<tr><td>05:59-06:07</td><td>conocerle el número cinco? Mire, este ha sido el número cinco, tómele una fotito,</td></tr>
+<tr><td>06:07-06:18</td><td>tómele una fotito, el número cinco nos indica que hay cinco cosas, vea como este guante, como</td></tr>
+<tr><td>06:18-06:25</td><td>este súper guante, mire, la elbita ha tenido un súper guante, mire, a ver, contamos los deditos,</td></tr>
+<tr><td>06:25-06:37</td><td>uno, dos, tres, cuatro, cinco, muy bien, el número cinco nos indica que hay cinco dedos,</td></tr>
+<tr><td>06:37-06:49</td><td>correcto, muy bien, ahora vamos a jugar, vamos a jugar con el con el dado mágico, mire, mire,</td></tr>
+<tr><td>06:49-06:56</td><td>este ha sido un dado, mire, atentos, este ha sido un dado, mire, este dado tiene el número cinco,</td></tr>
+<tr><td>06:56-07:03</td><td>mire, tiene el número cinco, mire, mire, mire, miren todos y tiene también diferentes cantidades,</td></tr>
+<tr><td>07:03-07:13</td><td>tiene uno, tiene dos, tiene tres, tiene cuatro y también tiene cinco bolitas, mire, vamos a jugar</td></tr>
+<tr><td>07:13-07:19</td><td>en equipo, vamos a lanzar el dado, así le puede hacer rodar o le puede lanzar para arriba,</td></tr>
+<tr><td>07:19-07:25</td><td>mire, le lanza para arriba, si es que sale una cantidad diferente a cinco solamente vamos a dar</td></tr>
+<tr><td>07:25-07:32</td><td>un aplauso, de acuerdo, pero trabajamos en equipos, primero trabaja el equipo de acá y después</td></tr>
+<tr><td>07:32-07:40</td><td>el otro equipo de acá, equipo número uno, equipo número dos, muy bien, mire, la elbita le va a</td></tr>
+<tr><td>07:40-07:46</td><td>nombrar a un amiguito que lance o haga rodar el dado o podemos lanzar para arriba o le podemos</td></tr>
+<tr><td>07:46-07:54</td><td>hacer rodar así, cayó número cinco, muy bien, ya, ajá, sentadito por favor, Dilan, esto muy</td></tr>
+<tr><td>07:54-08:03</td><td>bien, per turnos, mirará, recordará que hay que estar educaditos y participando, todos respetando</td></tr>
+<tr><td>08:03-08:11</td><td>el turno, muy bien, a ver equipo número uno se va a poner de pie, equipo número uno, levántese</td></tr>
+<tr><td>08:11-08:16</td><td>por favor, equipo número uno, levántese, levántese, póngase de pie porque ya vamos a jugar con el</td></tr>
+<tr><td>08:16-08:25</td><td>dado, a ver, Valentina va a lanzar el dado, venga para acá, venga, muy bien, lanza el dado para</td></tr>
+<tr><td>08:25-08:33</td><td>allá, lance mi amor, el dado, lance bien fuerte. Oh, qué número salría, a ver qué número salría,</td></tr>
+<tr><td>08:33-08:39</td><td>mire, este tenemos que ver esta carita, siéntese muchas gracias por su participación, siéntese mi</td></tr>
+<tr><td>08:39-08:46</td><td>amor, mire, ha salido número cinco, uno, dos, tres, cuatro y repitamos otra vez todos juntos,</td></tr>
+<tr><td>08:46-08:53</td><td>uno, dos, tres, cuatro, cinco, muy bien, ahora se van a levantar los chicos y van a dar cinco</td></tr>
+<tr><td>08:53-08:59</td><td>saltitos, equipo número uno, levántese, levántese equipo número uno y vamos a contar cinco saltos,</td></tr>
+<tr><td>08:59-09:04</td><td>ustedes también chicos de acá, número uno, equipo número uno, usted y equipo número uno,</td></tr>
+<tr><td>09:04-09:11</td><td>usted, eso, muy bien, hasta ahí equipo número uno, a ver, contamos, saltitos, saltamos, uno,</td></tr>
+<tr><td>09:12-09:20</td><td>eso, vamos, eso, dos, equipo número dos, es usted mi amor, volvemos a contar,</td></tr>
+<tr><td>09:20-09:26</td><td>primero equipo número uno, respetando el turno y después equipo número dos, muy bien, a ver chicos,</td></tr>
+<tr><td>09:27-09:40</td><td>equipo número uno, uno, dos, cuente, tres, cuatro, cinco, muy bien, tome asientito, tome asiento,</td></tr>
+<tr><td>09:40-09:48</td><td>ahora vamos a nombrar a otro participante del equipo número dos, levántese por favor, venga</td></tr>
+<tr><td>09:48-09:56</td><td>para acá, levántese equipo número dos, arleve, levántese por favor mi amor, para saltar y para</td></tr>
+<tr><td>09:56-10:04</td><td>para movernos, el cuerpito, lancen mi amor, otra vez cayó en el número, no cayó en el número</td></tr>
+<tr><td>10:04-10:09</td><td>cinco mi amor, aquí no le podemos mover el dalito porque ya nos dio el número cinco, ahora saltamos,</td></tr>
+<tr><td>10:09-10:22</td><td>uno, dos, tres, cuatro, cinco, muy bien, todos a tomar asiento, bravo, bravo, bravo, muy bien,</td></tr>
+<tr><td>10:22-10:32</td><td>muy bien chicos, mire, la albita trajo hoy unos juguetes súper divertidos, súper súper divertidos,</td></tr>
+<tr><td>10:32-10:43</td><td>qué mi amor, a ver, escuche atentamente qué es lo que vamos a hacer, leonard, por favor,</td></tr>
+<tr><td>10:43-10:48</td><td>nos sentamos bien, mire, aquí como está la niña ordenadita, mire, nos recuerda que nos sentamos</td></tr>
+<tr><td>10:48-10:59</td><td>bien la sillita, nos recuerda que nos sentamos muy bien en la sillita, mire, ya atento, ve a lo que</td></tr>
+<tr><td>10:59-11:13</td><td>vamos a hacer, mire, la albita tiene un CD y tiene unas pinzas, usted va a coger el CD y le va a</td></tr>
+<tr><td>11:13-11:25</td><td>sujetar con una mano y con la otra mano, con las pincitas, vea, uno, cuente, dos, tres, cuatro,</td></tr>
+<tr><td>11:25-11:34</td><td>cinco, será que le pongo otra? No, ¿por qué? Porque estamos estudiando el número cinco,</td></tr>
+<tr><td>11:34-11:43</td><td>le puedo sacar una? No, ¿por qué? Porque estamos estudiando el número cinco, muy bien, usted va</td></tr>
+<tr><td>11:43-11:55</td><td>a poner solamente cinco pinzas, ¿de acuerdo? A ver, vamos, uno, dos, tres, cuatro, cinco, ¿de acuerdo?</td></tr>
+<tr><td>11:55-12:05</td><td>Mire, cuando contamos, llegamos hasta cinco. Sí, mi amor, el que cuenta hasta cinco y para,</td></tr>
+<tr><td>12:05-12:13</td><td>le ponemos una carita feliz, contamos hasta cinco y paramos, vea porque la albita tiene más pinzas,</td></tr>
+<tr><td>12:13-12:21</td><td>pero no las va a poner porque estamos estudiando el número. Muy bien, vamos a trabajar y hoy</td></tr>
+<tr><td>12:21-12:26</td><td>ya le doy su material. Janita, por favor, para atrás, con su sillita, mía, por favor, para atrás,</td></tr>
+<tr><td>12:27-12:36</td><td>por favor, vilan para atrás, muy bien, Arlet, a ver la ayuda, mi amor, siga, siga, siga, por favor,</td></tr>
+<tr><td>12:36-12:50</td><td>muy bien, venga, muy bien, ahí Arlet, venga, Said, venga para acá, Said, venga, Said,</td></tr>
+<tr><td>12:50-12:57</td><td>venga, desde la vuelta, solita, usted ahí, mi amor, ahí, sientes en mi corazón ahí,</td></tr>
+<tr><td>12:57-13:03</td><td>ahí sientes el, por favor, aquí mismo, Rafita, aquí, aquí, sentadita, desde la vuelta a la mesa,</td></tr>
+<tr><td>13:03-13:12</td><td>por favor, vaya David allá al lado de, al lado de Rafael, venga usted con su sillita para acá,</td></tr>
+<tr><td>13:13-13:28</td><td>muy bien, desde la vuelta vale Valentina, desde la vueltita, muy bien, la lechusa, la lechusa,</td></tr>
+<tr><td>13:28-13:45</td><td>ahí mismo, ahí, A, C, A, C, todos calladitos, como la lechusa, que A, C, A, C, a ver, muy bien,</td></tr>
+<tr><td>13:45-13:52</td><td>ya escuchad a lo que le va a decir la elbita, vilan, mire, la elbita le va a dar el material,</td></tr>
+<tr><td>13:52-14:01</td><td>pero tiene que compartir entre parejitas, tiene que compartir entre parejitas, muy bien,</td></tr>
+<tr><td>14:03-14:10</td><td>contamos hasta cinco y paramos, o con Cd, de la su amigo un Cd, de la, al Rafa un Cd, a ver,</td></tr>
+<tr><td>14:10-14:16</td><td>contamos, cuente, cuente, porque ya le va a visitar el número cinco, para ver si es que ha</td></tr>
+<tr><td>14:16-14:31</td><td>hecho correcta la tarea, muy bien, Arlet, muy bien, venga, a ver, cuando, cuando trabajamos,</td></tr>
+<tr><td>14:31-14:39</td><td>estamos en silencio, muy bien, venga para acá mi amor, venga para acá, ya, silencio,</td></tr>
+<tr><td>14:39-14:49</td><td>y vamos a armar, arme, muy bien, siga, claro que le falta otra, contará muy bien, contará muy</td></tr>
+<tr><td>14:49-15:00</td><td>bien, tome, ahí están dos, venga para acá, calecito, venga para acá mi amor,</td></tr>
+<tr><td>15:00-15:14</td><td>el leíto no tiene, sí, tome mi amor el Cd, es bravo, venga aquí, cuente mi amor,</td></tr>
+<tr><td>15:14-15:22</td><td>cuente, ya le va a visitar el número cinco, aquí tiene mi amor, cuente, cuente, ya le va</td></tr>
+<tr><td>15:22-15:30</td><td>a visitar, ya le va a visitar el número cinco, a ver si, todos tienen el material chicos,</td></tr>
+<tr><td>15:30-15:39</td><td>ya mi amor, siga trabajando, mire el número cinco con estos ojitos le va a visitar, a ver,</td></tr>
+<tr><td>15:39-15:54</td><td>cuente, a ver, contamos, uno, dos, uno, dos, tres, cuatro, será que nos falta uno, falta uno, a ver,</td></tr>
+<tr><td>15:54-16:02</td><td>y ahí yo le visito a su, a su sillita, a ver, le visita el número cinco, dos, tres, cuatro,</td></tr>
+<tr><td>16:02-16:08</td><td>cinco, muy bien, correcto, like, like, tome mi amor, aquí tiene las piezas, siga poniendo en el</td></tr>
+<tr><td>16:08-16:21</td><td>Cd, a ver, like, muy bien, like, a ver, contamos, Matías, una, dos, tres, cuatro, cinco, ya paramos</td></tr>
+<tr><td>16:21-16:28</td><td>aquí, retiramos esta, está de más, saquenle mi amor, eso, vuelva a contar, no, eso está bien,</td></tr>
+<tr><td>16:28-16:37</td><td>muy bien, a ver, vamos, uno, dos, tres, cuatro, cinco, sí, ahí, cuente otra vez, cuente otra vez,</td></tr>
+<tr><td>16:37-16:47</td><td>a ver mi amor, usted, a ver, cuente, uno, dos, tres, cuatro, cinco, y está estado de más,</td></tr>
+<tr><td>16:47-16:54</td><td>le sacamos, le sacamos, es que la Ibita le puso una trampa, le dio más, pinzas para que usted</td></tr>
+<tr><td>16:54-17:02</td><td>cuente hasta cinco y pare, cuente hasta cinco y para, de acuerdo, ya, ya vamos, ya le visita el</td></tr>
+<tr><td>17:02-17:13</td><td>número cinco, muy bien, a ver, uno, dos, tres, cuatro, cinco, correcto, bien, dice el número</td></tr>
+<tr><td>17:13-17:22</td><td>cinco, muy bien chicos, muy bien, like, like, uno, dos, tres, cuatro, cinco, falta una, muy bien,</td></tr>
+<tr><td>17:22-17:28</td><td>muy bien, correcto, muy bien, like, muy bien, sí, cuente con su dedito, cuente con su dedito,</td></tr>
+<tr><td>17:29-17:40</td><td>dos, a ver, contamos, uno, dos, tres, cuatro, cinco, falta una, ponemos una más, muy bien, a ver,</td></tr>
+<tr><td>17:40-17:51</td><td>contamos, Rafita, uno, dos, tres, cuatro, cinco, correcto, listo, listo, listo, listo, a ver,</td></tr>
+<tr><td>17:51-17:59</td><td>like, like, ve a cómo le visita el número cinco, bien, bien, bien, chicos, like, muy bien, ahora</td></tr>
+<tr><td>17:59-18:10</td><td>va a sacar las pinzas y les vuelve al, al recipiente, a ver, Saib, contamos, a ver,</td></tr>
+<tr><td>18:10-18:18</td><td>chicos, vamos a cantar la lechusa todo, espero en secreto, a ver, la lechusa, la lechusa,</td></tr>
+<tr><td>18:18-18:40</td><td>como la lechusa, uno, dos, tres, cuatro, cinco y para, sacamos de esta de más, muy bien, sacamos</td></tr>
+<tr><td>18:40-18:45</td><td>todo, guarde todo, guarde todo, guarde pronto, sentaditos ahí, sentaditos todos, vamos a hacer</td></tr>
+<tr><td>18:45-19:00</td><td>otra tarea, vamos a hacer otra tarea, apúrese, apúrese, apúrese, muy bien, muy bien, chicos,</td></tr>
+<tr><td>19:00-19:08</td><td>gracias, gracias, gracias, sentaditos, educaditos, a ver, muy bien, muy bien, carita feliz para mis</td></tr>
+<tr><td>19:08-19:16</td><td>chicos, muy bien, el número cinco, chicos, nos indica que tenemos que contar hasta cinco y</td></tr>
+<tr><td>19:16-19:25</td><td>parar, muy bien, mirará, ve, ve, hay que respetar a los amiguitos, eh, rafita, sin gritar, sin gritar,</td></tr>
+<tr><td>19:25-19:30</td><td>no gritar, dice, hay que recordar los acuerdos, sí, muy bien.</td></tr>
+<tr><td>19:38-19:51</td><td>A ver, chicos, atentos, muy bien, chicos, mire, en este momento la elbita le va a dar unos</td></tr>
+<tr><td>19:51-20:00</td><td>lindos maderos, a ver, chicos, venís a hacer una toresita, mire para acá, mire para acá, mire,</td></tr>
+<tr><td>20:00-20:16</td><td>mire, uno, dos, tres, cuatro, rafita, tome asientito por favor, tome asientito por favor, tome asientito</td></tr>
+<tr><td>20:16-20:27</td><td>por favor, muy bien, ve a cuatro, cinco y para, leíta, contamos hasta cinco y paramos, contamos</td></tr>
+<tr><td>20:27-20:39</td><td>hasta cinco y paramos, ¿de acuerdo? La elbita le va a mirar, eso, muy bien, chicos, tome sus</td></tr>
+<tr><td>20:39-20:49</td><td>maderitos, hacemos una torre, hacemos una torre, chicos, hacemos una torre, ya le di su material,</td></tr>
+<tr><td>20:49-20:59</td><td>ya le haga una torre, ya no sé por qué sale la puerta, muy bien, y ahora vamos a recordar los</td></tr>
+<tr><td>20:59-21:08</td><td>acuerdos que dijimos, sí, es para los dos amiguitos, hay que compartir, hay que compartir, ya, no, no, no,</td></tr>
+<tr><td>21:08-21:16</td><td>no, si le comparte el amiguito, sí, porque está respetando los acuerdos, cuenta hasta cinco y para,</td></tr>
+<tr><td>21:20-21:30</td><td>cuentas hasta cinco y para, chicos, a ver, a ver, contamos rapidito, comparta con el amiguito,</td></tr>
+<tr><td>21:30-21:38</td><td>comparte con el amiguito, a ver, uno, dos, tres, cuatro, cinco, muy bien, muy bien,</td></tr>
+<tr><td>21:39-21:50</td><td>ya, uno, dos, tres, muy bien, perfecto, equipo, este equipo ya, ya terminó, a ver,</td></tr>
+<tr><td>21:50-22:00</td><td>cual más termina, cual más termina, muy bien, muy bien, excelente, excelente, muy bien,</td></tr>
+<tr><td>22:01-22:10</td><td>uno, uno más, uno, dos, tres, cuatro, cinco, cinco, uno más, uno más arriba, muy bien, muy bien,</td></tr>
+<tr><td>22:10-22:27</td><td>eso, uno, dos, tres, cuatro, cinco, eso, muy bien, excelente, a ver, cuántos hay aquí, cinco,</td></tr>
+<tr><td>22:27-22:42</td><td>muy bien, cinco, muy bien, muy bien, a ver, usted, uno, dos, sentaditos, dos,</td></tr>
+<tr><td>22:42-22:59</td><td>tres, cuatro, cinco, muy bien, eso, perfecto, uno más, uno, dos, tres, cuatro, cinco,</td></tr>
+<tr><td>22:59-23:10</td><td>muy bien, perfecto, chicos, muy bien, sí, correcto, a ver, no, uno, dos, tres, cuatro, cinco, seis,</td></tr>
+<tr><td>23:10-23:18</td><td>uno de más, retiramos uno, retiramos uno, uno, eso, ahí, cinco, cinco, uno, dos, excelente,</td></tr>
+<tr><td>23:18-23:26</td><td>muy bien, chicos, excelente, muy bien, chicos, bien, miren lo que vamos hasta ahora, bien,</td></tr>
+<tr><td>23:26-23:35</td><td>paulita, muy bien, muy bien, muy bien, dos, cuatro y cinco, muy bien, seis, seis, se derrumbó, uno,</td></tr>
+<tr><td>23:35-23:48</td><td>dos, tres, cuatro, cinco, eso, muy bien, ratita nos sentamos a seguir trabajando, miren lo que yo</td></tr>
+<tr><td>23:48-23:58</td><td>tengo aquí y ahora sí la tarea más importante del día, miren, aquí tengo yo el número cinco,</td></tr>
+<tr><td>23:59-24:01</td><td>miren lo que vamos a hacer,</td></tr>
+<tr><td>24:06-24:13</td><td>la Vale le está molestando, ya, Valentinita, hay que respetar el acuerdo, mire, hay que respetar el</td></tr>
+<tr><td>24:13-24:21</td><td>acuerdo y llevarse bien con los amiguitos, sí, ya, ok, tome asintito por favor, muy bien, mire,</td></tr>
+<tr><td>24:21-24:30</td><td>la albita tiene estos lindos dados, mire, mire, mire, mire, mire para acá, la albita le va a dar</td></tr>
+<tr><td>24:30-24:38</td><td>del color que ustedes se, mire, el cinco indica que tenemos que poner aquí cinco dados, despega y</td></tr>
+<tr><td>24:38-24:58</td><td>pone uno, mire, tome una foto, seis, seis, mire, dos, tres, cuatro y cinco, muy bien, ahora sí va a</td></tr>
+<tr><td>24:58-25:07</td><td>tener manitas debajo de la mesita, vaya para allá, jañita por favor, ya, ya le vamos a dar el color,</td></tr>
+<tr><td>25:07-25:14</td><td>ya, ya le doy mi amor, ya le damos, ya, muy bien, vamos a seguir trabajando, uno,</td></tr>
+<tr><td>25:17-25:24</td><td>siga, a ver, ya le voy a dar manitas debajo de la mesita, rapidito, rapidito, rapidito, rapidito,</td></tr>
+<tr><td>25:25-25:38</td><td>tome su tarea, tome su tarea, muy bien, a ver, la lechusa, la lechusa, siéntese bien lejito por</td></tr>
+<tr><td>25:38-25:55</td><td>favor, abajo los pies, hace, hace, todos calladitos, como la lechusa, que hace, que hace, a ver,</td></tr>
+<tr><td>25:55-26:03</td><td>muy bien, coja un poca y ponga unos, ponga los stickers, solo cinco, cualquiera de ustedes, cualquiera,</td></tr>
+<tr><td>26:03-26:11</td><td>coja, coja, dos, muy bien, solo cinco, pondrás solo cinco, tome, quién quiere escoger, qué color desea,</td></tr>
+<tr><td>26:11-26:21</td><td>ya, coja rojo, ya, ya muy bien, rápidamente, rápidamente, rápidamente, a ver quién termina más</td></tr>
+<tr><td>26:21-26:32</td><td>pronto, a ver, escoja uno, atlet, escoja uno, escoja uno por favor, rápidamente, rápidamente,</td></tr>
+<tr><td>26:33-26:38</td><td>ya, eso, muy bien, siga, siga,</td></tr>
+<tr><td>26:45-26:46</td><td>tenga,</td></tr>
+<tr><td>26:49-26:58</td><td>siga trabajando, siga trabajando, rapidito, a ver, me avisa quién termina primero, me avisa por favor,</td></tr>
+<tr><td>26:58-27:09</td><td>me avisa por favor, quién ha terminado primero, siga mi amor, ponga ahí, tome vale, siga,</td></tr>
+<tr><td>27:10-27:16</td><td>sí, qué lindo, tome, solo cinco, contará, a ver, que le evita, le hizo una campita, sí, muy bien,</td></tr>
+<tr><td>27:16-27:27</td><td>levante su tarea, quién terminó, acúrese, acúrese mi amor, pronto, pronto, eso, muy bien, eso,</td></tr>
+<tr><td>27:27-27:35</td><td>solo cinco y para, uno, dos, tres, cuatro, cinco y para, pronto, pronto, muy bien, eso, ya terminaron,</td></tr>
+<tr><td>27:35-27:46</td><td>bravo, ya terminaron, tres, pronto, pronto, a ver, tenemos dificultad con este por el otro lado,</td></tr>
+<tr><td>27:46-27:54</td><td>muy bien, muy bien, termine, termine, levante, levante su tarea, el que terminó, así mire,</td></tr>
+<tr><td>27:55-28:04</td><td>para tomarle una fotito, levante, quién terminó, tres, cuatro, muy bien, tome mi amor,</td></tr>
+<tr><td>28:06-28:21</td><td>prontamente, prontamente, muy bien, Mati, muy bien, uno, ya, tome otro, dos, ya le doy uno mi amor,</td></tr>
+<tr><td>28:22-28:34</td><td>ponga aquí mi amor, pegue aquí, aquí, así, dos, tres, tres, y a mi amor, ya, espérame ya,</td></tr>
+<tr><td>28:34-28:44</td><td>que ya le doy mi amor, muy bien, siga, ya terminaron, ya, levante su tarea, aquí mi amor, aquí pegue,</td></tr>
+<tr><td>28:45-28:49</td><td>levante su tarea, que la elbita le va a tomar una fotito,</td></tr>
+<tr><td>28:52-28:58</td><td>cuatro, ahí están cinco, muy bien, ese le sobró, guardense el su bolsillo, porque si le ponemos</td></tr>
+<tr><td>28:58-29:04</td><td>uno más, hay seis, muy bien, a ver, arriba, arriba, arriba, arriba, arriba, arriba, arriba su tarea,</td></tr>
+<tr><td>29:04-29:16</td><td>eso, muy bien chicos, este cinco nos indica que hay cinco dados, muy bien, hoy aprendimos,</td></tr>
+<tr><td>29:16-29:22</td><td>¿qué aprendimos hoy? El número cinco, el número cinco indica que hay cinco cosas,</td></tr>
+<tr><td>29:22-29:30</td><td>el número cinco está en todas partes, cuando llega a casa, busque cinco cosas y cuente con</td></tr>
+<tr><td>29:30-29:36</td><td>papá y mamá, ¿de acuerdo? Muy bien, muy bien chicos, felicitaciones, hoy trabajaron como</td></tr>
+<tr><td>29:36-29:41</td><td>unos verdaderos matemáticos, muy bien, bravo, muchas gracias.</td></tr></tbody></table>
+        </details>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
