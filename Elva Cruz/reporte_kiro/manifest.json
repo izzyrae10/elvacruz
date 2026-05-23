@@ -1,0 +1,25 @@
+{
+  "report_path": "Elva Cruz/reporte_kiro/reporte_evaluacion_kiro.html",
+  "evaluator": "kiro_llm_independent",
+  "generated_on": "2026-05-23",
+  "duration_label": "29:41",
+  "indicator_count": 31,
+  "ratings_distribution": {
+    "alto_si": 11,
+    "medio": 17,
+    "bajo": 2,
+    "na": 1
+  },
+  "visual_review_required_count": 11,
+  "agreement_with_deterministic": {
+    "exact_label_match": "31/31",
+    "internal_tendency_disagreements": ["2.3", "7.3"]
+  },
+  "inputs": {
+    "rubric": "Elva Cruz/reportes/artifacts/rubric_indicators.json",
+    "transcript": "Elva Cruz/text-data/1.tsv",
+    "lesson_plan": "Planificacion_Clase_Dado_Numero5.md",
+    "deterministic_scores_for_comparison": "Elva Cruz/reportes/artifacts/indicator_scores.json"
+  },
+  "methodology": "phased-local-v1 compared against independent LLM rating; LLM rated before opening deterministic scores per rule 9 of the prompt."
+}

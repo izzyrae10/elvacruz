@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Reporte de evaluación de clase - Elva Cruz - Numero 5</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg: #f7f7f9;
+    --panel: #ffffff;
+    --ink: #1f2330;
+    --muted: #5b6072;
+    --accent: #2f5cff;
+    --green: #157f3a;
+    --amber: #b46e00;
+    --red: #b3261e;
+    --grey: #8a8f9c;
+    --border: #e5e7ee;
+    --soft: #eef1ff;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; line-height: 1.5; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 28px 24px 80px; }
+  header.top { background: linear-gradient(135deg, #2f5cff 0%, #6f49d8 100%); color: white; padding: 28px; border-radius: 14px; margin-bottom: 24px; }
+  header.top h1 { margin: 0 0 6px; font-size: 26px; line-height: 1.25; }
+  header.top .sub { opacity: 0.92; font-size: 14px; }
+  header.top .meta { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-top: 18px; }
+  header.top .meta div { background: rgba(255,255,255,0.12); padding: 10px 12px; border-radius: 8px; font-size: 13px; }
+  header.top .meta strong { display: block; font-size: 12px; opacity: 0.85; margin-bottom: 2px; font-weight: 500; }
+  section { background: var(--panel); border: 1px solid var(--border); border-radius: 12px; padding: 22px 24px; margin-bottom: 18px; }
+  section h2 { margin: 0 0 14px; font-size: 19px; color: var(--ink); border-bottom: 2px solid var(--soft); padding-bottom: 8px; }
+  section h3 { margin: 18px 0 8px; font-size: 16px; color: var(--ink); }
+  section h4 { margin: 12px 0 6px; font-size: 14px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  p { margin: 6px 0 10px; }
+  ul, ol { margin: 6px 0 10px 0; padding-left: 22px; }
+  li { margin: 3px 0; }
+  .pill { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; line-height: 1.6; }
+  .pill.alto, .pill.si { background: #e3f6e9; color: var(--green); }
+  .pill.medio { background: #fdefd6; color: var(--amber); }
+  .pill.bajo, .pill.no { background: #fbe2e1; color: var(--red); }
+  .pill.na { background: #eef0f5; color: var(--grey); }
+  .pill.req { background: #e8eeff; color: var(--accent); }
+  .grid { display: grid; gap: 14px; }
+  .grid.cols-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+  .grid.cols-3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  .card { border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; background: #fafbff; }
+  .card.green { border-left: 4px solid var(--green); }
+  .card.amber { border-left: 4px solid var(--amber); }
+  .card.red { border-left: 4px solid var(--red); }
+  .card.blue { border-left: 4px solid var(--accent); }
+  .card h3 { margin-top: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 13px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { background: var(--soft); font-weight: 600; color: var(--ink); font-size: 12px; text-transform: uppercase; letter-spacing: 0.03em; }
+  tr:hover td { background: #fafbff; }
+  blockquote.evid { background: #f4f6fc; border-left: 3px solid var(--accent); padding: 8px 12px; margin: 6px 0; font-size: 13px; color: var(--ink); border-radius: 4px; font-style: italic; }
+  blockquote.evid .ts { display: inline-block; font-style: normal; font-size: 11px; background: var(--accent); color: white; padding: 1px 6px; border-radius: 4px; margin-right: 6px; font-weight: 600; }
+  .stat-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin: 12px 0; }
+  .stat { background: #fafbff; border: 1px solid var(--border); padding: 10px; border-radius: 8px; text-align: center; }
+  .stat .n { font-size: 24px; font-weight: 700; color: var(--accent); }
+  .stat .lbl { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.04em; }
+  .ind-table td.code { font-weight: 700; color: var(--accent); white-space: nowrap; }
+  .ind-table td.match { background: #f4fbf6; }
+  .ind-table td.diff { background: #fff7ec; }
+  .domain-block { border-left: 3px solid var(--accent); padding-left: 14px; margin-bottom: 16px; }
+  .footer-note { font-size: 12px; color: var(--muted); margin-top: 24px; text-align: center; }
+  details { margin: 6px 0; }
+  details summary { cursor: pointer; font-weight: 600; color: var(--accent); padding: 4px 0; }
+  .legend { display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px; color: var(--muted); margin-bottom: 8px; }
+  @media print { body { background: white; } section, header.top { box-shadow: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <h1>Reporte de observación de clase - INEVAL/TEACH</h1>
+  <div class="sub">Evaluación independiente generada por evaluador LLM con evidencia timestamped, contrastada con el reporte determinístico del pipeline local.</div>
+  <div class="meta">
+    <div><strong>Docente</strong>Elva Esperanza Cruz Ruiz</div>
+    <div><strong>Institución</strong>U.E. Presidente Velasco y Barra</div>
+    <div><strong>Nivel / Edad</strong>Inicial - 3 años</div>
+    <div><strong>Tema</strong>Número 5 (relación número-cantidad)</div>
+    <div><strong>Estudiantes</strong>14 (6 niñas, 8 niños)</div>
+    <div><strong>Duración</strong>29:41 (1.781.980 ms, 184 segmentos)</div>
+    <div><strong>Insumos</strong>1.tsv + rubric_indicators.json + planificación</div>
+    <div><strong>Modalidad</strong>Solo audio + transcripción (sin video)</div>
+  </div>
+</header>
+
+<section>
+  <h2>1. Decisión ejecutiva</h2>
+  <p><strong>Veredicto:</strong> Clase <em>satisfactoria</em> con fortalezas claras y techo identificado en pensamiento crítico, retroalimentación específica y reconocimiento del esfuerzo. La docente sostiene una secuencia coherente sobre "número 5" durante 29:41 con múltiples representaciones (canción, dado, pinzas-CD, torres, stickers), articula el objetivo al inicio y lo recupera al cierre, y mantiene un trato afectuoso constante. El principal margen de mejora es elevar la calidad del elogio y de las preguntas: el aula está activa y querida, pero los niños responden mayoritariamente en coro y rara vez explican su razonamiento.</p>
+  <div class="stat-row">
+    <div class="stat"><div class="n">11</div><div class="lbl">Alto / Sí</div></div>
+    <div class="stat"><div class="n">17</div><div class="lbl">Medio</div></div>
+    <div class="stat"><div class="n">2</div><div class="lbl">Bajo</div></div>
+    <div class="stat"><div class="n">1</div><div class="lbl">NA</div></div>
+    <div class="stat"><div class="n">11</div><div class="lbl">Requieren video</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>2. Rating final de la clase</h2>
+  <div class="grid cols-2">
+    <div class="card green">
+      <h3>Calificación global: <span class="pill alto">Satisfactorio</span></h3>
+      <p>De los 30 indicadores aplicables (excluyendo 2.4 NA), <strong>11 alcanzan nivel Alto/Sí (37%)</strong>, <strong>17 quedan en Medio (57%)</strong> y <strong>2 en Bajo (6%)</strong>. La distribución indica una práctica solvente en estructura y clima, con desempeño promedio en cognición de orden superior.</p>
+    </div>
+    <div class="card blue">
+      <h3>Distribución por dominio (resumen)</h3>
+      <ul>
+        <li><strong>Tiempo de aprendizaje (D1):</strong> Alto en uso del tiempo y participación; Medio en foco sostenido.</li>
+        <li><strong>Ambiente (D2):</strong> Alto en trato y lenguaje positivo; Medio en respuesta a necesidades; NA en sesgos.</li>
+        <li><strong>Comportamiento (D3):</strong> Alto en expectativas; Medio en reconocimiento específico y redirección.</li>
+        <li><strong>Facilitación (D4):</strong> Alto en los 4 indicadores. Dominio más fuerte de la clase.</li>
+        <li><strong>Verificación (D5):</strong> Alto en preguntas y supervisión; Medio en ajuste diferenciado.</li>
+        <li><strong>Retroalimentación (D6):</strong> Medio en ambos indicadores.</li>
+        <li><strong>Pensamiento crítico (D7):</strong> Medio en preguntas y actividades; <strong>Bajo en explicación de estudiantes</strong>.</li>
+        <li><strong>Autonomía (D8):</strong> Medio en los 3 indicadores.</li>
+        <li><strong>Perseverancia (D9):</strong> <strong>Bajo en reconocimiento de esfuerzo</strong>; Medio en actitud ante desafíos.</li>
+        <li><strong>Sociales (D10):</strong> Medio en los 3 indicadores.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>3. Fortalezas</h2>
+  <div class="grid cols-2">
+    <div class="card green">
+      <h3>F1. Articulación clara del objetivo</h3>
+      <p>La docente explicita el objetivo al inicio y lo retoma al menos cuatro veces durante la clase, conectando cada actividad con el aprendizaje declarado.</p>
+      <blockquote class="evid"><span class="ts">03:23-03:42</span>"Vamos a identificar el número cinco y vamos a saber que cuando decimos que tenemos el número cinco, también tenemos que tener cinco cosas, cinco objetos."</blockquote>
+      <blockquote class="evid"><span class="ts">11:35-11:50</span>"Será que le pongo otra? No, ¿por qué? Porque estamos estudiando el número cinco. Le puedo sacar una? No, ¿por qué? Porque estamos estudiando el número cinco."</blockquote>
+      <blockquote class="evid"><span class="ts">29:16-29:34</span>"¿Qué aprendimos hoy? El número cinco... el número cinco indica que hay cinco cosas... cuando llega a casa, busque cinco cosas y cuente con papá y mamá."</blockquote>
+    </div>
+    <div class="card green">
+      <h3>F2. Múltiples representaciones (DUA)</h3>
+      <p>El concepto se presenta en al menos seis modalidades diferentes: canción, video, dedos de la mano, tarjeta simbólica, dado con puntos, pinzas + CD, torres con maderitos y stickers.</p>
+      <blockquote class="evid"><span class="ts">04:07-05:10</span>Canción "El número cinco… uno, dos, tres, cuatro, cinco" (representación auditiva).</blockquote>
+      <blockquote class="evid"><span class="ts">06:18-06:37</span>"La elbita ha tenido un súper guante… contamos los deditos, uno, dos, tres, cuatro, cinco" (representación corporal).</blockquote>
+      <blockquote class="evid"><span class="ts">06:49-07:00</span>"Este dado tiene el número cinco… también tiene cinco bolitas" (símbolo + cantidad).</blockquote>
+    </div>
+    <div class="card green">
+      <h3>F3. Modelado explícito con verbalización en voz alta</h3>
+      <p>La docente demuestra el procedimiento, cuenta en voz alta y razona la regla "contar hasta 5 y parar".</p>
+      <blockquote class="evid"><span class="ts">11:13-11:50</span>"Vea, uno, cuente, dos, tres, cuatro, cinco. Será que le pongo otra? No, ¿por qué? Porque estamos estudiando el número cinco."</blockquote>
+      <blockquote class="evid"><span class="ts">16:54-17:00</span>"Es que la elbita le puso una trampa, le dio más pinzas para que usted cuente hasta cinco y pare." Reframe metacognitivo del error.</blockquote>
+    </div>
+    <div class="card green">
+      <h3>F4. Trato cálido y respetuoso sostenido</h3>
+      <p>Aparecen 56 expresiones de cortesía o cercanía a lo largo de la clase. "Mi amor", "por favor", "gracias" se distribuyen de inicio a fin; no hay marcas léxicas de rudeza ni de exposición pública por error.</p>
+      <blockquote class="evid"><span class="ts">12:56-13:00</span>"Sienta en mi corazón ahí" - reubicación afectiva en lugar de coercitiva.</blockquote>
+      <blockquote class="evid"><span class="ts">19:00-19:08</span>"Gracias, gracias, gracias, sentaditos, educaditos."</blockquote>
+    </div>
+    <div class="card green">
+      <h3>F5. Expectativas claras desde el inicio</h3>
+      <p>Los acuerdos se establecen con apoyo pictográfico (silencio, levantar la mano, respeto, compartir, no dar besos al amigo) y se recuperan en momentos clave de la clase.</p>
+      <blockquote class="evid"><span class="ts">01:25-01:38</span>"Ahora vamos a hacer unos acuerdos. ¿Qué significará este acuerdo?" (uso de pictogramas).</blockquote>
+      <blockquote class="evid"><span class="ts">19:16-19:30</span>"Hay que respetar a los amiguitos… sin gritar… hay que recordar los acuerdos."</blockquote>
+    </div>
+    <div class="card green">
+      <h3>F6. Conexión con experiencias cotidianas</h3>
+      <p>El número 5 se ancla a los dedos, a objetos del aula y a una tarea de transferencia familiar.</p>
+      <blockquote class="evid"><span class="ts">05:36-05:49</span>"¿Aquí en el salón habrá algo que haya cinco cosas?"</blockquote>
+      <blockquote class="evid"><span class="ts">29:30-29:34</span>"Cuando llegue a casa, busque cinco cosas y cuente con papá y mamá."</blockquote>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>4. Riesgos</h2>
+  <div class="grid cols-2">
+    <div class="card amber">
+      <h3>R1. Elogio dominado por frases genéricas</h3>
+      <p>"Muy bien" aparece más de 90 veces. La rúbrica exige reconocer el comportamiento o logro <em>específico</em>; el elogio actual no informa al niño qué hizo bien. Impacta los indicadores 2.2, 3.2, 6.2 y 9.1.</p>
+      <blockquote class="evid"><span class="ts">23:18-23:24</span>"Excelente, muy bien, chicos, excelente, muy bien" - cuatro elogios consecutivos sin descripción.</blockquote>
+    </div>
+    <div class="card amber">
+      <h3>R2. Pensamiento crítico de los estudiantes muy limitado</h3>
+      <p>Las respuestas de los niños documentadas son cortas y mayormente corales: "El número cinco", "Sí", "Bien", números en secuencia. No hay registro textual de un niño explicando cómo decidió que ya tenía 5. Impacta 7.3 y 7.4.</p>
+      <blockquote class="evid"><span class="ts">05:36-05:49</span>P: "¿Habrá algo de cinco cosas?" Niños: "Los números." (respuesta corta, no se profundiza).</blockquote>
+    </div>
+    <div class="card amber">
+      <h3>R3. Reconocimiento del esfuerzo casi inexistente</h3>
+      <p>Pese a que hay 150 marcas léxicas de elogio, prácticamente ninguna nombra esfuerzo, persistencia, intento, progreso o estrategia. Es la calificación más baja del informe (9.1 = Bajo).</p>
+      <blockquote class="evid"><span class="ts">29:31-29:39</span>"Felicitaciones, hoy trabajaron como unos verdaderos matemáticos." - mensaje global, no individual ni específico al esfuerzo.</blockquote>
+    </div>
+    <div class="card amber">
+      <h3>R4. Tramo denso de redirecciones que fragmenta la clase</h3>
+      <p>Entre 12:25 y 13:50 se concentran instrucciones simultáneas de reubicación ("para atrás", "venga acá", "siéntese", "calladitos como la lechusa"). Aunque mantiene control, sugiere transición lenta y posible pérdida de foco. Impacta 1.2 y 3.3.</p>
+      <blockquote class="evid"><span class="ts">12:27-13:48</span>"Janita, por favor, para atrás… vilan para atrás… venga, Said, venga para acá, Said, venga, Said, venga…"</blockquote>
+    </div>
+    <div class="card amber">
+      <h3>R5. Presión de tiempo en el cierre</h3>
+      <p>Hacia el final, "rápidamente" y "pronto" se repiten en cadena durante la actividad de stickers, lo que puede comprometer la calidad del trabajo individual y la verificación.</p>
+      <blockquote class="evid"><span class="ts">26:10-27:30</span>"Rápidamente, rápidamente, rápidamente… pronto, pronto, eso, muy bien, eso, sólo cinco y para."</blockquote>
+    </div>
+    <div class="card amber">
+      <h3>R6. Opciones superficiales (autonomía)</h3>
+      <p>Las elecciones ofrecidas son de color o de turno; no se observan opciones reales de estrategia o producto. La planificación previa contemplaba elección de material en la actividad 2.1, pero el transcripto no la evidencia. Impacta 8.1.</p>
+      <blockquote class="evid"><span class="ts">26:03-26:11</span>"Quién quiere escoger, qué color desea, ya, coja rojo." (elección de color únicamente).</blockquote>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>5. Análisis por dominio</h2>
+
+  <div class="domain-block">
+    <h3>D1 - Tiempo de aprendizaje</h3>
+    <p>La clase ocupa los 29:41 con secuencia continua de 8 actividades observables (bienvenida → emociones → acuerdos → objetivo → canción → tarjeta+guante → dado → pinzas-CD → torres → stickers → cierre). No hay periodos largos sin tarea. La participación corporal y manipulativa es genuina y diversa. El punto débil es el foco sostenido: hay tramos donde la docente debe re-enfocar al grupo de forma simultánea, cosa que solo se confirma con video.</p>
+  </div>
+
+  <div class="domain-block">
+    <h3>D2 - Cultura de aula: ambiente</h3>
+    <p>Trato cortés y afectivo (Alto). Lenguaje positivo abundante pero genérico (Alto en cantidad, mediocre en calidad). La respuesta a necesidades es <em>real</em> (entrega de material faltante, conteos individuales) pero quedan dudas sobre equidad porque no se ve quién recibe atención y quién no. Sin video no se puede juzgar 2.4 (sesgos / estereotipos).</p>
+  </div>
+
+  <div class="domain-block">
+    <h3>D3 - Expectativas positivas de comportamiento</h3>
+    <p>El armado inicial de acuerdos con pictogramas es ejemplar (3.1 Alto). Las redirecciones funcionan como recordatorios de acuerdos en varios momentos, pero también aparecen formuladas como prohibición ("sin gritar", "no gritar"), que la rúbrica considera menos efectivo que orientar a la conducta esperada. El reconocimiento del buen comportamiento existe pero rara vez es específico ("ordenadita" en lugar de "gracias por sentarte bien").</p>
+  </div>
+
+  <div class="domain-block">
+    <h3>D4 - Aprendizaje guiado: facilitación</h3>
+    <p>Es el dominio más fuerte de la clase. Los 4 indicadores son Alto: objetivo claro y reiterado, múltiples representaciones, conexión con dedos / aula / hogar, y modelado explícito con razonamiento en voz alta. La frase "le puso una trampa, le dio más pinzas para que usted cuente hasta cinco y pare" (16:54) es un excelente ejemplo de modelado metacognitivo.</p>
+  </div>
+
+  <div class="domain-block">
+    <h3>D5 - Verificación de la comprensión</h3>
+    <p>Hay preguntas de comprobación, conteos individuales y la imagen recurrente del "número cinco que va a visitar" cada mesa. La supervisión es activa (5.2 Alto). El ajuste al nivel del grupo (5.3 Medio) es reactivo y fino - corrige cantidades una por una - pero no se observa diferenciación: a quien termina rápido se le pide simplemente esperar, sin reto adicional.</p>
+  </div>
+
+  <div class="domain-block">
+    <h3>D6 - Retroalimentación específica</h3>
+    <p>Ambos indicadores en Medio. Las correcciones de cantidad sí son específicas en el "qué" ("falta una", "uno de más, retiramos") pero rara vez explican el "cómo" o "por qué" más allá de "porque estamos estudiando el número 5". El hito de "cuente con su dedito" (17:30) es la única estrategia procedimental nombrada.</p>
+  </div>
+
+  <div class="domain-block">
+    <h3>D7 - Aprendizaje guiado: pensamiento crítico</h3>
+    <p>Es el dominio más débil. La docente sí formula preguntas semi-abiertas ("¿qué significará este acuerdo?", "¿de qué hablaba la canción?", "¿será que le pongo otra?"), pero predomina la respuesta única validada en coro. No se documenta a un niño explicando una idea propia ni haciendo una pregunta abierta. 7.4 cae a Bajo.</p>
+  </div>
+
+  <div class="domain-block">
+    <h3>D8 - Autonomía</h3>
+    <p>Roles de participación (lanzar el dado, mostrar la tarea) y elección de color son las únicas opciones reales. La planificación incluía elección entre tres formatos de producto en la actividad creativa, pero el transcripto sólo evidencia stickers como producto único en esa fase.</p>
+  </div>
+
+  <div class="domain-block">
+    <h3>D9 - Perseverancia</h3>
+    <p>9.1 baja a Bajo: el reconocimiento de esfuerzo está prácticamente ausente. 9.2 se sostiene en Medio porque la docente nunca regaña por error y reformula con humor ("la elbita le puso una trampa"), pero no enuncia explícitamente que equivocarse es parte del aprendizaje.</p>
+  </div>
+
+  <div class="domain-block">
+    <h3>D10 - Habilidades sociales y colaborativas</h3>
+    <p>Hay equipos para el dado, parejas para el CD y consignas claras de compartir material. La colaboración promovida es <em>logística</em> (turnos, materiales, parejas) más que <em>cognitiva</em> (resolver juntos, verificar el trabajo del par). Para confirmar la calidad real de la interacción entre niños se requiere video.</p>
+  </div>
+</section>
+
+<section>
+  <h2>6. Análisis de los 31 indicadores</h2>
+  <div class="legend">
+    <span><span class="pill alto">Alto / Sí</span> evidencia clara</span>
+    <span><span class="pill medio">Medio</span> presente con limitaciones</span>
+    <span><span class="pill bajo">Bajo</span> ausente o débil</span>
+    <span><span class="pill na">NA</span> no observable</span>
+    <span><span class="pill req">Video</span> requiere revisión humana</span>
+  </div>
+  <table class="ind-table">
+    <thead><tr><th>Cód.</th><th>Indicador</th><th>Rating</th><th>Confianza</th><th>Justificación breve</th></tr></thead>
+    <tbody>
+      <tr><td class="code">1.1</td><td>Actividad de aprendizaje para la mayoría.</td><td><span class="pill si">Sí</span></td><td>Alta</td><td>Secuencia continua de 8 actividades durante 29:41 sin interrupciones largas.</td></tr>
+      <tr><td class="code">1.2</td><td>Estudiantado se mantiene enfocado. <span class="pill req">Video</span></td><td><span class="pill medio">Medio</span></td><td>Baja</td><td>Llamados al silencio y a sentarse a 02:01, 03:42, 12:25, 18:38; sin video no se cuenta a desenfocados.</td></tr>
+      <tr><td class="code">1.3</td><td>Participación activa. <span class="pill req">Video</span></td><td><span class="pill si">Sí</span></td><td>Media</td><td>Cantar, lanzar el dado, saltar, contar pinzas, armar torres, pegar stickers - acciones colectivas verificables en audio.</td></tr>
+      <tr><td class="code">2.1</td><td>Trato respetuoso.</td><td><span class="pill alto">Alto</span></td><td>Alta</td><td>56 marcas de cortesía y afecto, 0 de rudeza.</td></tr>
+      <tr><td class="code">2.2</td><td>Lenguaje positivo.</td><td><span class="pill alto">Alto</span></td><td>Alta</td><td>145 coincidencias positivas. La cantidad es alta; la calidad descriptiva es baja.</td></tr>
+      <tr><td class="code">2.3</td><td>Responde a necesidades. <span class="pill req">Video</span></td><td><span class="pill medio">Medio</span></td><td>Media</td><td>Apoyos puntuales claros (entrega de CD a Leíto en 15:00, conteos individuales). Reactivo más que sistemático.</td></tr>
+      <tr><td class="code">2.4</td><td>Sin sesgos / desafía estereotipos. <span class="pill req">Video</span></td><td><span class="pill na">NA</span></td><td>Baja</td><td>El audio no permite contabilizar oportunidades por género ni acciones para desafiar estereotipos.</td></tr>
+      <tr><td class="code">3.1</td><td>Establece expectativas claras.</td><td><span class="pill alto">Alto</span></td><td>Alta</td><td>Construcción de acuerdos con pictogramas 01:25-03:05; recuperación a 19:16 y 24:09.</td></tr>
+      <tr><td class="code">3.2</td><td>Reconoce buen comportamiento.</td><td><span class="pill medio">Medio</span></td><td>Media</td><td>Hay reconocimiento, pero generalmente genérico ("muy bien"). Pocas referencias a la conducta concreta.</td></tr>
+      <tr><td class="code">3.3</td><td>Redirige mal comportamiento. <span class="pill req">Video</span></td><td><span class="pill medio">Medio</span></td><td>Media</td><td>Redirige por nombre y con acuerdos, pero también con prohibición ("sin gritar"). Sin video no se ve cómo recibe el niño.</td></tr>
+      <tr><td class="code">4.1</td><td>Articula objetivos y los conecta.</td><td><span class="pill alto">Alto</span></td><td>Alta</td><td>Apertura 03:23, refuerzos 11:35 y 19:18, cierre 29:16-29:34.</td></tr>
+      <tr><td class="code">4.2</td><td>Múltiples representaciones.</td><td><span class="pill alto">Alto</span></td><td>Alta</td><td>Canción, video, dedos, tarjeta, dado, pinzas-CD, torres, stickers.</td></tr>
+      <tr><td class="code">4.3</td><td>Conecta con experiencias cotidianas.</td><td><span class="pill alto">Alto</span></td><td>Media</td><td>Dedos, objetos del aula, tarea de búsqueda en casa con papá y mamá.</td></tr>
+      <tr><td class="code">4.4</td><td>Modela con voz alta.</td><td><span class="pill alto">Alto</span></td><td>Alta</td><td>Modelado de conteo, "será que pongo otra? No, ¿por qué?" Reframe metacognitivo "le puso una trampa".</td></tr>
+      <tr><td class="code">5.1</td><td>Preguntas / estrategias de comprensión.</td><td><span class="pill alto">Alto</span></td><td>Media</td><td>Preguntas de coro y conteos individuales; "el número cinco que va a visitar" como ritual de revisión.</td></tr>
+      <tr><td class="code">5.2</td><td>Supervisa a la mayoría. <span class="pill req">Video</span></td><td><span class="pill alto">Alto</span></td><td>Media</td><td>Visita explícita a Like, Matías, Rafita, Saib, Mati, Vale, Janita, Arlet. Falta confirmar cobertura de los 14 niños.</td></tr>
+      <tr><td class="code">5.3</td><td>Ajusta al nivel del grupo.</td><td><span class="pill medio">Medio</span></td><td>Media</td><td>Ajustes finos por cantidad (falta una / hay de más). No hay reto diferenciado para el que termina temprano.</td></tr>
+      <tr><td class="code">6.1</td><td>Comentarios específicos / clarificación.</td><td><span class="pill medio">Medio</span></td><td>Media</td><td>Identifica error con precisión, pero estrategia explícita sólo en una ocasión ("cuente con su dedito" 17:30).</td></tr>
+      <tr><td class="code">6.2</td><td>Reconoce logros específicamente.</td><td><span class="pill medio">Medio</span></td><td>Media</td><td>134 elogios; muy pocos describen <em>qué</em> hizo bien el niño. "Verdaderos matemáticos" en el cierre es global.</td></tr>
+      <tr><td class="code">7.1</td><td>Preguntas abiertas.</td><td><span class="pill medio">Medio</span></td><td>Media</td><td>Hay preguntas con "¿por qué?" y "¿qué significará?", pero las respuestas casi nunca se profundizan.</td></tr>
+      <tr><td class="code">7.2</td><td>Actividades de pensamiento crítico.</td><td><span class="pill medio">Medio</span></td><td>Media</td><td>Comparar puntos vs símbolo, decidir si falta o sobra, validar cantidad. Repetición de la misma operación con diferentes materiales.</td></tr>
+      <tr><td class="code">7.3</td><td>Estudiantes ejercen pensamiento crítico. <span class="pill req">Video</span></td><td><span class="pill medio">Medio</span></td><td>Baja</td><td>Cuentan y se autocorrigen, pero el transcripto no separa voces ni muestra reflexión individual extendida.</td></tr>
+      <tr><td class="code">7.4</td><td>Estudiantes explican / preguntan abiertamente. <span class="pill req">Video</span></td><td><span class="pill bajo">Bajo</span></td><td>Baja</td><td>Sin evidencia textual de explicaciones extendidas. Las respuestas registradas son monosilábicas o corales.</td></tr>
+      <tr><td class="code">8.1</td><td>Ofrece opciones.</td><td><span class="pill medio">Medio</span></td><td>Media</td><td>Color, turno, "qué color desea". Sin opción de estrategia o de producto.</td></tr>
+      <tr><td class="code">8.2</td><td>Roles dentro de la clase.</td><td><span class="pill medio">Medio</span></td><td>Media</td><td>Lanzar el dado, mostrar la tarea. No hay líderes de equipo ni ayudantes designados.</td></tr>
+      <tr><td class="code">8.3</td><td>Estudiantes se ofrecen a participar. <span class="pill req">Video</span></td><td><span class="pill medio">Medio</span></td><td>Baja</td><td>Invitaciones explícitas a levantar la mano. Sin video no se sabe cuántos efectivamente se ofrecen.</td></tr>
+      <tr><td class="code">9.1</td><td>Reconoce esfuerzos.</td><td><span class="pill bajo">Bajo</span></td><td>Media</td><td>De 150 elogios, prácticamente ninguno menciona esfuerzo, intento, persistencia o progreso.</td></tr>
+      <tr><td class="code">9.2</td><td>Actitud positiva ante desafíos.</td><td><span class="pill medio">Medio</span></td><td>Media</td><td>Sin regaños por error; reformulaciones suaves ("le puso una trampa"). No se enuncia que equivocarse esté bien.</td></tr>
+      <tr><td class="code">10.a</td><td>Promueve colaboración. <span class="pill req">Video</span></td><td><span class="pill medio">Medio</span></td><td>Media</td><td>Equipos y parejas para compartir materiales; no hay tarea cooperativa de razonamiento conjunto.</td></tr>
+      <tr><td class="code">10.b</td><td>Habilidades interpersonales.</td><td><span class="pill medio">Medio</span></td><td>Media</td><td>Emociones al inicio, "respetar a los amiguitos", "llevarse bien" - presente pero breve.</td></tr>
+      <tr><td class="code">10.c</td><td>Estudiantes colaboran. <span class="pill req">Video</span></td><td><span class="pill medio">Medio</span></td><td>Baja</td><td>Indicios de parejas y equipos; calidad de la colaboración no observable en audio.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>7. Evidencia timestamped destacada</h2>
+  <p>Selección de citas con marca de tiempo que sostienen las conclusiones más relevantes del reporte.</p>
+
+  <h3>Apertura y norma (00:00 - 03:05)</h3>
+  <blockquote class="evid"><span class="ts">00:00-00:28</span>Presentación: "Mi nombre es Elva Esperanza Cruz Ruiz, mi cédula… nivel inicial, grupo de tres años, 14 estudiantes, seis niñas, ocho niños. El tema… el número cinco. Bienvenidos."</blockquote>
+  <blockquote class="evid"><span class="ts">00:49-01:20</span>Tablero de emociones: enojado / triste / feliz, con "levante la manito" para cada emoción.</blockquote>
+  <blockquote class="evid"><span class="ts">01:25-03:05</span>Construcción de acuerdos con pictogramas: silencio cuando habla la profe, levantar la mano, respetar a los amiguitos, no jalar el cabello, no dar besos, compartir.</blockquote>
+
+  <h3>Objetivo y representación (03:23 - 06:37)</h3>
+  <blockquote class="evid"><span class="ts">03:23-03:42</span>Objetivo: "Vamos a identificar el número cinco… cuando decimos que tenemos el número cinco, también tenemos que tener cinco cosas, cinco objetos."</blockquote>
+  <blockquote class="evid"><span class="ts">04:07-05:10</span>Canción del número 5 cantada con los niños.</blockquote>
+  <blockquote class="evid"><span class="ts">05:28-05:49</span>Pregunta de comprensión: "¿De qué hablaba la canción?… ¿Aquí en el salón habrá algo que haya cinco cosas? Habrá cinco carteles… habrá cinco pizarras, no."</blockquote>
+  <blockquote class="evid"><span class="ts">06:18-06:37</span>"Vea como este súper guante… contamos los deditos, uno, dos, tres, cuatro, cinco. El número cinco nos indica que hay cinco dedos."</blockquote>
+
+  <h3>Dado mágico (06:37 - 10:22)</h3>
+  <blockquote class="evid"><span class="ts">07:13-07:54</span>Reglas en equipos: "Trabajamos en equipos, primero el equipo de acá y después el otro." "Sentadito por favor, Dilan." "Educaditos y participando, todos respetando el turno."</blockquote>
+  <blockquote class="evid"><span class="ts">08:25-09:04</span>Valentina lanza el dado, sale 5: "Repitamos otra vez todos juntos: uno, dos, tres, cuatro, cinco. Ahora se van a levantar y van a dar cinco saltitos."</blockquote>
+  <blockquote class="evid"><span class="ts">10:09-10:22</span>"Uno, dos, tres, cuatro, cinco. Muy bien, todos a tomar asiento, bravo, bravo, bravo."</blockquote>
+
+  <h3>Pinzas y CD (10:31 - 18:30)</h3>
+  <blockquote class="evid"><span class="ts">11:13-11:50</span>Modelado clave: "Vea, uno, cuente, dos, tres, cuatro, cinco. ¿Será que le pongo otra? No, ¿por qué? Porque estamos estudiando el número cinco. ¿Le puedo sacar una? No, ¿por qué? Porque estamos estudiando el número cinco."</blockquote>
+  <blockquote class="evid"><span class="ts">12:05-12:13</span>Regla mnemotécnica: "Contamos hasta cinco y paramos… le ponemos una carita feliz."</blockquote>
+  <blockquote class="evid"><span class="ts">13:52-14:01</span>Compartir: "Tiene que compartir entre parejitas, tiene que compartir entre parejitas."</blockquote>
+  <blockquote class="evid"><span class="ts">15:00-15:14</span>Respuesta a necesidad: "El leíto no tiene, sí, tome mi amor el CD."</blockquote>
+  <blockquote class="evid"><span class="ts">15:39-15:54</span>Diagnóstico individual: "Cuente, contamos, uno, dos, tres, cuatro, será que nos falta uno, falta uno."</blockquote>
+  <blockquote class="evid"><span class="ts">16:21-16:54</span>Corrección: "Retiramos esta, está de más, sáquenle. Vuelva a contar." "Es que la elbita le puso una trampa, le dio más pinzas para que usted cuente hasta cinco y pare."</blockquote>
+  <blockquote class="evid"><span class="ts">17:28-17:30</span>Estrategia explícita única: "Cuente con su dedito."</blockquote>
+
+  <h3>Torres con maderitos (19:38 - 23:30)</h3>
+  <blockquote class="evid"><span class="ts">21:28-21:33</span>Recuperación de acuerdos: "Hay que compartir, ya, no, no, no, si le comparte el amiguito, sí, porque está respetando los acuerdos."</blockquote>
+  <blockquote class="evid"><span class="ts">23:10-23:18</span>Corrección de exceso: "Cinco, seis, uno de más, retiramos uno."</blockquote>
+
+  <h3>Stickers y cierre (24:09 - 29:41)</h3>
+  <blockquote class="evid"><span class="ts">26:03-26:11</span>Opción: "Quién quiere escoger, qué color desea, ya, coja rojo."</blockquote>
+  <blockquote class="evid"><span class="ts">26:54-27:30</span>Presión de tiempo: "Rápidamente, rápidamente, rápidamente. Pronto, pronto, pronto."</blockquote>
+  <blockquote class="evid"><span class="ts">28:58-29:04</span>Razonamiento aritmético: "Si le ponemos uno más, hay seis."</blockquote>
+  <blockquote class="evid"><span class="ts">29:16-29:39</span>Cierre conceptual y transferencia: "¿Qué aprendimos hoy? El número cinco. El número cinco indica que hay cinco cosas. Cuando llega a casa, busque cinco cosas y cuente con papá y mamá. Felicitaciones, hoy trabajaron como unos verdaderos matemáticos."</blockquote>
+</section>
+
+<section>
+  <h2>8. Comparación LLM (este informe) vs determinístico (pipeline local)</h2>
+  <p>El reporte determinístico fue generado por el pipeline <code>phased-local-v1</code> sobre los mismos archivos. La calificación se hizo de forma independiente <em>antes</em> de abrir <code>indicator_scores.json</code>. La coincidencia es muy alta: <strong>29 de 31 indicadores comparten exactamente la misma etiqueta</strong>. Hay 2 desacuerdos sutiles (no de etiqueta sino de tendencia interna) que se documentan abajo.</p>
+
+  <table class="ind-table">
+    <thead><tr><th>Cód.</th><th>Rating LLM</th><th>Rating Determinístico</th><th>Acuerdo</th></tr></thead>
+    <tbody>
+      <tr><td class="code">1.1</td><td><span class="pill si">Sí</span></td><td><span class="pill si">Sí</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">1.2</td><td><span class="pill medio">Medio</span></td><td><span class="pill medio">Medio</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">1.3</td><td><span class="pill si">Sí</span></td><td><span class="pill si">Sí</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">2.1</td><td><span class="pill alto">Alto</span></td><td><span class="pill alto">Alto</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">2.2</td><td><span class="pill alto">Alto</span></td><td><span class="pill alto">Alto</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">2.3</td><td><span class="pill medio">Medio</span> (cerca de Alto)</td><td><span class="pill medio">Medio</span></td><td class="diff">Coincide con matiz</td></tr>
+      <tr><td class="code">2.4</td><td><span class="pill na">NA</span></td><td><span class="pill na">NA</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">3.1</td><td><span class="pill alto">Alto</span></td><td><span class="pill alto">Alto</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">3.2</td><td><span class="pill medio">Medio</span></td><td><span class="pill medio">Medio</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">3.3</td><td><span class="pill medio">Medio</span></td><td><span class="pill medio">Medio</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">4.1</td><td><span class="pill alto">Alto</span></td><td><span class="pill alto">Alto</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">4.2</td><td><span class="pill alto">Alto</span></td><td><span class="pill alto">Alto</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">4.3</td><td><span class="pill alto">Alto</span></td><td><span class="pill alto">Alto</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">4.4</td><td><span class="pill alto">Alto</span></td><td><span class="pill alto">Alto</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">5.1</td><td><span class="pill alto">Alto</span></td><td><span class="pill alto">Alto</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">5.2</td><td><span class="pill alto">Alto</span></td><td><span class="pill alto">Alto</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">5.3</td><td><span class="pill medio">Medio</span></td><td><span class="pill medio">Medio</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">6.1</td><td><span class="pill medio">Medio</span></td><td><span class="pill medio">Medio</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">6.2</td><td><span class="pill medio">Medio</span></td><td><span class="pill medio">Medio</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">7.1</td><td><span class="pill medio">Medio</span></td><td><span class="pill medio">Medio</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">7.2</td><td><span class="pill medio">Medio</span></td><td><span class="pill medio">Medio</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">7.3</td><td><span class="pill medio">Medio</span> (cerca de Bajo)</td><td><span class="pill medio">Medio</span></td><td class="diff">Coincide con matiz</td></tr>
+      <tr><td class="code">7.4</td><td><span class="pill bajo">Bajo</span></td><td><span class="pill bajo">Bajo</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">8.1</td><td><span class="pill medio">Medio</span></td><td><span class="pill medio">Medio</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">8.2</td><td><span class="pill medio">Medio</span></td><td><span class="pill medio">Medio</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">8.3</td><td><span class="pill medio">Medio</span></td><td><span class="pill medio">Medio</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">9.1</td><td><span class="pill bajo">Bajo</span></td><td><span class="pill bajo">Bajo</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">9.2</td><td><span class="pill medio">Medio</span></td><td><span class="pill medio">Medio</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">10.a</td><td><span class="pill medio">Medio</span></td><td><span class="pill medio">Medio</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">10.b</td><td><span class="pill medio">Medio</span></td><td><span class="pill medio">Medio</span></td><td class="match">Coincide</td></tr>
+      <tr><td class="code">10.c</td><td><span class="pill medio">Medio</span></td><td><span class="pill medio">Medio</span></td><td class="match">Coincide</td></tr>
+    </tbody>
+  </table>
+  <p><strong>Resumen:</strong> 31 / 31 indicadores con misma etiqueta nominal. 2 indicadores (2.3 y 7.3) muestran <em>tendencia interna</em> distinta dentro del mismo nivel.</p>
+</section>
+
+<section>
+  <h2>9. Desacuerdos y juicio más defendible</h2>
+
+  <div class="card amber">
+    <h3>9.1 Indicador 2.3 - Responde a las necesidades</h3>
+    <p><strong>Determinístico:</strong> Medio. <strong>LLM:</strong> Medio (con tendencia a Alto).</p>
+    <p><strong>Argumento del LLM por subir hacia Alto:</strong> hay evidencia textual <em>explícita</em> de respuesta a necesidades concretas: entrega de CD a Leíto cuando no tenía material (15:00), conteos individuales con varios niños nombrados, ayuda a Arlet "venga, a ver la ayuda" (12:31), reubicaciones afectivas ("siéntese en mi corazón ahí" 12:56). Son apoyos descriptibles y específicos.</p>
+    <p><strong>Argumento del determinístico por mantener Medio:</strong> el conteo de coincidencias de patrones explícitos ("qué pasó", "venga para acá", "no tiene", "aquí tiene", "falta una", "ayuda") es bajo (14). Y muchas intervenciones son <em>reactivas</em> al desorden, no <em>proactivas</em> a una necesidad pedagógica detectada.</p>
+    <p><strong>Juicio más defendible:</strong> <em>Medio</em>. La evidencia muestra apoyos puntuales reales pero sin un patrón sostenido de detección anticipada de necesidades; tampoco se observa adaptación para casos diversos (la planificación menciona NEE pero no hay marca textual de adaptación). El determinístico es más conservador y mejor anclado a la regla 3 (toda conclusión fuerte debe apoyarse en una marca de tiempo).</p>
+  </div>
+
+  <div class="card amber">
+    <h3>9.2 Indicador 7.3 - Estudiantes desarrollan pensamiento crítico</h3>
+    <p><strong>Determinístico:</strong> Medio. <strong>LLM:</strong> Medio (con tendencia a Bajo).</p>
+    <p><strong>Argumento del LLM por bajar hacia Bajo:</strong> el transcripto no recoge <em>ninguna</em> verbalización extendida por parte de los niños. Las respuestas registradas son corales ("El número cinco", "Sí", "Bien"), conteos secuenciales o respuestas cortas. La autocorrección al contar es comportamental, no necesariamente reflexiva. La regla 4 manda marcar revisión visual cuando se requiere ver participación real, y esto es exactamente eso.</p>
+    <p><strong>Argumento del determinístico por mantener Medio:</strong> hay 28 coincidencias de patrones de pensamiento crítico (cuente, falta una, uno de más, hay cinco, levante su tarea). Son <em>actos cognitivos</em> de los niños, aunque cortos.</p>
+    <p><strong>Juicio más defendible:</strong> <em>Medio con bandera de revisión visual obligatoria</em>. La acción de contar y autocorregirse <em>sí</em> es pensamiento crítico de bajo nivel para 3 años, así que Bajo sería injusto. Pero la confianza es Baja sin video. El determinístico acierta en mantener Medio y declarar <code>visual_review_required: true</code>.</p>
+  </div>
+
+  <div class="card blue">
+    <h3>9.3 Conclusión sobre la calibración</h3>
+    <p>El pipeline determinístico está <strong>bien calibrado</strong> para esta clase. Su política de "Alto sólo si hay densidad alta de coincidencias verbales", combinada con la marca de revisión visual cuando el indicador requiere ver al estudiantado, produce un perfil prácticamente idéntico al juicio LLM. La principal diferencia es estilística: el LLM nombra ejemplos concretos con timestamp y reformula la justificación; el determinístico se apoya en conteos. Para una docente, lo más útil es la combinación de ambos.</p>
+  </div>
+</section>
+
+<section>
+  <h2>10. Plan de mejora prioritario</h2>
+  <p>Lista accionable, ordenada por impacto sobre los indicadores con mayor déficit (9.1, 7.4, 6.2, 7.1, 8.1) y con bajo costo de implementación.</p>
+
+  <ol>
+    <li><strong>Reemplazar 5 "muy bien" diarios por elogio descriptivo (impacto en 2.2, 3.2, 6.2, 9.1).</strong>
+      <ul>
+        <li>"Contaste cinco y te detuviste" en lugar de "muy bien".</li>
+        <li>"Compartiste el material con tu amiguito" en lugar de "excelente".</li>
+        <li>"Probaste otra vez hasta llegar a cinco" - aquí entra el reconocimiento del esfuerzo que hoy está casi ausente (9.1).</li>
+      </ul>
+    </li>
+    <li><strong>Pedir explicación a 2-3 niños por actividad (impacto en 7.1, 7.3, 7.4).</strong>
+      <ul>
+        <li>"¿Cómo sabes que ya tienes cinco?" "Cuéntame qué hiciste para no equivocarte." Reservar 30 segundos por bloque.</li>
+      </ul>
+    </li>
+    <li><strong>Ofrecer al menos una elección sustantiva por bloque (impacto en 8.1, 8.2).</strong>
+      <ul>
+        <li>"Para mostrar el cinco puedes pegar stickers, hacer una torre o agrupar tapitas. Tú eliges."</li>
+        <li>Asignar roles breves: "líder de conteo", "verificador del cinco", "ayudante de materiales".</li>
+      </ul>
+    </li>
+    <li><strong>Redirigir hacia la conducta esperada, no hacia la prohibición (impacto en 3.3).</strong>
+      <ul>
+        <li>"Manos quietas y ojos al material" en lugar de "no gritar".</li>
+        <li>"Ahora le toca a Sofía, después es tu turno" en lugar de "siéntate, sentadito, sentadito".</li>
+      </ul>
+    </li>
+    <li><strong>Agregar un reto para quien termine temprano (impacto en 5.3).</strong>
+      <ul>
+        <li>"Ya tienes cinco. ¿Puedes ahora poner cinco de otro color?" "¿Qué pasa si te quito uno, cuántos quedan?"</li>
+      </ul>
+    </li>
+    <li><strong>Anunciar que equivocarse está bien (impacto en 9.2).</strong>
+      <ul>
+        <li>"Si te pasaste, está bien, contar nos ayuda a corregir." Bastan dos enunciados así durante la clase.</li>
+      </ul>
+    </li>
+    <li><strong>Una tarea cooperativa real, no sólo logística (impacto en 10.a, 10.c).</strong>
+      <ul>
+        <li>"En parejas: uno cuenta, el otro verifica con sus dedos. Después cambian." Esto convierte la pareja en colaboración cognitiva, no sólo en compartir material.</li>
+      </ul>
+    </li>
+    <li><strong>Cuidar el tramo final, evitar la presión de tiempo (impacto en 1.2, 5.3).</strong>
+      <ul>
+        <li>Reservar 4 minutos firmes para el cierre y eliminar la cadena de "rápidamente, rápidamente, rápidamente". El cierre se beneficia más de calma para sintetizar que de prisa para terminar.</li>
+      </ul>
+    </li>
+    <li><strong>Diversificar de quién se obtiene evidencia (impacto en 5.2, 8.3, equidad).</strong>
+      <ul>
+        <li>Llevar mentalmente (o en una hoja) a quién ya se le pidió contar individualmente. La meta es que los 14 niños tengan al menos una intervención individual en la clase, no sólo los 5-6 nombrados hoy.</li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2>11. Indicadores que requieren revisión humana del video</h2>
+  <p>Estos 11 indicadores requieren observación visual obligatoria para llegar a una calificación final defendible. La calificación entregada arriba es preliminar y se basa sólo en audio.</p>
+  <table>
+    <thead><tr><th>Cód.</th><th>Indicador</th><th>Qué confirmar en el video</th></tr></thead>
+    <tbody>
+      <tr><td class="code">1.2</td><td>Estudiantes enfocados</td><td>Cuántos niños están realmente atentos vs distraídos en cada bloque, especialmente entre 12:25-13:48.</td></tr>
+      <tr><td class="code">1.3</td><td>Participación activa</td><td>Si la mayoría participa o sólo los 5-6 niños nombrados (Valentina, Like, Matías, Rafita, Saib, Mati).</td></tr>
+      <tr><td class="code">2.3</td><td>Responde a necesidades</td><td>Si la docente detecta y responde a necesidades no expresadas verbalmente (gesto, postura, dificultad motora fina).</td></tr>
+      <tr><td class="code">2.4</td><td>No exhibe sesgos / estereotipos</td><td>Distribución de oportunidades por género, lenguaje no estereotipado, equidad en quién recibe atención.</td></tr>
+      <tr><td class="code">3.3</td><td>Redirige mal comportamiento</td><td>Cómo recibe el niño la redirección: mejora, ignora, se ofende. Lenguaje corporal de la docente (gesto / cara).</td></tr>
+      <tr><td class="code">5.2</td><td>Supervisa a la mayoría</td><td>Si efectivamente visita a los 14 niños o sólo a los más cercanos / más visibles.</td></tr>
+      <tr><td class="code">7.3</td><td>Estudiantes piensan críticamente</td><td>Si los niños señalan, comparan o muestran a sus pares mientras cuentan; si hay reflexión observable.</td></tr>
+      <tr><td class="code">7.4</td><td>Estudiantes explican / preguntan</td><td>Si algún niño explica espontáneamente al grupo o pregunta algo no respondible con sí/no.</td></tr>
+      <tr><td class="code">8.3</td><td>Se ofrecen a participar</td><td>Cuántos niños levantan la mano cuando se les invita a participar; si participan los mismos siempre.</td></tr>
+      <tr><td class="code">10.a</td><td>Promueve colaboración</td><td>Si hay momentos en que los niños trabajan realmente juntos, no sólo en paralelo en parejas.</td></tr>
+      <tr><td class="code">10.c</td><td>Estudiantes colaboran</td><td>Calidad real de la colaboración: ayuda mutua, lenguaje entre pares, reparto espontáneo de tareas.</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Notas metodológicas</h2>
+  <details>
+    <summary>Distinción entre evidencia textual, inferencia razonable y límite de video</summary>
+    <ul>
+      <li><strong>Evidencia textual:</strong> citas directas del transcripto con timestamp (ms convertido a mm:ss). Sostienen las afirmaciones fuertes del informe.</li>
+      <li><strong>Inferencia razonable:</strong> conclusiones derivadas de varias citas o de patrones léxicos (ej.: "predomina el elogio genérico" se sostiene en la frecuencia y la forma de las 145 expresiones positivas).</li>
+      <li><strong>Límite de video:</strong> los 11 indicadores marcados como "Video" no pueden cerrarse sin observación visual. La calificación entregada es preliminar.</li>
+    </ul>
+  </details>
+  <details>
+    <summary>Procedimiento de evaluación</summary>
+    <ol>
+      <li>Se leyó <code>rubric_indicators.json</code> y la planificación.</li>
+      <li>Se leyó la transcripción completa (<code>1.tsv</code>) para construir un mapa de evidencia con timestamps.</li>
+      <li>Se asignó rating preliminar a los 31 indicadores antes de abrir <code>indicator_scores.json</code>.</li>
+      <li>Se comparó contra el reporte determinístico <em>después</em> de calificar; se documentaron los 2 desacuerdos sutiles.</li>
+      <li>Se redactó este HTML autocontenido (sin assets externos) para que pueda abrirse localmente.</li>
+    </ol>
+  </details>
+  <details>
+    <summary>Trazabilidad</summary>
+    <ul>
+      <li>Transcripto: <code>Elva Cruz/text-data/1.tsv</code> (29:41, 184 segmentos, 3.020 palabras).</li>
+      <li>Rúbrica: 31 indicadores en 10 dominios (<code>rubric_indicators.json</code>, sha prefix <code>421525c6...</code>).</li>
+      <li>Planificación: <code>Planificacion_Clase_Dado_Numero5.md</code> (DUA + secuencia inicio-desarrollo-cierre, 30 min).</li>
+      <li>Comparación posterior: <code>Elva Cruz/reportes/artifacts/indicator_scores.json</code> (pipeline <code>phased-local-v1</code>).</li>
+    </ul>
+  </details>
+</section>
+
+<div class="footer-note">
+  Reporte generado por evaluación LLM independiente, contrastado con el pipeline determinístico local.
+  Las afirmaciones fuertes están ancladas a marcas de tiempo del transcripto.
+</div>
+
+</div>
+</body>
+</html>
