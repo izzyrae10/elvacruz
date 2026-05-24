@@ -64,6 +64,26 @@
   .ind-table td.diff { background: #fff7ec; }
   .domain-block { border-left: 3px solid var(--accent); padding-left: 14px; margin-bottom: 16px; }
   .footer-note { font-size: 12px; color: var(--muted); margin-top: 24px; text-align: center; }
+  .score-hero { display: grid; grid-template-columns: 220px 1fr; gap: 22px; align-items: center; padding: 18px 20px; border: 1px solid var(--border); border-radius: 12px; background: linear-gradient(135deg, #eef3ff 0%, #f3f0ff 100%); margin-bottom: 14px; }
+  .score-hero .big { text-align: center; }
+  .score-hero .big .pct { font-size: 56px; font-weight: 800; color: var(--accent); line-height: 1; letter-spacing: -1px; }
+  .score-hero .big .pct sup { font-size: 24px; vertical-align: top; margin-left: 2px; }
+  .score-hero .big .raw { font-size: 13px; color: var(--muted); margin-top: 4px; font-weight: 600; }
+  .score-hero .big .band { display: inline-block; margin-top: 8px; padding: 4px 12px; border-radius: 999px; background: var(--green); color: white; font-size: 12px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+  .score-hero .right h3 { margin: 0 0 6px; font-size: 17px; }
+  .score-hero .right p { margin: 4px 0; font-size: 13.5px; color: var(--ink); }
+  .bar-row { display: grid; grid-template-columns: 70px 1fr 60px 36px; gap: 10px; align-items: center; padding: 4px 0; font-size: 13px; }
+  .bar-row .lbl { font-weight: 600; color: var(--ink); }
+  .bar-row .bar { background: #eef0f5; height: 10px; border-radius: 999px; overflow: hidden; position: relative; }
+  .bar-row .bar > span { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, #2f5cff 0%, #6f49d8 100%); }
+  .bar-row .bar.low > span { background: linear-gradient(90deg, #b46e00 0%, #b3261e 100%); }
+  .bar-row .bar.high > span { background: linear-gradient(90deg, #157f3a 0%, #2f5cff 100%); }
+  .bar-row .pct-cell { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; color: var(--ink); }
+  .bar-row .raw-cell { text-align: right; font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .band-table { font-size: 13px; }
+  .band-table td:first-child { white-space: nowrap; font-weight: 600; }
+  .band-table tr.current { background: #e3f6e9; }
+  .band-table tr.current td { font-weight: 700; }
   details { margin: 6px 0; }
   details summary { cursor: pointer; font-weight: 600; color: var(--accent); padding: 4px 0; }
   .legend { display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px; color: var(--muted); margin-bottom: 8px; }
@@ -91,6 +111,7 @@
 <section>
   <h2>1. Decisión ejecutiva</h2>
   <p><strong>Veredicto:</strong> Clase <em>satisfactoria</em> con fortalezas claras y techo identificado en pensamiento crítico, retroalimentación específica y reconocimiento del esfuerzo. La docente sostiene una secuencia coherente sobre "número 5" durante 29:41 con múltiples representaciones (canción, dado, pinzas-CD, torres, stickers), articula el objetivo al inicio y lo recupera al cierre, y mantiene un trato afectuoso constante. El principal margen de mejora es elevar la calidad del elogio y de las preguntas: el aula está activa y querida, pero los niños responden mayoritariamente en coro y rara vez explican su razonamiento.</p>
+  <p><strong>Puntaje global:</strong> <span class="pill alto">76,7%</span> &mdash; banda <strong>Satisfactorio</strong> (69 de 90 puntos posibles, escala 3-2-1, indicador NA excluido). Detalle del cálculo en la sección 2.</p>
   <div class="stat-row">
     <div class="stat"><div class="n">11</div><div class="lbl">Alto / Sí</div></div>
     <div class="stat"><div class="n">17</div><div class="lbl">Medio</div></div>
@@ -101,28 +122,129 @@
 </section>
 
 <section>
-  <h2>2. Rating final de la clase</h2>
-  <div class="grid cols-2">
+  <h2>2. Rating final cuantitativo</h2>
+
+  <div class="score-hero">
+    <div class="big">
+      <div class="pct">76,7<sup>%</sup></div>
+      <div class="raw">69 / 90 puntos</div>
+      <div class="band">Satisfactorio</div>
+    </div>
+    <div class="right">
+      <h3>Calificación global de la clase</h3>
+      <p>Sumatoria de los 31 indicadores con escala <strong>Alto/Sí = 3, Medio = 2, Bajo/No = 1, NA = excluido</strong>. Se evaluaron 30 indicadores aplicables (2.4 excluido por no observabilidad en audio). Total obtenido: <strong>11×3 + 17×2 + 2×1 = 69</strong>. Total posible: <strong>30×3 = 90</strong>.</p>
+      <p>El puntaje coincide exactamente con el determinístico porque las 31 etiquetas nominales son idénticas en ambas evaluaciones.</p>
+    </div>
+  </div>
+
+  <h3>Banda de desempeño</h3>
+  <table class="band-table">
+    <thead><tr><th>Banda</th><th>Rango</th><th>Interpretación</th></tr></thead>
+    <tbody>
+      <tr><td>Destacado</td><td>90 - 100%</td><td>Práctica modelo, evidencia consistente en todos los dominios.</td></tr>
+      <tr class="current"><td>Satisfactorio</td><td>75 - 89%</td><td><strong>Esta clase: 76,7%.</strong> Práctica solvente con áreas puntuales de mejora.</td></tr>
+      <tr><td>Mejorable</td><td>60 - 74%</td><td>Cumplimiento parcial; varios indicadores requieren trabajo focalizado.</td></tr>
+      <tr><td>Insuficiente</td><td>&lt; 60%</td><td>Práctica con vacíos significativos; requiere acompañamiento sistemático.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Desglose porcentual por dominio</h3>
+  <p style="font-size:13px;color:var(--muted);margin-bottom:10px;">Cada dominio se calcula como puntos obtenidos / puntos posibles × 100. Los dominios marcados en banda alta (≥80%) son fortalezas; los marcados en banda baja (&lt;65%) son prioridades de mejora.</p>
+
+  <div class="bar-row" style="font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em;font-weight:600;">
+    <div>Dominio</div><div>Avance</div><div>%</div><div></div>
+  </div>
+
+  <div class="bar-row">
+    <div class="lbl">D4 Facilitación</div>
+    <div class="bar high"><span style="width:100%"></span></div>
+    <div class="pct-cell">100,0%</div>
+    <div class="raw-cell">12/12</div>
+  </div>
+  <div class="bar-row">
+    <div class="lbl">D1 Tiempo</div>
+    <div class="bar high"><span style="width:88.9%"></span></div>
+    <div class="pct-cell">88,9%</div>
+    <div class="raw-cell">8/9</div>
+  </div>
+  <div class="bar-row">
+    <div class="lbl">D2 Ambiente</div>
+    <div class="bar high"><span style="width:88.9%"></span></div>
+    <div class="pct-cell">88,9%</div>
+    <div class="raw-cell">8/9*</div>
+  </div>
+  <div class="bar-row">
+    <div class="lbl">D5 Verificación</div>
+    <div class="bar high"><span style="width:88.9%"></span></div>
+    <div class="pct-cell">88,9%</div>
+    <div class="raw-cell">8/9</div>
+  </div>
+  <div class="bar-row">
+    <div class="lbl">D3 Comportamiento</div>
+    <div class="bar"><span style="width:77.8%"></span></div>
+    <div class="pct-cell">77,8%</div>
+    <div class="raw-cell">7/9</div>
+  </div>
+  <div class="bar-row">
+    <div class="lbl">D6 Retroalimentación</div>
+    <div class="bar"><span style="width:66.7%"></span></div>
+    <div class="pct-cell">66,7%</div>
+    <div class="raw-cell">4/6</div>
+  </div>
+  <div class="bar-row">
+    <div class="lbl">D8 Autonomía</div>
+    <div class="bar"><span style="width:66.7%"></span></div>
+    <div class="pct-cell">66,7%</div>
+    <div class="raw-cell">6/9</div>
+  </div>
+  <div class="bar-row">
+    <div class="lbl">D10 Sociales</div>
+    <div class="bar"><span style="width:66.7%"></span></div>
+    <div class="pct-cell">66,7%</div>
+    <div class="raw-cell">6/9</div>
+  </div>
+  <div class="bar-row">
+    <div class="lbl">D7 Pensamiento crítico</div>
+    <div class="bar low"><span style="width:58.3%"></span></div>
+    <div class="pct-cell">58,3%</div>
+    <div class="raw-cell">7/12</div>
+  </div>
+  <div class="bar-row">
+    <div class="lbl">D9 Perseverancia</div>
+    <div class="bar low"><span style="width:50%"></span></div>
+    <div class="pct-cell">50,0%</div>
+    <div class="raw-cell">3/6</div>
+  </div>
+  <p style="font-size:12px;color:var(--muted);margin-top:8px;">* En D2 se excluye el indicador 2.4 (NA por no observabilidad). El denominador es 9 puntos sobre 3 indicadores aplicables.</p>
+
+  <div class="grid cols-2" style="margin-top:18px;">
     <div class="card green">
-      <h3>Calificación global: <span class="pill alto">Satisfactorio</span></h3>
-      <p>De los 30 indicadores aplicables (excluyendo 2.4 NA), <strong>11 alcanzan nivel Alto/Sí (37%)</strong>, <strong>17 quedan en Medio (57%)</strong> y <strong>2 en Bajo (6%)</strong>. La distribución indica una práctica solvente en estructura y clima, con desempeño promedio en cognición de orden superior.</p>
+      <h3>Distribución cualitativa</h3>
+      <p>De los 30 indicadores aplicables, <strong>11 alcanzan Alto/Sí (37%)</strong>, <strong>17 quedan en Medio (57%)</strong> y <strong>2 en Bajo (6%)</strong>. La práctica es solvente en estructura y clima, con desempeño promedio en cognición de orden superior.</p>
     </div>
     <div class="card blue">
-      <h3>Distribución por dominio (resumen)</h3>
+      <h3>Lectura por dominio</h3>
       <ul>
-        <li><strong>Tiempo de aprendizaje (D1):</strong> Alto en uso del tiempo y participación; Medio en foco sostenido.</li>
-        <li><strong>Ambiente (D2):</strong> Alto en trato y lenguaje positivo; Medio en respuesta a necesidades; NA en sesgos.</li>
-        <li><strong>Comportamiento (D3):</strong> Alto en expectativas; Medio en reconocimiento específico y redirección.</li>
-        <li><strong>Facilitación (D4):</strong> Alto en los 4 indicadores. Dominio más fuerte de la clase.</li>
-        <li><strong>Verificación (D5):</strong> Alto en preguntas y supervisión; Medio en ajuste diferenciado.</li>
-        <li><strong>Retroalimentación (D6):</strong> Medio en ambos indicadores.</li>
-        <li><strong>Pensamiento crítico (D7):</strong> Medio en preguntas y actividades; <strong>Bajo en explicación de estudiantes</strong>.</li>
-        <li><strong>Autonomía (D8):</strong> Medio en los 3 indicadores.</li>
-        <li><strong>Perseverancia (D9):</strong> <strong>Bajo en reconocimiento de esfuerzo</strong>; Medio en actitud ante desafíos.</li>
-        <li><strong>Sociales (D10):</strong> Medio en los 3 indicadores.</li>
+        <li><strong>Fortalezas (≥80%):</strong> D4 Facilitación, D1 Tiempo, D2 Ambiente, D5 Verificación.</li>
+        <li><strong>Banda intermedia (65-79%):</strong> D3 Comportamiento, D6 Retroalimentación, D8 Autonomía, D10 Sociales.</li>
+        <li><strong>Prioridades de mejora (&lt;65%):</strong> D7 Pensamiento crítico (58,3%) y D9 Perseverancia (50%). Aquí se concentran los 2 únicos "Bajo" del informe (7.4 y 9.1).</li>
       </ul>
     </div>
   </div>
+
+  <details style="margin-top:14px;">
+    <summary>Metodología del puntaje y cálculo alternativo</summary>
+    <p><strong>Método principal (escala 3-2-1):</strong> es la conversión estándar usada en marcos tipo TEACH. Da crédito parcial a los Bajos porque indican que el indicador <em>fue observable</em> aunque débil.</p>
+    <ul>
+      <li>Alto / Sí = 3 puntos</li>
+      <li>Medio = 2 puntos</li>
+      <li>Bajo / No = 1 punto</li>
+      <li>NA = se excluye del numerador y del denominador</li>
+    </ul>
+    <p><strong>Cálculo:</strong> 11×3 + 17×2 + 2×1 = 33 + 34 + 2 = 69 puntos. Denominador: 30 indicadores × 3 = 90. Resultado: 69 ÷ 90 = 0,7667 = <strong>76,7%</strong>.</p>
+    <p><strong>Método alternativo (escala 2-1-0, más exigente):</strong> Alto = 2, Medio = 1, Bajo = 0. Resultado: (11×2 + 17×1 + 2×0) ÷ (30×2) = 39 ÷ 60 = <strong>65,0%</strong>. Cae en banda Mejorable. Este método castiga más fuerte a los Bajos y a los Medios; se reporta para transparencia, pero el método principal es más alineado con la práctica TEACH/INEVAL.</p>
+    <p><strong>Verificación cruzada:</strong> aplicado a las 31 etiquetas del determinístico, el resultado es idéntico (76,7% / 65,0%) porque las etiquetas nominales coinciden en los 31 indicadores.</p>
+  </details>
 </section>
 
 <section>
