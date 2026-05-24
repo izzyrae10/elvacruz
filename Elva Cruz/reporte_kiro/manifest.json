@@ -1,0 +1,48 @@
+{
+  "report_path": "Elva Cruz/reporte_kiro/reporte_evaluacion_kiro.html",
+  "evaluator": "kiro_llm_independent",
+  "generated_on": "2026-05-23",
+  "duration_label": "29:41",
+  "indicator_count": 31,
+  "indicator_count_applicable": 30,
+  "ratings_distribution": {
+    "alto_si": 11,
+    "medio": 17,
+    "bajo": 2,
+    "na": 1
+  },
+  "overall_score": {
+    "method": "TEACH 3-2-1 (Alto/Si=3, Medio=2, Bajo/No=1, NA excluded)",
+    "points_obtained": 69,
+    "points_possible": 90,
+    "percentage": 76.7,
+    "band": "Satisfactorio",
+    "band_range": "75-89%",
+    "alternative_strict_2_1_0_percentage": 65.0
+  },
+  "domain_scores": [
+    { "domain": "D1 Tiempo de aprendizaje", "obtained": 8, "possible": 9, "pct": 88.9 },
+    { "domain": "D2 Ambiente", "obtained": 8, "possible": 9, "pct": 88.9, "note": "2.4 excluido NA" },
+    { "domain": "D3 Comportamiento", "obtained": 7, "possible": 9, "pct": 77.8 },
+    { "domain": "D4 Facilitacion", "obtained": 12, "possible": 12, "pct": 100.0 },
+    { "domain": "D5 Verificacion", "obtained": 8, "possible": 9, "pct": 88.9 },
+    { "domain": "D6 Retroalimentacion", "obtained": 4, "possible": 6, "pct": 66.7 },
+    { "domain": "D7 Pensamiento critico", "obtained": 7, "possible": 12, "pct": 58.3 },
+    { "domain": "D8 Autonomia", "obtained": 6, "possible": 9, "pct": 66.7 },
+    { "domain": "D9 Perseverancia", "obtained": 3, "possible": 6, "pct": 50.0 },
+    { "domain": "D10 Sociales", "obtained": 6, "possible": 9, "pct": 66.7 }
+  ],
+  "visual_review_required_count": 11,
+  "agreement_with_deterministic": {
+    "exact_label_match": "31/31",
+    "internal_tendency_disagreements": ["2.3", "7.3"],
+    "score_match": "identical (76.7%) since labels coincide"
+  },
+  "inputs": {
+    "rubric": "Elva Cruz/reportes/artifacts/rubric_indicators.json",
+    "transcript": "Elva Cruz/text-data/1.tsv",
+    "lesson_plan": "Planificacion_Clase_Dado_Numero5.md",
+    "deterministic_scores_for_comparison": "Elva Cruz/reportes/artifacts/indicator_scores.json"
+  },
+  "methodology": "phased-local-v1 compared against independent LLM rating; LLM rated before opening deterministic scores per rule 9 of the prompt."
+}
